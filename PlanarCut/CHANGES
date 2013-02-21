@@ -1,0 +1,23 @@
+Version 1.0.1
+-------------
+
+    * Minor Bugfix in class CutSegment
+    * Minor Changes in 'testCutSegment.cpp'
+    * Update of authors' email and homepage
+    
+    
+Version 1.0.2
+-------------
+
+    * Minor Bugfix in classes CutGrid, CutPlanar, CutSegment
+    * Minor Bugfix in 'testCutSegment.cpp'
+
+
+
+
+
+
+
+
+
+
