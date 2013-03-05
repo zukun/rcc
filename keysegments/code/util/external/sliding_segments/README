@@ -1,0 +1,12 @@
+Here is an example of using the function enumerateGroups.m
+
+Just load up MATLAB and run sliding_segments, it will visualize merged segments
+
+-Tomasz
+
+Please consider citing my work if you find this code useful in your research
+
+Tomasz Malisiewicz, Alexei A. Efros. Improving Spatial Support for Objects via Multiple Segmentations, British Machine Vision Conference (BMVC 2007), September 2007.
+
+Tomasz Malisiewicz, Alexei A. Efros. Recognition by Association via Learning Per-exemplar Distances. In CVPR, June 2008.
+

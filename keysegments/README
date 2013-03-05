@@ -1,0 +1,39 @@
+Key-Segments Video Segmentation README File
+-------------------------------------------
+
+
+1. Using the code
+
+There are 2 demo files:
+
+a) hypotheses_demo.m: discovers keysegment hypotheses (i.e., clusters) in ranked-order of their object-like properties.
+b) keySegs_demo.m: produces a binary segmentation of the object corresponding to the specified keysegment hypothesis.
+
+
+
+2. Notes
+
+The code assumes that the video frames are stored in order (i.e., frame 1 is the first file, frame 2 is the second file),
+and that the files types are either jpg, png, or bmp.  (The code can be easily changed to accomodate other file types.) 
+
+The code assumes that the BPLRs [1], region proposals [2], and optical flows [3] are pre-computed.  
+You can download the pre-computed data for the SegTrack dataset here: vision.cs.utexas.edu/projects/keysegments/data.tgz
+Example code for computing them are provided in ./code/preprocessing/
+
+[1] J. Kim and K. Grauman. Boundary Preserving Dense Local Regions. CVPR 2011.
+[2] I. Endres and D. Hoiem. Category Independent Object Proposals. ECCV 2010.
+[3] T. Brox and J. Malik. Large displacement optical flow: descriptor matching in variational motion estimation. TPAMI 2011.
+
+The segmentation demo code (keySegs_demo.m) produces slightly different results to those reported in the paper ("Ours" in Table 1);
+better for 3 videos, similar for 2 videos, and worse for 1 video.  This is due to changes in the BPLR parameters.
+The results for the color-only method ("Ours w/o partial shape match" in Table 2) are identical.
+
+
+
+3. Citation
+
+Please cite our paper if you use our code:
+
+Y. J. Lee, J. Kim, and K. Grauman. Key-Segments for Video Object Segmentation. 
+Proceedings of the IEEE International Conference on Computer Vision (ICCV), 2011.
+

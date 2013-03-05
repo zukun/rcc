@@ -1,0 +1,93 @@
+        Software for Boundary Preserving Dense Local Regions
+
+        http://vision.cs.utexas.edu/projects/bplr/bplr.html
+Jaechul Kim (jaechul@cs.utexas.edu) and Kristen Grauman (grauman@cs.utexas.edu) 
+
+---------------------------------------------------------------------------
+Install
+---------------------------------------------------------------------------
+This code is tested in MATLAB 7.5(r2007b) under Linux 32-bit and 64-bit.
+If you work in Linux, you should be able to run the code as it is.
+
+Otherwise, you should re-compile mex files that the code links.
+
+- For BPLR
+run bplr_compile_mex.m 
+
+- For external libraries
+(All mex files of external libraries are located at /BPLR/external/ and 
+you should put your compiled ones there.)
+
+    - For Berkeley segmentation
+    (1) Download the source code: 
+    http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_source.tgz
+
+    (2) Compile the source: follow the instruction at /BSR/grouping/source/README
+
+    (3) Copy the compile library (/BSR/grouping/lib) into /BPLR/external/bsr/
+
+    - For MatlabBGL
+    This provides mex files for all major os; thus you may not need to compile it.
+    Just in case it does not work, 
+    you should check out: 
+    http://www.stanford.edu/~dgleich/programs/matlab_bgl/matlab_bgl_v2.1.pdf
+
+    - For slmetric_pw
+    (1) Run /BPLR/external/pwmetric/slmetric_pw_compile.m
+
+    - For Euclidean minimum spanning tree
+    (1) Type in matlab 
+    >> mex /BPLR/external/spanning_tree/computeEMST.c
+
+    - For VLFEAT (http://www.vlfeat.org/)
+    Follow the instruction at /BPLR/external/vlfeat-0.9.8/README
+
+---------------------------------------------------------------------------
+Example
+---------------------------------------------------------------------------
+(1) You can run example.m to see if the installation is successful.
+>> bplr_startup % path setting for BPLR
+>> bprl_compile_mex % compile mex files in case your os is not linux. 
+>> example % run the example code
+
+(2) demo.m includes all the routines to compute BPLR and some descriptors.
+
+(3) display/displayBPLRInteractive.m display BPLRs at the mouse-clicked locations.
+
+---------------------------------------------------------------------------
+Note on computation efficiency
+---------------------------------------------------------------------------
+Depending on sampling rate and image size, large memory may be required, 
+which can affect the computation efficiency substantially.
+Thus, you may need to adjust rsz and grid_space in demo.m to accommodate 
+the number of extractions to your system.
+
+Rule of thumb
+- Approximate number of BPLR extractions ~= (image_width/grid_space)*(image_height/grid_space)
+
+For extracting 5000-7000 BPLRs,
+- Computation time
+    In 2.4GHz, 2G RAM, 
+        BPLR extration: 5-8 secs.
+        PHOG descriptor: 5-8 secs.
+    In 3.47GHz with 72G RAM, 
+        BPLR extration: 3-4 secs.
+        PHOG descriptor: 3-4 secs.
+    (I did not inclde segmentation time, which takes a few minutes in general.)
+- Memory use: about 400-600MB during computation
+
+---------------------------------------------------------------------------
+License
+---------------------------------------------------------------------------
+This program is free software; you can redistribute it and/or modify it 
+under the terms of the GNU General Public License as published by 
+the Free Software Foundation; either version 2 of the L and PHOG descriptor icense, or
+(at your option) any later version. 
+For more details, see the GNU General Public License.
+
+---------------------------------------------------------------------------
+References
+---------------------------------------------------------------------------
+If you use this code, please cite:
+
+Jaechul Kim and Kristen Grauman. Boundary Preserving Dense Local Regions. CVPR,2011.

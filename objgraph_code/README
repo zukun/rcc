@@ -1,0 +1,58 @@
+Object-Graphs Discovery README File
+-----------------------------------
+
+1. Installation
+
+You will need to download the following software:
+
+a) Normalized Cuts by J. Shi and J. Malik
+   http://www.cis.upenn.edu/~jshi/software/
+b) Berkeley benchmark and boundary detection code
+   http://www.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/code/segbench.tar.gz
+c) Multiple Kernel Learning (MKL) code by F. Bach, G. Lanckriet, and M. Jordan
+   http://www.stat.berkeley.edu/~gobo/SKMsmo.tar
+d) Libsvm by C-C. Chang and C-J. Lin
+   http://www.csie.ntu.edu.tw/~cjlin/libsvm/
+
+Some of these are not necessary.  For example, you can replace the MKL with simple averaging of the kernels.  
+Pwmetric is only needed for chi-squre distance computation.  We used the software for speed.
+If you make any changes, you will need to go to the appropriate m-files to change these.
+
+e) in addition, we used the cleaned-up MSRC-v2 ground-truth data by Tomasz Malisiewicz
+   http://www.cs.cmu.edu/~tmalisie/projects/bmvc07/clean_msrc2_segmentations.tar.gz
+
+The following software are already included:
+
+f) pyramid of HOG code from A. Bosch and A. Zisserman
+   http://www.robots.ox.ac.uk/~vgg/research/caltech/phog.html
+g) Superpixel code by G. Mori
+   http://www.cs.sfu.ca/~mori/research/superpixels/
+h) Pwmetric by D. Lin from Matlab Central (for chi-square distance)
+   http://www.mathworks.com/matlabcentral/fileexchange/15935-computing-pairwise-distances-and-metrics
+
+
+2. Using the code
+
+There are 3 main components to the software:
+a) Feature extraction (featExtraction.m)
+b) Training the known categories (train.m)
+c) Context-aware discovery (discovery.m)
+
+To extract texton, color, and phog histogram features for each region (i.e., superpixel or regions from mulitple-segmentations), run "featExtraction.m" script.
+To train N known category classifers using color, texton, and phog features, run "train.m" script.
+To discover k unknown categories using the appearance features + object-graph descriptor, run "discovery.m" script.
+
+The current software works with the MSRC-v2 dataset.
+
+Note that each module can be easily replaced with your own choice of features, classifiers, and clustering algorithms, as long as you can compute pixel-level posteriors for the known categories. 
+You can also work with a different dataset of your choice, but you will have to change some of the code to accomodate that.
+
+
+3. Citation
+
+Please acknowledge the use of our code with a citation:
+
+Y. J. Lee and K. Grauman. "Object-Graphs for Context-Aware Category Discovery." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2010.
+
+
+[Thanks to Neelima Chavali for pointing out minor bugs in the feature extraction code.  Note that these do not change the results at all, as the bugs were regarding directory paths or modifications of the external codes.]
