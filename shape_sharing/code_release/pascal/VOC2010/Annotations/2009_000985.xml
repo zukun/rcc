@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2009_000985.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>bicycle</name>
+		<bndbox>
+			<xmax>469</xmax>
+			<xmin>37</xmin>
+			<ymax>272</ymax>
+			<ymin>15</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>285</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

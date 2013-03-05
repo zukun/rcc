@@ -1,0 +1,54 @@
+<annotation>
+	<folder>VOC2010</folder>
+	<filename>2008_003414.jpg</filename>
+	<source>
+		<database>The VOC2008 Database</database>
+		<annotation>PASCAL VOC2008</annotation>
+		<image>flickr</image>
+	</source>
+	<size>
+		<width>500</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>train</name>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>35</xmin>
+			<ymin>84</ymin>
+			<xmax>369</xmax>
+			<ymax>462</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+	<object>
+		<name>person</name>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+		<occluded>1</occluded>
+		<bndbox>
+			<xmin>348</xmin>
+			<ymin>284</ymin>
+			<xmax>399</xmax>
+			<ymax>422</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+	<object>
+		<name>train</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>412</xmin>
+			<ymin>302</ymin>
+			<xmax>470</xmax>
+			<ymax>372</ymax>
+		</bndbox>
+		<difficult>1</difficult>
+	</object>
+</annotation>

@@ -1,0 +1,41 @@
+<annotation>
+	<folder>VOC2010</folder>
+	<filename>2008_002835.jpg</filename>
+	<source>
+		<database>The VOC2008 Database</database>
+		<annotation>PASCAL VOC2008</annotation>
+		<image>flickr</image>
+	</source>
+	<size>
+		<width>500</width>
+		<height>419</height>
+		<depth>3</depth>
+	</size>
+	<segmented>1</segmented>
+	<object>
+		<name>horse</name>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+		<occluded>1</occluded>
+		<bndbox>
+			<xmin>99</xmin>
+			<ymin>91</ymin>
+			<xmax>348</xmax>
+			<ymax>365</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+	<object>
+		<name>person</name>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+		<occluded>1</occluded>
+		<bndbox>
+			<xmin>164</xmin>
+			<ymin>29</ymin>
+			<xmax>305</xmax>
+			<ymax>278</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+</annotation>

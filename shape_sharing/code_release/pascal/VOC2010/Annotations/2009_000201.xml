@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2009_000201.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>bottle</name>
+		<bndbox>
+			<xmax>245</xmax>
+			<xmin>156</xmin>
+			<ymax>411</ymax>
+			<ymin>76</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>1</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>333</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

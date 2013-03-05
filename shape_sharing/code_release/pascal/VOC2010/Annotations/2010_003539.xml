@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2010_003539.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>cat</name>
+		<bndbox>
+			<xmax>448</xmax>
+			<xmin>81</xmin>
+			<ymax>487</ymax>
+			<ymin>24</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>bottle</name>
+		<bndbox>
+			<xmax>464</xmax>
+			<xmin>442</xmin>
+			<ymax>268</ymax>
+			<ymin>191</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>487</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

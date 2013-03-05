@@ -1,0 +1,28 @@
+<annotation>
+	<folder>VOC2010</folder>
+	<filename>2008_001030.jpg</filename>
+	<source>
+		<database>The VOC2008 Database</database>
+		<annotation>PASCAL VOC2008</annotation>
+		<image>flickr</image>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>1</segmented>
+	<object>
+		<name>sofa</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<occluded>1</occluded>
+		<bndbox>
+			<xmin>36</xmin>
+			<ymin>205</ymin>
+			<xmax>406</xmax>
+			<ymax>374</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+</annotation>

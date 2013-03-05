@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2009_000341.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>motorbike</name>
+		<bndbox>
+			<xmax>500</xmax>
+			<xmin>1</xmin>
+			<ymax>278</ymax>
+			<ymin>15</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>500</xmax>
+			<xmin>465</xmin>
+			<ymax>90</ymax>
+			<ymin>48</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Rear</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>383</xmax>
+			<xmin>352</xmin>
+			<ymax>85</ymax>
+			<ymin>50</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>333</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2009_003386.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>60</xmax>
+			<xmin>1</xmin>
+			<ymax>234</ymax>
+			<ymin>212</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>314</xmax>
+			<xmin>243</xmin>
+			<ymax>236</ymax>
+			<ymin>208</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>338</xmax>
+			<xmin>303</xmin>
+			<ymax>228</ymax>
+			<ymin>213</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Right</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>257</height>
+		<width>338</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

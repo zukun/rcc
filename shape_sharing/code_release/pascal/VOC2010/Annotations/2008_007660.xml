@@ -1,0 +1,54 @@
+<annotation>
+	<folder>VOC2010</folder>
+	<filename>2008_007660.jpg</filename>
+	<source>
+		<database>The VOC2008 Database</database>
+		<annotation>PASCAL VOC2008</annotation>
+		<image>flickr</image>
+	</source>
+	<size>
+		<width>500</width>
+		<height>333</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>motorbike</name>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+		<occluded>1</occluded>
+		<bndbox>
+			<xmin>241</xmin>
+			<ymin>114</ymin>
+			<xmax>328</xmax>
+			<ymax>163</ymax>
+		</bndbox>
+		<difficult>1</difficult>
+	</object>
+	<object>
+		<name>person</name>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>276</xmin>
+			<ymin>102</ymin>
+			<xmax>318</xmax>
+			<ymax>156</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+	<object>
+		<name>car</name>
+		<pose>Rear</pose>
+		<truncated>1</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>388</xmin>
+			<ymin>145</ymin>
+			<xmax>500</xmax>
+			<ymax>247</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+</annotation>

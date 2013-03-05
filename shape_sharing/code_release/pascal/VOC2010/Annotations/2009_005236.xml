@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_005236.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>cat</name>
+		<bndbox>
+			<xmax>259</xmax>
+			<xmin>15</xmin>
+			<ymax>327</ymax>
+			<ymin>15</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>cat</name>
+		<bndbox>
+			<xmax>334</xmax>
+			<xmin>105</xmin>
+			<ymax>377</ymax>
+			<ymin>159</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>1</segmented>
+	<size>
+		<depth>3</depth>
+		<height>380</height>
+		<width>355</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

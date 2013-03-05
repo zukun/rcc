@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2010_004680.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>bottle</name>
+		<bndbox>
+			<xmax>248</xmax>
+			<xmin>122</xmin>
+			<ymax>490</ymax>
+			<ymin>20</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>361</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

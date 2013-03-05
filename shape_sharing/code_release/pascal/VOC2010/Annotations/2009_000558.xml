@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_000558.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>bus</name>
+		<bndbox>
+			<xmax>375</xmax>
+			<xmin>6</xmin>
+			<ymax>429</ymax>
+			<ymin>109</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>bus</name>
+		<bndbox>
+			<xmax>375</xmax>
+			<xmin>279</xmin>
+			<ymax>356</ymax>
+			<ymin>142</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

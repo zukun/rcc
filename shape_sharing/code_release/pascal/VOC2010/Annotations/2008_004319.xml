@@ -1,0 +1,41 @@
+<annotation>
+	<folder>VOC2010</folder>
+	<filename>2008_004319.jpg</filename>
+	<source>
+		<database>The VOC2008 Database</database>
+		<annotation>PASCAL VOC2008</annotation>
+		<image>flickr</image>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>dog</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<occluded>1</occluded>
+		<bndbox>
+			<xmin>239</xmin>
+			<ymin>229</ymin>
+			<xmax>415</xmax>
+			<ymax>322</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+	<object>
+		<name>dog</name>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>176</ymin>
+			<xmax>207</xmax>
+			<ymax>311</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+</annotation>

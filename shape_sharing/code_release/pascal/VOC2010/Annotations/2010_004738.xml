@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2010_004738.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>dog</name>
+		<bndbox>
+			<xmax>255</xmax>
+			<xmin>1</xmin>
+			<ymax>396</ymax>
+			<ymin>107</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>chair</name>
+		<bndbox>
+			<xmax>347</xmax>
+			<xmin>3</xmin>
+			<ymax>500</ymax>
+			<ymin>2</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>347</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

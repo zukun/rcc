@@ -1,0 +1,46 @@
+<annotation>
+	<folder>VOC2010</folder>
+	<filename>2008_002908.jpg</filename>
+	<source>
+		<database>The VOC2008 Database</database>
+		<annotation>PASCAL VOC2008</annotation>
+		<image>flickr</image>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>36</xmin>
+			<ymin>64</ymin>
+			<xmax>500</xmax>
+			<ymax>375</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+		<part>
+			<name>head</name>
+			<bndbox>
+				<xmin>191</xmin>
+				<ymin>67</ymin>
+				<xmax>320</xmax>
+				<ymax>226</ymax>
+			</bndbox>
+		</part>
+		<part>
+			<name>hand</name>
+			<bndbox>
+				<xmin>103</xmin>
+				<ymin>182</ymin>
+				<xmax>203</xmax>
+				<ymax>269</ymax>
+			</bndbox>
+		</part>
+	</object>
+</annotation>

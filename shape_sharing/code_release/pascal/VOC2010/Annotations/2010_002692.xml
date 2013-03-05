@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2010_002692.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>cat</name>
+		<bndbox>
+			<xmax>264</xmax>
+			<xmin>85</xmin>
+			<ymax>427</ymax>
+			<ymin>42</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

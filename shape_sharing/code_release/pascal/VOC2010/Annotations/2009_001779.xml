@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_001779.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>tvmonitor</name>
+		<bndbox>
+			<xmax>200</xmax>
+			<xmin>79</xmin>
+			<ymax>233</ymax>
+			<ymin>86</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>tvmonitor</name>
+		<bndbox>
+			<xmax>313</xmax>
+			<xmin>185</xmin>
+			<ymax>219</ymax>
+			<ymin>90</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>334</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

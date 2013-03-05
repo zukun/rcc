@@ -1,0 +1,28 @@
+<annotation>
+	<folder>VOC2010</folder>
+	<filename>2008_003939.jpg</filename>
+	<source>
+		<database>The VOC2008 Database</database>
+		<annotation>PASCAL VOC2008</annotation>
+		<image>flickr</image>
+	</source>
+	<size>
+		<width>375</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>1</segmented>
+	<object>
+		<name>motorbike</name>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+		<occluded>1</occluded>
+		<bndbox>
+			<xmin>97</xmin>
+			<ymin>336</ymin>
+			<xmax>279</xmax>
+			<ymax>469</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+</annotation>

@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2010_000381.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>490</xmax>
+			<xmin>13</xmin>
+			<ymax>273</ymax>
+			<ymin>101</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>500</xmax>
+			<xmin>307</xmin>
+			<ymax>186</ymax>
+			<ymin>98</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Right</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>375</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

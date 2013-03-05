@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_001207.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>bottle</name>
+		<bndbox>
+			<xmax>198</xmax>
+			<xmin>139</xmin>
+			<ymax>333</ymax>
+			<ymin>72</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>367</xmax>
+			<xmin>175</xmin>
+			<ymax>333</ymax>
+			<ymin>95</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>333</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

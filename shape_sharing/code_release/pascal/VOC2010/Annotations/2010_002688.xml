@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2010_002688.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>bird</name>
+		<bndbox>
+			<xmax>451</xmax>
+			<xmin>304</xmin>
+			<ymax>170</ymax>
+			<ymin>88</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>210</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

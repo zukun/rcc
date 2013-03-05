@@ -1,0 +1,54 @@
+<annotation>
+	<folder>VOC2010</folder>
+	<filename>2008_005071.jpg</filename>
+	<source>
+		<database>The VOC2008 Database</database>
+		<annotation>PASCAL VOC2008</annotation>
+		<image>flickr</image>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>boat</name>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>21</xmin>
+			<ymin>14</ymin>
+			<xmax>442</xmax>
+			<ymax>324</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+	<object>
+		<name>boat</name>
+		<pose>Right</pose>
+		<truncated>1</truncated>
+		<occluded>1</occluded>
+		<bndbox>
+			<xmin>341</xmin>
+			<ymin>170</ymin>
+			<xmax>500</xmax>
+			<ymax>228</ymax>
+		</bndbox>
+		<difficult>0</difficult>
+	</object>
+	<object>
+		<name>boat</name>
+		<pose>Left</pose>
+		<truncated>1</truncated>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>462</xmin>
+			<ymin>242</ymin>
+			<xmax>500</xmax>
+			<ymax>282</ymax>
+		</bndbox>
+		<difficult>1</difficult>
+	</object>
+</annotation>

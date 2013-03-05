@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2010_002128.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>motorbike</name>
+		<bndbox>
+			<xmax>397</xmax>
+			<xmin>108</xmin>
+			<ymax>361</ymax>
+			<ymin>173</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>239</xmax>
+			<xmin>160</xmin>
+			<ymax>367</ymax>
+			<ymin>79</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>225</xmax>
+			<xmin>104</xmin>
+			<ymax>264</ymax>
+			<ymin>54</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>375</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

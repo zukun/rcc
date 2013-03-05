@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2009_001253.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>motorbike</name>
+		<bndbox>
+			<xmax>291</xmax>
+			<xmin>84</xmin>
+			<ymax>454</ymax>
+			<ymin>105</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>1</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

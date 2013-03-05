@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_004513.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>282</xmax>
+			<xmin>201</xmin>
+			<ymax>197</ymax>
+			<ymin>137</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>sheep</name>
+		<bndbox>
+			<xmax>262</xmax>
+			<xmin>84</xmin>
+			<ymax>398</ymax>
+			<ymin>168</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>335</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

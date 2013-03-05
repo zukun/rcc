@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_005062.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>tvmonitor</name>
+		<bndbox>
+			<xmax>183</xmax>
+			<xmin>83</xmin>
+			<ymax>137</ymax>
+			<ymin>46</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>chair</name>
+		<bndbox>
+			<xmax>186</xmax>
+			<xmin>39</xmin>
+			<ymax>399</ymax>
+			<ymin>172</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Rear</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>410</height>
+		<width>410</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

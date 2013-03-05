@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2010_001127.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>tvmonitor</name>
+		<bndbox>
+			<xmax>42</xmax>
+			<xmin>1</xmin>
+			<ymax>142</ymax>
+			<ymin>52</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>sofa</name>
+		<bndbox>
+			<xmax>500</xmax>
+			<xmin>367</xmin>
+			<ymax>181</ymax>
+			<ymin>78</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>sofa</name>
+		<bndbox>
+			<xmax>453</xmax>
+			<xmin>43</xmin>
+			<ymax>375</ymax>
+			<ymin>168</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Rear</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>375</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

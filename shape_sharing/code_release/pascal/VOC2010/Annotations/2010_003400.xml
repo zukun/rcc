@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2010_003400.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>466</xmax>
+			<xmin>39</xmin>
+			<ymax>254</ymax>
+			<ymin>71</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>375</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

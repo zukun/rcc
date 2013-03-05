@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2010_000545.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>cow</name>
+		<bndbox>
+			<xmax>375</xmax>
+			<xmin>147</xmin>
+			<ymax>387</ymax>
+			<ymin>40</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>cow</name>
+		<bndbox>
+			<xmax>257</xmax>
+			<xmin>28</xmin>
+			<ymax>418</ymax>
+			<ymin>53</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>cow</name>
+		<bndbox>
+			<xmax>100</xmax>
+			<xmin>1</xmin>
+			<ymax>305</ymax>
+			<ymin>121</ymin>
+		</bndbox>
+		<difficult>1</difficult>
+		<occluded>1</occluded>
+		<pose>Left</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

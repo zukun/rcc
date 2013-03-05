@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2010_003260.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>boat</name>
+		<bndbox>
+			<xmax>373</xmax>
+			<xmin>309</xmin>
+			<ymax>243</ymax>
+			<ymin>157</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>boat</name>
+		<bndbox>
+			<xmax>367</xmax>
+			<xmin>338</xmin>
+			<ymax>255</ymax>
+			<ymin>236</ymin>
+		</bndbox>
+		<difficult>1</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>boat</name>
+		<bndbox>
+			<xmax>327</xmax>
+			<xmin>104</xmin>
+			<ymax>500</ymax>
+			<ymin>316</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

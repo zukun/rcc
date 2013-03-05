@@ -1,0 +1,54 @@
+<annotation>
+	<folder>VOC2010</folder>
+	<filename>2007_005971.jpg</filename>
+	<source>
+		<database>The VOC2007 Database</database>
+		<annotation>PASCAL VOC2007</annotation>
+		<image>flickr</image>
+	</source>
+	<size>
+		<width>500</width>
+		<height>333</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>8</xmin>
+			<ymin>109</ymin>
+			<xmax>341</xmax>
+			<ymax>333</ymax>
+		</bndbox>
+		<part>
+			<name>head</name>
+			<bndbox>
+				<xmin>234</xmin>
+				<ymin>109</ymin>
+				<xmax>290</xmax>
+				<ymax>177</ymax>
+			</bndbox>
+		</part>
+		<part>
+			<name>hand</name>
+			<bndbox>
+				<xmin>169</xmin>
+				<ymin>274</ymin>
+				<xmax>205</xmax>
+				<ymax>309</ymax>
+			</bndbox>
+		</part>
+		<part>
+			<name>hand</name>
+			<bndbox>
+				<xmin>219</xmin>
+				<ymin>273</ymin>
+				<xmax>273</xmax>
+				<ymax>314</ymax>
+			</bndbox>
+		</part>
+	</object>
+</annotation>

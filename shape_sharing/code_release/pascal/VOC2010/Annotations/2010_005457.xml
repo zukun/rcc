@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2010_005457.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>bus</name>
+		<bndbox>
+			<xmax>452</xmax>
+			<xmin>52</xmin>
+			<ymax>370</ymax>
+			<ymin>1</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>500</xmax>
+			<xmin>469</xmin>
+			<ymax>229</ymax>
+			<ymin>162</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>1</segmented>
+	<size>
+		<depth>3</depth>
+		<height>375</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

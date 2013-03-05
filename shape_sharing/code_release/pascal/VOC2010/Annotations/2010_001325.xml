@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2010_001325.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>horse</name>
+		<bndbox>
+			<xmax>372</xmax>
+			<xmin>159</xmin>
+			<ymax>325</ymax>
+			<ymin>119</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>299</xmax>
+			<xmin>215</xmin>
+			<ymax>205</ymax>
+			<ymin>22</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>332</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

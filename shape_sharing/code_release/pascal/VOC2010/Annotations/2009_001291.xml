@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2009_001291.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>train</name>
+		<bndbox>
+			<xmax>317</xmax>
+			<xmin>96</xmin>
+			<ymax>389</ymax>
+			<ymin>100</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>408</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

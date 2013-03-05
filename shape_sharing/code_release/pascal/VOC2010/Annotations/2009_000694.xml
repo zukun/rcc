@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2009_000694.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>cow</name>
+		<bndbox>
+			<xmax>71</xmax>
+			<xmin>29</xmin>
+			<ymax>299</ymax>
+			<ymin>281</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>cow</name>
+		<bndbox>
+			<xmax>184</xmax>
+			<xmin>75</xmin>
+			<ymax>349</ymax>
+			<ymin>244</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>cow</name>
+		<bndbox>
+			<xmax>351</xmax>
+			<xmin>235</xmin>
+			<ymax>343</ymax>
+			<ymin>241</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

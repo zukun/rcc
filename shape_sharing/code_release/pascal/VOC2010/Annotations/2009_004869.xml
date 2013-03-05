@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2009_004869.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>pottedplant</name>
+		<bndbox>
+			<xmax>281</xmax>
+			<xmin>212</xmin>
+			<ymax>281</ymax>
+			<ymin>150</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>99</xmax>
+			<xmin>45</xmin>
+			<ymax>126</ymax>
+			<ymin>60</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>chair</name>
+		<bndbox>
+			<xmax>473</xmax>
+			<xmin>111</xmin>
+			<ymax>333</ymax>
+			<ymin>18</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>333</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

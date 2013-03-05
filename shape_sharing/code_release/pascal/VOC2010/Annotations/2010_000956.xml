@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2010_000956.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>bird</name>
+		<bndbox>
+			<xmax>198</xmax>
+			<xmin>172</xmin>
+			<ymax>47</ymax>
+			<ymin>26</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>bird</name>
+		<bndbox>
+			<xmax>129</xmax>
+			<xmin>109</xmin>
+			<ymax>413</ymax>
+			<ymin>400</ymin>
+		</bndbox>
+		<difficult>1</difficult>
+		<occluded>0</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>bird</name>
+		<bndbox>
+			<xmax>57</xmax>
+			<xmin>40</xmin>
+			<ymax>404</ymax>
+			<ymin>394</ymin>
+		</bndbox>
+		<difficult>1</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

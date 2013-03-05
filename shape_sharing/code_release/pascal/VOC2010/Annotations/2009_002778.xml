@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2009_002778.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>boat</name>
+		<bndbox>
+			<xmax>291</xmax>
+			<xmin>133</xmin>
+			<ymax>214</ymax>
+			<ymin>172</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>boat</name>
+		<bndbox>
+			<xmax>293</xmax>
+			<xmin>199</xmin>
+			<ymax>111</ymax>
+			<ymin>79</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>362</xmax>
+			<xmin>355</xmin>
+			<ymax>119</ymax>
+			<ymin>101</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>358</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

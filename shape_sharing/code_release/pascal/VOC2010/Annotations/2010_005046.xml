@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2010_005046.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>diningtable</name>
+		<bndbox>
+			<xmax>467</xmax>
+			<xmin>1</xmin>
+			<ymax>398</ymax>
+			<ymin>303</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>238</xmax>
+			<xmin>23</xmin>
+			<ymax>362</ymax>
+			<ymin>66</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>447</xmax>
+			<xmin>38</xmin>
+			<ymax>372</ymax>
+			<ymin>49</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>1</segmented>
+	<size>
+		<depth>3</depth>
+		<height>399</height>
+		<width>480</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

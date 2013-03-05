@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2009_000133.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>aeroplane</name>
+		<bndbox>
+			<xmax>383</xmax>
+			<xmin>111</xmin>
+			<ymax>234</ymax>
+			<ymin>144</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>1</segmented>
+	<size>
+		<depth>3</depth>
+		<height>273</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

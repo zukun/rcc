@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_002415.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>diningtable</name>
+		<bndbox>
+			<xmax>375</xmax>
+			<xmin>1</xmin>
+			<ymax>351</ymax>
+			<ymin>1</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>chair</name>
+		<bndbox>
+			<xmax>346</xmax>
+			<xmin>70</xmin>
+			<ymax>500</ymax>
+			<ymin>25</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

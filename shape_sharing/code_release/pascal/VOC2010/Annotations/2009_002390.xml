@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2009_002390.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>sofa</name>
+		<bndbox>
+			<xmax>281</xmax>
+			<xmin>1</xmin>
+			<ymax>451</ymax>
+			<ymin>132</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Left</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>1</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

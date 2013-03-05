@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_001245.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>train</name>
+		<bndbox>
+			<xmax>407</xmax>
+			<xmin>79</xmin>
+			<ymax>274</ymax>
+			<ymin>143</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>45</xmax>
+			<xmin>35</xmin>
+			<ymax>221</ymax>
+			<ymin>209</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>375</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

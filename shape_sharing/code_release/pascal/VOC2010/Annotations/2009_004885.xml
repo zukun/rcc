@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2009_004885.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>pottedplant</name>
+		<bndbox>
+			<xmax>438</xmax>
+			<xmin>278</xmin>
+			<ymax>352</ymax>
+			<ymin>187</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>pottedplant</name>
+		<bndbox>
+			<xmax>310</xmax>
+			<xmin>148</xmin>
+			<ymax>332</ymax>
+			<ymin>148</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>pottedplant</name>
+		<bndbox>
+			<xmax>178</xmax>
+			<xmin>37</xmin>
+			<ymax>312</ymax>
+			<ymin>147</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>360</height>
+		<width>480</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

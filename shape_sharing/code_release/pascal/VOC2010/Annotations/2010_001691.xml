@@ -1,0 +1,28 @@
+<annotation>
+	<filename>2010_001691.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>boat</name>
+		<bndbox>
+			<xmax>174</xmax>
+			<xmin>145</xmin>
+			<ymax>200</ymax>
+			<ymin>97</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>291</height>
+		<width>418</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

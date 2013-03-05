@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/projects/vision/6/jaechul/flann-1.21-src-64/src/cpp/./constants.h
+
+/projects/vision/6/jaechul/flann-1.21-src-64/src/cpp/./flann.h
+constants.h
+/projects/vision/6/jaechul/flann-1.21-src-64/src/cpp/./constants.h
+
+/projects/vision/6/jaechul/flann-1.21-src-64/src/cpp/tests/flann_test.cc
+flann.h
+/projects/vision/6/jaechul/flann-1.21-src-64/src/cpp/tests/flann.h
+stdio.h
+-
+stdlib.h
+-
+

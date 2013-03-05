@@ -1,0 +1,54 @@
+<annotation>
+	<filename>2009_003896.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>aeroplane</name>
+		<bndbox>
+			<xmax>242</xmax>
+			<xmin>130</xmin>
+			<ymax>296</ymax>
+			<ymin>216</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>345</xmax>
+			<xmin>229</xmin>
+			<ymax>500</ymax>
+			<ymin>275</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Rear</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>138</xmax>
+			<xmin>38</xmin>
+			<ymax>500</ymax>
+			<ymin>284</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Rear</pose>
+		<truncated>1</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>375</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

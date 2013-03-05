@@ -1,0 +1,55 @@
+<annotation>
+	<filename>2009_004221.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>347</xmax>
+			<xmin>213</xmin>
+			<ymax>500</ymax>
+			<ymin>55</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+		<part>
+			<name>head</name>
+			<bndbox>
+				<xmin>231</xmin>
+				<ymin>71</ymin>
+				<xmax>281</xmax>
+				<ymax>125</ymax>
+			</bndbox>
+		</part>
+		<part>
+			<name>hand</name>
+			<bndbox>
+				<xmin>332</xmin>
+				<ymin>274</ymin>
+				<xmax>350</xmax>
+				<ymax>304</ymax>
+			</bndbox>
+		</part>
+		<part>
+			<name>foot</name>
+			<bndbox>
+				<xmin>300</xmin>
+				<ymin>470</ymin>
+				<xmax>337</xmax>
+				<ymax>500</ymax>
+			</bndbox>
+		</part>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>396</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

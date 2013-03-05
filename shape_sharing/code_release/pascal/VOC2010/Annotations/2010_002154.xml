@@ -1,0 +1,55 @@
+<annotation>
+	<filename>2010_002154.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>461</xmax>
+			<xmin>267</xmin>
+			<ymax>375</ymax>
+			<ymin>91</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<part>
+			<name>head</name>
+			<bndbox>
+				<xmin>399</xmin>
+				<ymin>90</ymin>
+				<xmax>459</xmax>
+				<ymax>165</ymax>
+			</bndbox>
+		</part>
+		<part>
+			<name>hand</name>
+			<bndbox>
+				<xmin>313</xmin>
+				<ymin>119</ymin>
+				<xmax>341</xmax>
+				<ymax>143</ymax>
+			</bndbox>
+		</part>
+		<part>
+			<name>hand</name>
+			<bndbox>
+				<xmin>294</xmin>
+				<ymin>156</ymin>
+				<xmax>344</xmax>
+				<ymax>208</ymax>
+			</bndbox>
+		</part>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>375</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2010</annotation>
+		<database>The VOC2010 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

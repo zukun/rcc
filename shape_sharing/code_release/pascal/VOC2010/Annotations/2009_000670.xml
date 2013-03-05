@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_000670.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>sheep</name>
+		<bndbox>
+			<xmax>276</xmax>
+			<xmin>209</xmin>
+			<ymax>421</ymax>
+			<ymin>315</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>sheep</name>
+		<bndbox>
+			<xmax>175</xmax>
+			<xmin>82</xmin>
+			<ymax>422</ymax>
+			<ymin>283</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>500</height>
+		<width>333</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>

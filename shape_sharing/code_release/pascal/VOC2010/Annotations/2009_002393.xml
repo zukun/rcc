@@ -1,0 +1,41 @@
+<annotation>
+	<filename>2009_002393.jpg</filename>
+	<folder>VOC2010</folder>
+	<object>
+		<name>aeroplane</name>
+		<bndbox>
+			<xmax>345</xmax>
+			<xmin>219</xmin>
+			<ymax>136</ymax>
+			<ymin>87</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>bird</name>
+		<bndbox>
+			<xmax>329</xmax>
+			<xmin>303</xmin>
+			<ymax>19</ymax>
+			<ymin>5</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<segmented>0</segmented>
+	<size>
+		<depth>3</depth>
+		<height>319</height>
+		<width>500</width>
+	</size>
+	<source>
+		<annotation>PASCAL VOC2009</annotation>
+		<database>The VOC2009 Database</database>
+		<image>flickr</image>
+	</source>
+</annotation>
