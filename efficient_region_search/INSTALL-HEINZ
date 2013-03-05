@@ -1,0 +1,8 @@
+Installation instructions for heinz
+July 2008, G. Klau
+
+1.) get the dhea code from Ivana Ljubic's page and check whether it runs. Notice: this requires a CPLEX license!
+2.) cp the dhea executable into this directory
+3.) try heinz.py
+
+If anything goes wrong, please do not hesitate to contact Gunnar Klau (gunnar AT math dot fu-berlin.de)

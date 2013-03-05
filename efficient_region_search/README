@@ -1,0 +1,11 @@
+This directory has code for running our detection algorithm ERS given a superpixel segmentation, bag of word features and linear svm weights
+which are stored in the directories images/, features/, classifier/ for some example images. 
+
+Requirements
+ -- heinz code from Gunnar Klau https://www.mi.fu-berlin.de/w/LiSA/Heinz (included in this package)
+ -- dhea code from Ivana Ljubic http://homepage.univie.ac.at/ivana.ljubic/research/pcstp/	
+ -- cplex license (IBM provides ilog cplex full version for students here https://www.ibm.com/developerworks/university/software/get_software.html#download)
+ -- make sure the license file is in the path (e.g. export ILOG_LICENSE_FILE=cplex/ilm/access.101.ilm for linux machines)
+ -- add the ers-code directory to the executable path (e.g. export PATH=$PATH:<ers-code-dir> in linux)
+
+Try running run_ers.m to get started.

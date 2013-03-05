@@ -1,0 +1,5 @@
+node
+# nr	x	y	price\kw	demand	source
+link
+# nr	from	to	length
+ring
