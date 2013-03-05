@@ -1,0 +1,171 @@
+LIBPMK: A Pyramid Match Toolkit
+
+Author: John J. Lee
+Project home page: http://people.csail.mit.edu/libpmk/jjl
+
+This mega-package contains the core LIBPMK distribution as well as
+several extension libraries. Each extension is in a separate directory
+and comes with its own LICENSE file. For more information, please see
+the project home page.
+
+This file contains a brief description of the LIBPMK core and each
+extension. It also gives instructions on how to build the library and
+gives pointers to the included demo tools.
+
+==================================================================
+1. LIBPMK CORE (directory name: libpmk2)
+==================================================================
+
+This builds the LIBPMK core library, as well as the set of packaged
+tools that lets you run a PMK.
+
+1. cd libpmk2
+2. make libpmk 
+3. make libpmk_util
+4. make tools # OPTIONAL
+5. make diag  # OPTIONAL
+6. make tests # OPTIONAL
+
+Steps 2 and 3 build the core library.
+
+Step 4 builds some pre-packaged tools that lets you run the PMK
+pipeline without writing any code, as well as a lot of other useful
+data manipulation tools (the comments at the top of each file describe
+what each tool does). The resulting binaries are all present in the
+"tools" subdirectory.
+
+Step 5 builds a set of diagnostic tools that lets you inspect the
+contents of a PointSetList file, a pyramid file, a kernel file, or the
+output of a hierarchical cluster. It is great for debugging. The
+resulting binaries all go to the "diagnostic" subdirectory.
+
+Step 6 builds unit tests for various pieces of infrastructure. They
+are provided in case you want to make modifications to the basic data
+structures without breaking anything.
+
+
+==================================================================
+2. EXAMPLE USAGE OF FULL PMK PIPELINE (directory name: libpmk_eth)
+==================================================================
+
+This provides a demo example of an end-to-end experiment that uses the
+interchangeable LIBPMK components in a single binary on the ETH-80
+dataset. It performs hierarchical clustering to make a vocabulary,
+creates pyramids, compares them and builds a kernel matrix, then
+trains and tests an SVM.
+
+0. Go to http://people.csail.mit.edu/jjl/libpmk/samples/eth.html and download
+   the files listed under the "Data files" section.
+1. cd libpmk_eth
+2. make
+3. ./eth-experiment.out /path/to/ETH80_GridSIFT.psl 3 11 /path/to/ETH80_labels.txt
+
+Example output:
+Reading /afs/csail.mit.edu/u/j/jjl/data/eth/ethGridPCASIFTptsets.bin
+Running hierarchical clustering
+Making pyramids
+Computing kernel matrix
+Average accuracy: 0.847500
+
+
+==================================================================
+3. EXTENSION: FEATURE EXTRACTION (directory name: libpmk_features)
+==================================================================
+
+This provides the feature extraction functionality of LIBPMK. It
+requires ImageMagick to be installed on the system. In addition, the
+binaries provided in this package are provided courtesy of other
+researchers (please see the LICENSE and README files in the
+libpmk_features directory for references and copyright rules) and run
+on Linux only.
+
+0. sudo apt-get install libmagick++-dev  (Ubuntu)
+0. Make sure libpmk and libpmk_util from LIBPMK core are compiled (Section 1)
+1. cd libpmk_features
+2. make library
+3. make tools (OPTIONAL)
+
+Step 2 creates libpmk_features.o, which other programs can link to.
+
+Step 3 builds a demo application that reads image filenames from a
+command line and produces a PointSetList. Run it without any command
+line arguments to see example usage.
+
+==================================================================
+4. EXTENSION: SPATIAL PMK (directory name: spatial_pmk)
+==================================================================
+
+This provides the Spatial PMK algorithm of Lazebnik et al.
+
+0. Make sure libpmk and libpmk_util from LIBPMK core are compiled (Section 1)
+1. cd spatial_pmk
+2. make
+3. make tools (OPTIONAL)
+4. make tests (OPTIONAL)
+
+Step 2 builds the object files for the spatial PMK extension. They are used
+by the tools in step 3.
+
+Step 3 builds binaries that use the object files from step 2. They comprise
+a full run of the spatial PMK algorithm. Please see the comments at the top
+of each file to see a description of what they do. You may also run any
+of the binaries without commandline arguments to see example usage.
+
+Step 4 builds a unit test (optional).
+
+==================================================================
+5. EXTENSION: ISM DEMO (directory name: libpmk_ism)
+==================================================================
+
+This provides the Implicit Shape Model implementation of Liebe et al.,
+and also provides a demo GTK application that showcases it. This demo
+sssssssssrequires the Feature Extraction extension (Section 2) to be built, and
+also requires that libgtkmm is installed on the system (for the demo
+UI).
+
+0. Make sure libpmk and libpmk_util from LIBPMK core are compiled (Section 1)
+0. Make sure the libpmk_features library is built (Section 3)
+0. sudo apt-get install libgtkmm-2.4-dev   (Ubuntu)
+1. cd libpmk_ism
+2. make library
+3. make ui (OPTIONAL)
+
+Optionally, you may also build some example tools that do NOT use a
+UI, but just some binaries that you can use to train and test a model
+from the command line:
+4. cd examples
+5. make
+
+As with everything above, the compiled binaries can be run without
+commandline options to see example usage. Also, descriptions are
+available at the top of each file.
+
+To run the demo UI (step 3), run "demo.out" in the "ui"
+subdirectory. This package contains a couple of example images you may
+use. Load an image using the UI, then drag a box around a region, then
+add it to the training set. Then, you may load another image and click
+"Detect objects".
+
+NOTE: in the UI demo, the paths to the extractor binares are hard
+coded.  If you encounter problems while trying to compute features of
+an image while running this application, you may have to edit frame.cc
+and image-display.cc to manually set the paths to the "h_affine.ln"
+and the "compute_descriptors.ln" binaries provided by the feature
+extractor extension (Section 2).
+
+==================================================================
+6. EXTENSION: ADAPTIVE VOCABULARY FORESTS (directory name: avt)
+==================================================================
+
+Provides the Adaptive Vocabulary Forests of Yeh et al.
+
+0. Make sure libpmk and libpmk_util from LIBPMK core are compiled (Section 1)
+1. cd avt
+2. make library
+3. make tools (OPTIONAL)
+
+As with everything else: the files in the "tools" subdirectory can be
+run without arguments to see example usage, and their descriptions are
+documented at the top of each file. The included tools allow you to
+build vocabulary trees, then create pyramids from them so that they
+can be matched and turned into a kernel via the LIBPMK core tools.

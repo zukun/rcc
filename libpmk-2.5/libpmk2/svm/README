@@ -1,0 +1,8 @@
+All of the LIBSVM code contained in this package is located only in
+the svm/ directory. The code is a patched version of LIBSVM which
+includes precomputed kernel support and one-vs-all classification.
+
+For more information about LIBSVM, see:
+Chih-Chung Chang and Chih-Jen Lin, LIBSVM : a library for support vector machines, 2001. Software available at http://www.csie.ntu.edu.tw/~cjlin/libsvm
+
+Please see the COPYRIGHT message included in this directory.

@@ -1,0 +1,15 @@
+The following applies to all of the code in this directory EXCEPT "bin":
+
+This work is licensed under the Creative Commons
+Attribution-Noncommercial 3.0 United States License. To view a copy of
+this license, visit http://creativecommons.org/licenses/by-nc/3.0/us/
+or send a letter to Creative Commons, 171 Second Street, Suite 300,
+San Francisco, California, 94105, USA.
+
+
+The files contained in the "bin" directory are owned by their original
+authors. See the README file in this directory or the URLs below for
+more details. The licenses for these binaries prohibit commercial use.
+
+http://www.robots.ox.ac.uk/~vgg/research/affine/index.html
+http://www.vision.ee.ethz.ch/~surf/download_ac.html (see bin/LICENSE_surf)

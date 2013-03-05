@@ -1,0 +1,37 @@
+The files contained in the "bin" directory (with the exception of
+surf.ln; see below) are Linux binaries that perform the keypoint
+detection and feature extraction, courtesy of the Oxford Visual
+Geometry Group. The binaries used here are h_affine.ln, mser.ln, and
+compute_descriptors.ln. The code in this sub-package is simply a C++
+wrapper around those binaries. All of those binaries (which do indeed
+get updates from time to time) are available on their group's website
+at: http://www.robots.ox.ac.uk/~vgg/research/affine/index.html
+
+We thank the original authors for making these binaries available.
+
+The relevant papers accompanying these are as follows:
+
+- Harris-Affine & Hessian Affine: K. Mikolajczyk and C. Schmid, Scale
+and Affine invariant interest point detectors. In IJC V 60(1):63-86,
+2004.
+
+- MSER: J.Matas, O. Chum, M. Urban, and T. Pajdla, Robust wide
+baseline stereo from maximally stable extremal regions. In BMVC
+p. 384-393, 2002.
+
+- SIFT: D. Lowe, Distinctive image features from scale invariant
+keypoints. In IJCV 60(2):91-110, 2004.
+
+********************************************
+
+The file "surf.ln" was provided by the following:
+
+Herbert Bay, Andreas Ess, Tinne Tuytelaars, Luc Van Gool, "SURF:
+Speeded Up Robust Features", Computer Vision and Image Understanding
+(CVIU), Vol. 110, No. 3, pp. 346--359, 2008
+
+The authors' website is available here:
+http://www.vision.ee.ethz.ch/~surf/index.html
+
+As mentioned in the LICENSE file, these binaries are made available
+for noncommercial purposes only.
