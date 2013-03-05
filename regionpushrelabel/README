@@ -1,6 +1,6 @@
 ******************************************************************
 *                                                                *
-*    RegionPushRelabel - Version 1.08                            *
+*    RegionPushRelabel - Version 1.09                            *
 *       A parallel out-of-core cache-oblivious FIFO push-relabel *
 *       algorithm for graphs with a regular structure.           *
 *    http://vision.csd.uwo.ca/code/                              *
@@ -53,6 +53,7 @@ http://www.boost.org/doc/libs/1_38_0/more/getting_started/windows.html
 
 3. Revision history
 
+v1.09 - bug fix (thanks to Ankit Chaudhary)
 v1.08 - another gcc incompatibility fixed (thanks to Tahir Majeed)
 v1.07 - better parameter default values
 v1.06 - graph size can be runtime-specified and is no longer required

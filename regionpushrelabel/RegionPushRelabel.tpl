@@ -348,7 +348,7 @@ void RegionPushRelabel<CapType, FlowType, A0, A1, A2, A3, A4, A5, A6>::update_re
 					for (size_t be = 0; be < layout->block_edge_count; be++)
 					{
 						if (block_mask & (1 << be))
-							worker.boundary_mask[region_index][c][l] |= 1 << node_mask[be];
+							worker.boundary_mask[region_index][c][l] |= node_mask[be];
 					}
 				}
 			}
@@ -1014,6 +1014,7 @@ void RegionPushRelabel<CapType, FlowType, A0, A1, A2, A3, A4, A5, A6>::RegionWor
 		// Reserve a new region if needed
 		if (is_region_discharged())
 		{
+			relabel_region();
 			graph->update_region_sync(*this);
 
 			// Wait for more work if region is empty
@@ -1033,12 +1034,6 @@ void RegionPushRelabel<CapType, FlowType, A0, A1, A2, A3, A4, A5, A6>::RegionWor
 
 		// Process the new region and update shared data
 		gap_relabel();
-
-		if (region_discharges > LOCAL_WORK_THRESHOLD)
-		{
-			relabel_region();
-			graph->update_data_sync(*this);
-		}
 
 		discharge_region();
 		graph->update_data_sync(*this);
