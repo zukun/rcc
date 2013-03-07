@@ -1,0 +1,95 @@
+
+<!-- saved from url=(0061)http://grail.cs.washington.edu/projects/photomontage/release/ -->
+<html><script type="text/javascript" src="chrome-extension://khbjahpecnkenngkidhioicnfpakihgo/iframe_raw.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Interactive Digital Photomontage Software Release</title>
+<style type="text/css"></style></head>
+
+<body bgcolor="white">
+
+From this page you can download the executable and source code to our
+research project, <a href="http://grail.cs.washington.edu/projects/photomontage/">
+Interactive Digital Photomontage</a>.  If you simply wish to use our
+software, just download the Windows executable.  If you would like to
+extend our approach, our source code is also available for research
+purposes.  The source code is released under the terms of the <a href="http://www.gnu.org/licenses/gpl.html">GNU Public License</a>. <p>
+
+</p><p><b><font color="#ff0000">This is research software and code, and
+thus very messy and poorly-documented.  It is likely to contain bugs.
+We do not promise that it works, and we do not promise to support it.
+Use at your own risk!  </font></b></p><p>
+
+<font size="+1"><b>Executable &amp; Documentation</b></font><br></p><p>
+
+You may download the executable <a href="http://grail.cs.washington.edu/projects/photomontage/release/fuse.exe">here</a>.  There is
+also some basic <a href="http://grail.cs.washington.edu/projects/photomontage/release/photodocs/index.html">documentation</a>.  Sample <a href="http://grail.cs.washington.edu/projects/photomontage/">data sets</a> are available. </p><p>
+
+Notice that our system requires some sort of hardware-accelerated openGL. Don't worry, you likely have this.</p><p>
+
+<font size="+1"><b>Source Code</b></font></p><p>
+
+Our system uses the open-source GUI toolkit <a href="http://www.wxwindows.org/">WxWidgets</a>; as such, it can be
+compiled on Windows, Linux, or Mac OS X.  However, we have only
+compiled it on Windows and Linux. </p><p>
+
+Also, we use graph cut software developed by <a href="http://research.microsoft.com/~vnk/">Vladimir Kolmogorov</a>.
+His source code is available publicly, but has not been released under
+the terms of the GPL; we thus ask you to download it separately. </p><p>
+
+The first three steps are the same for Windows or Linux. </p><p>
+
+</p><ol>
+<li>Download <a href="http://grail.cs.washington.edu/projects/photomontage/release/fuse_1b.zip">source code</a> and unzip it.</li>
+
+<li>Download graph cut software <a href="http://www.cs.cornell.edu/People/vnk/software/match-v3.1.src.tar.gz">here</a>.
+Copy the following files from match-v3.1.src/maxflow/ to
+fuse/graphcuts/: block.h, graph.h, graph.cpp, maxflow.cpp.</li>
+
+<li>In line 102 of fuse/graphcuts/graph.h, change "short" to "float".
+In line 104, change "int" to "double". </li><br>
+
+</ol>
+
+<b>Windows</b><p>
+
+</p><ol>
+<li>Download and install <a href="http://www.wxwindows.org/">WxWidgets</a> version 2.4.2.  Make
+sure to enable openGL support by setting wxUSE_GLCANVAS to 1 in
+setup.h.</li>
+
+<li>Set the WXWIN environment variable to the path to your WxWidgets
+installation.</li>
+
+<li>Copy the contents of fuse/win to the top-level fuse directory.</li>
+
+<li>Open the Visual Studio project file, and compile.</li>
+
+</ol>
+
+
+<br>
+
+<b>Linux</b> <p>
+
+</p><ol>
+
+<li> Make sure you have some sort of hardware-accelerated openGL,
+rather than pure software rendering.</li>
+
+<li>Download and install <a href="http://www.wxwindows.org/">WxWidgets</a> version 2.4.2.  Make
+sure to enable openGL support by passing option -with-opengl to the
+Configure script.  Also, read the README in fuse/linux.</li>
+
+<li>Copy fuse/linux/Makefile to fuse/Makefile.  (Makefile originally by <a href="http://graphics.csail.mit.edu/~sumner/">Bob Sumner</a>.)</li>
+
+<li>Type "make".</li>
+
+</ol>
+
+
+<br><br>
+
+Please <a href="mailto:aseem@agarwala.org">email me</a> if you have trouble with these instructions, or if you find the software useful.  
+
+
+
+</body></html>

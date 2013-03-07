@@ -1,0 +1,14 @@
+The Makefile assumes you are using wxWindows 2.4.2, and that it is
+installed in /usr (/usr/lib/, /usr/include/wx, etc...).  It may,
+however, be in /usr/local instead; in this case modify line 18 of the
+Makefile appropriately.
+
+Also, wxWindows 2.4.2 has conflicts with very recent versions of GTK,
+so you are welcome to use the most recent version of wxWindows
+(2.6.0).  However, this would also require changing the Makefile,
+namely lines 16-18.  Also, this new version of wxWindows splits the
+libraries up into different parts; base, core, and gl.  You would need
+to link to all these libraries.
+
+If you email me at pano@agarwala.org, I can send you a Makefile
+customized to 2.6.

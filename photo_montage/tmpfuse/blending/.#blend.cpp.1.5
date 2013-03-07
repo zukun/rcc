@@ -1,0 +1,769 @@
+#include <iostream>
+#include <time.h>
+#include "blend.h"
+using namespace std;
+
+namespace Adrien {
+
+  void blend(int w, int h, ushort* labeling, std::vector<ImageAbs*> * imgs, unsigned char* final, Areal edgeThres, FILE* fp) {
+    // Make sure the labeling is zero (backround) along border.
+    ushort *lab = new ushort[w*h];
+    enforceLabelingContraint(w, h, labeling, lab);
+  
+    // Allocate some space into which we'll do our computations.
+    unsigned char *finlChannels[] = {(unsigned char *) malloc(w * h),   // starts as base, gets new features blended in
+				     (unsigned char *) malloc(w * h),
+				     (unsigned char *) malloc(w * h)};
+    unsigned char *imagChannels[] = {(unsigned char *) malloc(w * h),   // takes offset new feature image
+				     (unsigned char *) malloc(w * h),
+				     (unsigned char *) malloc(w * h)};
+    unsigned char *offsetImg = (unsigned char *) malloc(w* h * 3);
+
+    // Offset & Decompose the background image into its color channels.
+    // This forms basis for our result.
+    offsetImageRGB(w,h, (*imgs)[0], offsetImg);
+    channelDecompose(w,h,offsetImg, finlChannels[0], finlChannels[1], finlChannels[2]); 
+
+    // now blend in each feature, in order
+    for (unsigned int feature = 1 ; feature < imgs->size() ; feature++) {
+
+      // Create the matrix for this blend;
+      PoissonBlender blendMatrix(w, h, feature, lab, edgeThres);
+      if (blendMatrix.getNumPixels() == 0) {
+	cout << "WARNING: Feature " << feature << " has no values in labeling." << endl;
+	//fprintf(fp, "Feature %d has no values in labeling.\n",feature);
+	continue;
+      }
+
+      // offset the image
+      offsetImageRGB(w, h, (*imgs)[feature], offsetImg);
+
+      // Decompose this feature image into its color channels
+      channelDecompose(w, h, offsetImg, imagChannels[0], imagChannels[1], imagChannels[2]);
+
+
+      // now blend in, one channel at a time
+      //for (int chnl = 0 ; chnl < 3 ; chnl++)
+      blendMatrix.blendChannels(imagChannels, finlChannels, fp);
+    }
+
+    // now put the whole thing back together
+    channelCombine(w, h, finlChannels[0], finlChannels[1], finlChannels[2], final);
+
+    // free all allocated memory
+    delete[] lab;
+    free(finlChannels[0]);
+    free(finlChannels[1]);
+    free(finlChannels[2]);
+    free(imagChannels[0]);
+    free(imagChannels[1]);
+    free(imagChannels[2]);
+    free(offsetImg);
+  }
+
+  void PoissonBlender::blendChannels(unsigned char* img[3], unsigned char* final[3], FILE* fp) {
+    _img = img;
+    _final = final;
+    for (int chnl = 0 ; chnl < 3 ; chnl++) {
+      // uncomment this to get the most brain-dead blending
+      //mat->brainDeadPaste(img[chnl], final[chnl]);
+      //return;
+
+      // create vectors to hold the unknown left hand side (LHS) x of the
+      // Poisson equation, and known RHS r of the equation.
+      Areal *x = (Areal *) malloc(getNumPixels() * sizeof(Areal));
+      Areal *r = (Areal *) malloc(getNumPixels() * sizeof(Areal));
+      setRVector(img[chnl], final[chnl], r);
+      setXVector(img[chnl], x);
+
+      // solve the system
+      Areal epsilon = 0.001; // how low should we go?
+      //Areal epsilon = 0.000001; // how low should we go? 
+      int steps = 1000;//2 * mat->getNumPixels(); // max steps
+      Areal error = ConjGrad(getNumPixels(), this, x, r, epsilon, &steps, fp);
+      cout << "completed Poisson blending in " << steps << " steps with error " << error << endl;
+      //fprintf(fp, "Completed Poisson blending in %d steps with error %f\n",steps,error);
+      if (steps == 5000)
+      //fprintf(fp, "WARNING: 5000 steps is maximum. May need to increase number of steps.\n");
+	cout << "WARNING: 5000 steps is maximum. May need to increase \"steps\" in blend.cpp" << endl;
+      fflush(fp);
+      // paste the information into result
+      pasteRIntoImg(x, final[chnl]);
+
+      // free up vectors
+      free(x);
+      free(r);
+    }
+  }
+
+  /*
+  void rgbToRgba(int w, int h, unsigned char *rgbBuffer, unsigned char *rgbaBuffer) {
+    int n = w * h;
+    for (int i = 0 ; i < n ; i++) {
+      rgbaBuffer[4 * i + 0] = rgbBuffer[3 * i + 0];
+      rgbaBuffer[4 * i + 1] = rgbBuffer[3 * i + 1];
+      rgbaBuffer[4 * i + 2] = rgbBuffer[3 * i + 2];
+      rgbaBuffer[4 * i + 3] = 255;
+    }
+  }
+
+  void rgbaToRgb(int w, int h, unsigned char *rgbaBuffer, unsigned char *rgbBuffer) {
+    int n = w * h;
+    for (int i = 0 ; i < n ; i++) {
+      rgbBuffer[3 * i + 0] = rgbaBuffer[4 * i + 0]; 
+      rgbBuffer[3 * i + 1] = rgbaBuffer[4 * i + 1]; 
+      rgbBuffer[3 * i + 2] = rgbaBuffer[4 * i + 2]; 
+    }
+  }
+  */
+
+  int imgIndex(int x, int y, int w) {
+    return y * w + x;
+  }
+
+  int imgIndexRGB(int x, int y, int w) {
+    return imgIndex(x, y, w) * 3;
+  }
+
+
+  void channelDecompose(int w, int h, unsigned char *img, unsigned char *r, unsigned char *g, unsigned char *b) {
+    int n = w * h;
+    for (int i = 0 ; i < n ; i++) {
+      r[i] = img[3 * i + 0];
+      g[i] = img[3 * i + 1];
+      b[i] = img[3 * i + 2];
+    }
+  }
+
+  /*
+    void channelDecompose(ImageAbs* im, unsigned char *r, unsigned char *g, unsigned char *b) {
+    int n = im->_size.x * im->_size.y;
+    for (int i = 0 ; i < n ; i++) {
+    r[i] = im->_data[3 * i + 0];
+    g[i] = im->_data[3 * i + 1];
+    b[i] = im->_data[3 * i + 2];
+    }
+    }
+  */
+  void channelCombine(int w, int h, unsigned char *r, unsigned char *g, unsigned char *b, unsigned char *img) {
+    int n = w * h;
+    for (int i = 0 ; i < n ; i++) {
+      img[3 * i + 0] = r[i]; 
+      img[3 * i + 1] = g[i]; 
+      img[3 * i + 2] = b[i]; 
+    }
+  }
+
+  // Make sure the labeling is zero (backround) along border.
+  void enforceLabelingContraint(int w, int h, ushort *oldLabeling, ushort *result) {
+    memcpy(result, oldLabeling, sizeof(ushort)*w * h);
+    int i;
+    for (i = 0 ; i < w ; i++)
+      result[imgIndex(i, 0, w)] = result[imgIndex(i, h - 1, w)] = 0;
+    for (i = 0 ; i < h ; i++)
+      result[imgIndex(0, i, w)] = result[imgIndex(w - 1, i, w)] = 0;
+  }
+
+  // pushes the image by coord, and fills black
+  void offsetImageRGB(int w, int h, ImageAbs* in, unsigned char *out) {
+    for (int x = 0 ; x < w ; x++) {
+      for (int y = 0 ; y < h ; y++) {
+	Coord prime(x,y);
+	in->displace(prime);
+	int xPrime = prime.x, yPrime = prime.y;
+	//int xPrime = x - in->displacement().x;
+	//int yPrime = y - in->displacement().y;
+	if ((xPrime < 0) || (xPrime >= in->_size.x) ||
+	    (yPrime < 0) || (yPrime >= in->_size.y)) {
+	  out[imgIndexRGB(x, y, w) + 0] = 0;
+	  out[imgIndexRGB(x, y, w) + 1] = 0;
+	  out[imgIndexRGB(x, y, w) + 2] = 0;
+	} else {
+	  out[imgIndexRGB(x, y, w) + 0] = in->data()[imgIndexRGB(xPrime, yPrime, in->_size.x) + 0];
+	  out[imgIndexRGB(x, y, w) + 1] = in->data()[imgIndexRGB(xPrime, yPrime, in->_size.x) + 1];
+	  out[imgIndexRGB(x, y, w) + 2] = in->data()[imgIndexRGB(xPrime, yPrime, in->_size.x) + 2];
+	}
+      }
+    }
+  }
+
+  PoissonBlender::PoissonBlender(int wInit, int hInit, int feature, ushort *labeling, Areal edgeThres) {
+    //int widthInit, int heightInit, int depthInit, tripleBoolGrid *boundariesInit)
+  
+    // initialize arguments
+    w = wInit;
+    h = hInit;
+    _edgeThres = edgeThres;
+
+    // create lookup tables in each direction
+    _pixelToIndex = (int *) malloc(w * h * sizeof(int));
+    memset(_pixelToIndex, 255, w * h * sizeof(int)); // set to -1
+    for (int x = 0 ; x < w ; x++) {
+      for (int y = 0 ; y < h ; y++) {
+	if (labeling[imgIndex(x, y, w)] == feature) {
+	  _pixelToIndex[imgIndex(x, y, w)] = (int)_indexToPixel.size();
+	  _indexToPixel.push_back(Coord(x, y));
+	}
+      }
+    }
+  }
+
+  PoissonBlender::~PoissonBlender() {
+    free(_pixelToIndex);
+  }
+
+  // returns the number of pixels that will be set with this blend operation
+  int PoissonBlender::getNumPixels() const {
+    return (int)_indexToPixel.size();
+  }
+
+
+  // returns sum of magnitude of edge between guideLoc & finalLoc in guiding and final images
+  Areal PoissonBlender::getE(const int gI, const int fI, const bool vertCut) {
+    //assert(fabs(guideLoc.x - finalLoc.x) == 1 ^ fabs(guideLoc.y - finalLoc.y) == 1);
+    //int gI = imgIndex(guideLoc.x, guideLoc.y, w),
+    //fI = imgIndex(finalLoc.x, finalLoc.y, w);
+
+    Areal sumA=0, sumB=0, d;
+    for (int c=0; c<3; ++c) {  // iterate over colors
+
+      if (vertCut) { //vertical cut
+
+	d = Areal(_img[c][gI-w]) + 2. * Areal(_img[c][gI]) + Areal(_img[c][gI+w]) -
+	  Areal(_img[c][fI-w]) - 2. * Areal(_img[c][fI]) - Areal(_img[c][fI+w]);
+	d /= 3.;
+	sumA += d*d;
+
+	d = Areal(_final[c][gI-w]) + 2. * Areal(_final[c][gI]) + Areal(_final[c][gI+w]) -
+	  Areal(_final[c][fI-w]) - 2. * Areal(_final[c][fI]) - Areal(_final[c][fI+w]);
+	d /= 3.;
+	sumB += d*d;
+
+      }
+      else {   // horizontal cut
+	
+	d = Areal(_img[c][gI-1]) + 2. * Areal(_img[c][gI]) + Areal(_img[c][gI+1]) -
+	  Areal(_img[c][fI-1]) - 2. * Areal(_img[c][fI]) - Areal(_img[c][fI+1]);
+	d /= 3.;
+	sumA += d*d;
+	
+	d = Areal(_final[c][gI-1]) + 2. * Areal(_final[c][gI]) + Areal(_final[c][gI+1]) -
+	  Areal(_final[c][fI-1]) - 2. * Areal(_final[c][fI]) - Areal(_final[c][fI+1]);
+	d /= 3.;
+	sumB += d*d;
+	
+      }
+    }
+
+    sumA = sqrt(sumA);
+    sumB = sqrt(sumB);
+    return sumA + sumB;
+  }
+
+  // Tbis matrix will contain the right hand side of the poisson
+  // equation.  In general, this is lambda, where del^2 rho = lambda. In
+  // this poisson blending case this will be the Laplacian of the
+  // underlying image plus boundary terms.
+  void PoissonBlender::setRVector(unsigned char *guidingImg, unsigned char *underlyingImg, Areal *r) {
+    // Index layout:
+    //
+    //   b
+    // c a d
+    //   e
+
+    for (int i = 0 ; i < getNumPixels() ; i++) {
+      // indices
+      int x = _indexToPixel[i].x, y = _indexToPixel[i].y;
+      int a = imgIndex(x, y, w);
+      int b = imgIndex(x, y - 1, w);
+      int c = imgIndex(x - 1, y, w);
+      int d = imgIndex(x + 1, y, w);
+      int e = imgIndex(x, y + 1, w);
+
+      // Laplacian of guiding image.
+      r[i] = -4.0 * guidingImg[a];
+      r[i] += guidingImg[b] + guidingImg[c] + guidingImg[d] + guidingImg[e];
+
+      // Add boundary terms as necessary.
+
+      if (_pixelToIndex[b] < 0) {
+	if (getE(a,b,false) < _edgeThres)
+	  r[i] -= underlyingImg[b];
+	else
+	  r[i] -= guidingImg[b];
+      }
+
+      if (_pixelToIndex[c] < 0) {
+	if (getE(a,c,true) < _edgeThres)
+	  r[i] -= underlyingImg[c];
+	else
+	  r[i] -= guidingImg[c];
+      }
+
+      if (_pixelToIndex[d] < 0) {
+	if (getE(a,d,true) < _edgeThres)
+	  r[i] -= underlyingImg[d];
+	else
+	  r[i] -= guidingImg[d];
+      }
+
+      if (_pixelToIndex[e] < 0) {
+	if (getE(a,e,false) < _edgeThres)
+	  r[i] -= underlyingImg[e];
+	else
+	  r[i] -= guidingImg[e];
+      }
+
+      /*
+      if (_pixelToIndex[b] < 0)
+	r[i] -= underlyingImg[b];
+      if (_pixelToIndex[c] < 0)
+	r[i] -= underlyingImg[c];
+      if (_pixelToIndex[d] < 0)
+	r[i] -= underlyingImg[d];
+      if (_pixelToIndex[e] < 0)
+      r[i] -= underlyingImg[e];*/
+    }
+  }
+
+  // Same as above but gives first guess for unknown, x vecotr
+  void PoissonBlender::setXVector(unsigned char *img, Areal *x) {
+    for (int i = 0 ; i < getNumPixels() ; i++) {
+      x[i] = img[imgIndex(_indexToPixel[i].x, _indexToPixel[i].y, w)];
+      //     cout << x[i] << " " << ((int) img[imgIndex(_indexToPixel[i].x, _indexToPixel[i].y, w)]) << endl;
+    }
+  }
+
+
+  // This function will paste the r vector into the image by clamping,
+  // converting to unsigned char, and then putting the value where
+  // approriate in the image.
+  void PoissonBlender::pasteRIntoImg(Areal *r, unsigned char *resultImg) {
+    for (int i = 0 ; i < getNumPixels() ; i++) {
+      //     cout << r[i] << " ";
+
+      // clamp
+      int val = (int) r[i];
+      if (val < 0)
+	val = 0;
+      if (val > 255)
+	val = 255;
+
+      // now set the pixel
+      resultImg[imgIndex(_indexToPixel[i].x, _indexToPixel[i].y, w)] = (unsigned char) val;
+
+      //     cout << ((int) resultImg[imgIndex(_indexToPixel[i].x, _indexToPixel[i].y, w)]) << endl;
+    }
+  }
+
+
+  // Used for debugging. Simply sets final to img inside the paste region.
+  void PoissonBlender::brainDeadPaste(unsigned char *img, unsigned char* final) {
+    int n = w * h;
+    for (int i = 0 ; i < n ; i++) {
+      if (_pixelToIndex[i] >= 0)
+	final[i] = img[i];
+    }
+  }
+
+
+  void PoissonBlender::matVecMult(const Areal x[], Areal r[]) const {
+    // Index layout:
+    //
+    //   b
+    // c a d
+    //   e
+
+    for (int i = 0 ; i < getNumPixels() ; i++) {
+      // indices
+      int xPxl = _indexToPixel[i].x, yPxl = _indexToPixel[i].y;
+      int b = imgIndex(xPxl, yPxl - 1, w);
+      int c = imgIndex(xPxl - 1, yPxl, w);
+      int d = imgIndex(xPxl + 1, yPxl, w);
+      int e = imgIndex(xPxl, yPxl + 1, w);
+
+      // Central term of laplacian.
+      r[i] = -4.0 * x[i];
+
+      // Add outer terms if not boundary.
+      if (_pixelToIndex[b] >= 0)
+	r[i] += x[_pixelToIndex[b]];
+      if (_pixelToIndex[c] >= 0)
+	r[i] += x[_pixelToIndex[c]];
+      if (_pixelToIndex[d] >= 0)
+	r[i] += x[_pixelToIndex[d]];
+      if (_pixelToIndex[e] >= 0)
+	r[i] += x[_pixelToIndex[e]];
+    }
+  }
+
+
+
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////////
+  
+  GlobalBlender::GlobalBlender(int w, int h, std::vector<ImageAbs*> * imgs, 
+			       unsigned char* final, Areal edgeThres, FILE* fp) : 
+    _w(w), _h(h), _edgeThres(edgeThres), _fp(fp), _result(final) {
+    _wh = _w*_h;
+    _pixelPin = 0;
+    _numImages = (int) imgs->size();
+    _linkTypeLookup = new PixLinkTypes[numPixels()];
+    _x = new Areal[numVariables()];
+    _b = new Areal[numVariables()];
+    memset(_x, 0, sizeof(Areal)*numVariables()); // not really necessary
+    _labels = new ushort[numPixels()];
+    _imgMap = new int[_numImages];
+    for (int i=0; i<_numImages; ++i)
+      _imgMap[i]=-1;
+    _imgs = *imgs;
+
+    // May or may not be good idea to assume base image should play a role,
+    // but makes it easier to establish initial condition
+    memset(_labels, 0, numPixels()*sizeof(ushort));
+
+    if (_fp==NULL) 
+      _fp = fopen("blendingNotes.txt","w");
+
+    buildOffsetImage(0);
+    for (int c=0; c<3; ++c) {
+      buildInitial(c, _labels);
+      pasteResultIntoFinal(c, _labels);
+    }
+    
+  }
+
+  GlobalBlender::~GlobalBlender() {
+    delete[] _linkTypeLookup;
+    delete[] _x;
+    delete[] _labels;
+    delete[] _imgMap;
+    delete[] _b;
+  }
+
+  Areal GlobalBlender::getE(const int aI, const int bI, const ushort* labels, const bool vertCut) {
+    Areal sumA=0, sumB=0, d;
+    const int aIm = labelImToOffsetIm(labels[aI]), bIm = labelImToOffsetIm(labels[bI]);
+    int ax = aI%_w, ay = aI / _w;
+    for (int c=0; c<3; ++c) {  // iterate over colors
+      
+      if (vertCut) { //vertical cut
+	if (ay==0 || ay==_h-1) 
+	  d = Areal(getImgValue(aI,c,aIm)) - Areal(getImgValue(bI,c,aIm));
+	else {
+	  d = Areal(getImgValue(aI-_w,c,aIm)) + 2.*Areal(getImgValue(aI,c,aIm)) + Areal(getImgValue(aI+_w,c,aIm)) -
+	    Areal(getImgValue(bI-_w,c,aIm)) - 2.*Areal(getImgValue(bI,c,aIm)) - Areal(getImgValue(bI+_w,c,aIm));
+	  d /= 3.;
+	}
+
+	sumA += d*d;
+	
+	if (ay==0 || ay==_h-1) 
+	  d = Areal(getImgValue(aI,c,bIm)) - Areal(getImgValue(bI,c,bIm));
+	else {
+	  d = Areal(getImgValue(aI-_w,c,bIm)) + 2.*Areal(getImgValue(aI,c,bIm)) + Areal(getImgValue(aI+_w,c,bIm)) -
+	    Areal(getImgValue(bI-_w,c,bIm)) - 2.*Areal(getImgValue(bI,c,bIm)) - Areal(getImgValue(bI+_w,c,bIm));
+	  d /= 3.;
+	}
+
+	sumB += d*d;
+
+      } 
+      else { // horizontal cut
+	if (ax==0 || ax==_w-1)
+	  d = Areal(getImgValue(aI,c,aIm)) - Areal(getImgValue(bI,c,aIm));
+	else {
+	  d = Areal(getImgValue(aI-1,c,aIm)) + 2.*Areal(getImgValue(aI,c,aIm)) + Areal(getImgValue(aI+1,c,aIm)) -
+	    Areal(getImgValue(bI-1,c,aIm)) - 2.*Areal(getImgValue(bI,c,aIm)) - Areal(getImgValue(bI+1,c,aIm));
+	  d /= 3.;
+	}
+
+	sumA += d*d;
+
+	if (ax==0 || ax==_w-1)
+	  d = Areal(getImgValue(aI,c,bIm)) - Areal(getImgValue(bI,c,bIm));
+	else {
+	  d = Areal(getImgValue(aI-1,c,bIm)) + 2.*Areal(getImgValue(aI,c,bIm)) + Areal(getImgValue(aI+1,c,bIm)) -
+	    Areal(getImgValue(bI-1,c,bIm)) - 2.*Areal(getImgValue(bI,c,bIm)) - Areal(getImgValue(bI+1,c,bIm));
+	  d /= 3.;
+	}
+
+	sumB += d*d;
+	
+      }
+      
+    } // end iterate over colors
+
+    sumA = sqrt(sumA);
+    sumB = sqrt(sumB);
+    return sumA + sumB;
+  }
+
+
+  void GlobalBlender::computeEdgeMap(const ushort* labels)  { 
+    int index=0,x,y;
+    Areal E;
+    for (y=0; y<_h; ++y)
+      for (x=0; x<_w; ++x, ++index) {
+
+	// right
+	if (x==_w-1)   // out of bounds
+	  _linkTypeLookup[index].r = L_IGNORE;
+	else if (labels[index] == labels[index+1])  // same label, no cut
+	  _linkTypeLookup[index].r = L_NORMAL;
+	else {         // vertical cut, blend or don't care?
+	  E = getE(index, index+1, labels, true);
+	  if (E < _edgeThres)  // not an edge
+	    _linkTypeLookup[index].r = L_BLEND;
+	  else
+	    _linkTypeLookup[index].r = L_IGNORE;
+	}
+
+	// bottom 
+	if (y==_h-1)
+	  _linkTypeLookup[index].b = L_IGNORE;
+	else if (labels[index] == labels[index+_w])
+	  _linkTypeLookup[index].b = L_NORMAL;
+	else {
+	  E = getE(index, index+_w, labels, false);
+	  if (E < _edgeThres)  // not an edge
+	    _linkTypeLookup[index].b = L_BLEND;
+	  else
+	    _linkTypeLookup[index].b = L_IGNORE;
+	}
+
+      } // end iteration over pixels
+
+  }
+
+  void GlobalBlender::buildInitial(const int c, const ushort* newLabels) {
+    for (int i=0; i<numVariables(); ++i) // iterate over variables
+      _x[i] = (Areal) getImgValue(varToPixelIndex(i), c, newLabels);
+  }
+
+  void GlobalBlender::modifyInitial(const int c, const ushort* newLabels) {
+    int pixIndex, i;
+    for (i=0; i<numVariables(); ++i) {
+      pixIndex = varToPixelIndex(i);
+      if (newLabels[pixIndex] != _labels[pixIndex])
+	_x[i] = (Areal) getImgValue(pixIndex, c, newLabels);
+      else
+	_x[i] = (Areal) getResultVal(pixIndex, c);
+    }
+
+    /*
+      pixIndex = 0; 
+      for (int y=0; y<10; ++y)
+      for (int x=0; x<10; ++x, ++pixIndex) {
+      i = pixelToVar(pixIndex);
+      if (i==-1)
+      continue;
+      else if (x < 5)
+      _x[i] = x*25.;
+      else if (x==5)
+      _x[i] = 87.5;
+      else if (x==6)
+      _x[i] = 37.5;
+      else if (x==7)
+      _x[i] = 87.5;
+      else if (x==8)
+      _x[i] = 137.5;
+      else if (x==9)
+      _x[i] = 187.5;
+      }
+    */
+  }
+
+  // given new labeling, makes sure _offsetImgs has necessary offset image data
+  void GlobalBlender::updateOffsetImgs(const ushort* newLabels) { 
+    int index=0, lab;
+    for (int j=0; j<_h; ++j)
+      for (int i=0; i<_w; ++i, ++index) {
+	lab = newLabels[index];
+	if (_imgMap[lab] == -1) 
+	  buildOffsetImage(lab);
+      }
+  }
+
+  void GlobalBlender::buildOffsetImage(const int i) {
+    unsigned char* newIm = new unsigned char[3*numPixels()];
+    _offsetImgs.push_back(newIm);
+    _imgMap[i] = int(_offsetImgs.size()) - 1;
+    ImageAbs* ia = _imgs[i];
+    
+    for (int x = 0 ; x < _w ; x++) 
+      for (int y = 0 ; y < _h ; y++) {
+	Coord prime(x,y);
+	ia->displace(prime);
+	int xPrime = prime.x, yPrime = prime.y;
+	//int xPrime = x - ia->displacement().x;
+	//int yPrime = y - ia->displacement().y;
+	if ((xPrime < 0) || (xPrime >= ia->_size.x) ||
+	    (yPrime < 0) || (yPrime >= ia->_size.y)) {
+	  newIm[imgIndexRGB(x,y,_w) + 0] = 0;
+	  newIm[imgIndexRGB(x,y,_w) + 1] = 0;
+	  newIm[imgIndexRGB(x,y,_w) + 2] = 0;
+	}
+	else {
+	  const unsigned char* I = ia->data(xPrime, yPrime);
+	  newIm[imgIndexRGB(x,y,_w) + 0] = I[0]; 
+	  newIm[imgIndexRGB(x,y,_w) + 1] = I[1];
+	  newIm[imgIndexRGB(x,y,_w) + 2] = I[2];
+	}
+      } // x,y
+
+    /*ImageAbs* shit = new ImageAbs(_w, _h, newIm); 
+      char filename[100];
+      sprintf(filename,"shit%.2d.ppm",i);
+      shit->writePPM(filename);
+      delete shit;*/
+  }
+
+  void GlobalBlender::compute(bool reInit, const ushort* newLabels, Areal edgeThres) { 
+    fprintf(_fp, "Computing blend\n"); fflush(_fp);
+    _edgeThres = edgeThres;
+    updateOffsetImgs(newLabels);
+    computeEdgeMap(newLabels);
+
+    time_t startTime, endTime;
+    startTime = time(NULL);
+    
+    //vector<int> crap;
+    //HB_OneCurve sweeper(_w,_h,crap,0);
+    HB_Precond sweeper(_w, _h);
+    for (int c=0; c<3; ++c) { // iterate over color channels
+   
+      if (reInit)
+	buildInitial(c, newLabels);
+      else
+	modifyInitial(c, newLabels);
+        
+      // do compute here
+      computeRhs(c, newLabels);
+
+      Areal epsilon = 1.;  // /.0001
+      //Areal epsilon = 0.000001; // DOES MAKE A DIFFERENCE!
+      int steps = 10000;
+      Areal error = PrecConjGrad(numVariables(), this, &sweeper, _x,_b,epsilon,&steps, _fp);
+      //buildInitial(c, newLabels);
+      fprintf(_fp,"Completed Poisson blend in %d steps with %f error\n",steps,error); fflush(_fp);
+      //steps = 10000;
+      //error = ConjGrad(numVariables(), this,_x,_b,epsilon,&steps, _fp);
+      //fprintf(_fp,"Completed Poisson blend in %d steps with %f error\n",steps,error); fflush(_fp);
+
+      //saveX();
+      pasteResultIntoFinal(c, newLabels);
+    }
+  
+    endTime = time(NULL);
+    fprintf(_fp, "Took time %f\n",difftime(endTime, startTime)); fflush(_fp);
+
+    memcpy(_labels, newLabels, numPixels()*sizeof(short));
+    fprintf(_fp, "Finished Computing blend\n"); fflush(_fp);
+  }
+
+  void GlobalBlender::saveX() {
+    FILE* fp = fopen("X.txt","w");
+    fprintf(fp,"%d\n", getImgValue(0, 0, _labels));
+    for (int i=0; i<numVariables(); ++i)
+      fprintf(fp,"%f\n",_x[i]);
+    fclose(fp);
+  }
+
+
+  void GlobalBlender::pasteResultIntoFinal(int c, const ushort* labels) {
+    for (int i = 0 ; i < numPixels() ; i++) { // iterate over pixels
+      int var = pixelToVar(i);
+      if (var==-1) { // not a variable, just copy it
+	_result[i*3+c] = getImgValue(i, c, labels);
+      }
+      else {         // take from solution, but clamp it first
+	int val = (int)_x[var];
+	if (val < 0)
+	  val = 0;
+	if (val > 255)
+	  val = 255;
+
+	_result[i*3+c] = (unsigned char) val;
+      }
+      //fprintf(_fp, "i: %d outc: %d, result %d from _x %.5f\n", i, outc,_result[i*3+outc], _x[var]);
+    }
+    // fflush(_fp);
+  }
+  
+
+  void GlobalBlender::matVecMult(const Areal x[], Areal r[]) const { 
+
+    int j = nonVarPixel();
+    int nv = numVariables();
+    memset(r, 0, nv*sizeof(Areal));
+    for (int i=0; i<nv; ++i) {  // iterate over variables
+      
+      int pixIndex = varToPixelIndex(i);
+
+      // iterate over four neighbors
+      for (int l=0; l<4; ++l) {
+	int otherPixIndex = linkResolve(pixIndex,l);
+	LinkType lt = lookupLink(pixIndex, otherPixIndex, l);
+	int otherVar = pixelToVar(otherPixIndex);
+	
+	if (lt==L_NORMAL || lt == L_BLEND) {
+	  if (otherPixIndex == j)  // non-variable pixel, spits to rhs
+	    r[i] -= x[i];
+	  else                     // normal
+	    r[i] += x[otherVar] - x[i];
+	} 
+	// ignore L_IGNORE
+      } // iterate over 4 neighbors
+    } // iterate over variables
+  }
+
+  void GlobalBlender::computeRhs(const int c, const ushort* labels) {
+    //    0
+    // 1  i  2
+    //    3
+
+    int j = nonVarPixel();
+    memset(_b, 0, numVariables()*sizeof(Areal));
+    for (int i=0; i<numVariables(); ++i) {  // iterate over variables
+
+      int pixIndex = varToPixelIndex(i);
+      Areal myColor = (Areal)getImgValue(pixIndex, c, labels);
+
+      // iterate over four neighbors
+      for (int l=0; l<4; ++l) {
+
+	int otherPixIndex = linkResolve(pixIndex,l);
+	LinkType lt = lookupLink(pixIndex, otherPixIndex, l);
+	
+	if (lt==L_NORMAL) {
+	  _b[i] += Areal(getImgValue(otherPixIndex, c, labels)) - myColor;
+	}
+
+	else if (lt==L_BLEND) {
+	  int myIm = labelImToOffsetIm(labels[pixIndex]),
+	    otherIm = labelImToOffsetIm(labels[otherPixIndex]);
+	  Areal a1 = Areal(getImgValue(otherPixIndex,c,myIm)) - myColor;
+	  Areal a2 = Areal(getImgValue(otherPixIndex,c,otherIm)) - Areal(getImgValue(pixIndex,c,otherIm));
+	  _b[i] += (a1+a2) * .5;
+	  //_b[i] += ( ( Areal(getImgValue(otherPixIndex,c,myIm)) - myColor) +
+	  //     ( Areal(getImgValue(otherPixIndex,c,otherIm)) - Areal(getImgValue(pixIndex,c,otherIm)))
+	  //     * .5);	  
+	}
+	// ignore L_IGNORE case
+	
+	// deal with non-var pixel
+	if (otherPixIndex == j)
+	  _b[i] -= (Areal) getImgValue(j,c,labels);
+
+      } // iterate over neighbors
+      
+    }// iterate over variables
+  }
+
+
+
+  
+  
+} // end namespace

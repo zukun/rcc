@@ -1,0 +1,31 @@
+/////////////////////////////////////////////////////////////////////////////
+// Name:        cube.h
+// Purpose:     wxGLCanvas demo program
+// Author:      Julian Smart
+// Modified by:
+// Created:     04/01/98
+// RCS-ID:      $Id: fuse.h,v 1.1.1.1 2004/05/24 21:16:48 aseem Exp $
+// Copyright:   (c) Julian Smart
+// Licence:     wxWindows licence
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef _WX_CUBE_H_
+#define _WX_CUBE_H_
+
+#include "wx/glcanvas.h"
+#include "myGLCanvas.h"
+
+
+// Define a new application type
+class MyApp: public wxApp
+{
+public:
+    bool OnInit(void);
+};
+
+
+
+
+
+#endif
+
