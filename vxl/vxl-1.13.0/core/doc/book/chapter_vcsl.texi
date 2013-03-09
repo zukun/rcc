@@ -1,0 +1,168 @@
+@chapsummary
+Metric entities, co-ordinate systems and transformations.
+@endchapsummary
+
+This non-core Level 2 library @code{vcsl} is intended to provide an environment
+for representing co-ordinate systems, transformations, dimensions, and metric
+units.
+
+This includes classes for
+@itemize @bullet
+@item Radians, degrees, and meters.
+@item 2D and 3D Cartesian co-ordinate systems
+@item Various polar co-ordinate systems
+@item Various geographic co-ordinate systems.
+@item Various Transformations
+@end itemize
+
+@section Contents
+@subsection Metric and Dimensional classes
+
+@itemize @bullet
+  @item @code{vcsl_dimension} - Abstract dimension
+  @itemize @bullet
+    @item @code{vcsl_length}
+    @item @code{vcsl_angle}
+  @end itemize
+
+  @item @code{vcsl_unit} - Abstract unit associated to a dimension
+  @itemize @bullet
+    @item @code{vcsl_length_unit}
+    @itemize @bullet
+      @item @code{vcsl_meter} - This is the standard length unit
+    @end itemize
+    @item @code{vcsl_angle_unit}
+    @itemize @bullet
+      @item @code{vcsl_radian} - This is the standard angular unit
+      @item @code{vcsl_degree}
+    @end itemize
+  @end itemize
+@end itemize
+
+@subsection Co-ordinate Systems and Transformations
+@itemize @bullet
+  @item @code{vcsl_coordinate_system}
+  @itemize @bullet
+    @item @code{vcsl_cartesian_2d}
+    @item @code{vcsl_cartesian_3d}
+    @item @code{vcsl_cylindrical}
+    @item @code{vcsl_polar}
+    @item @code{vcsl_spherical}
+    @item @code{vcsl_geographic}
+    @itemize @bullet
+      @item @code{vcsl_geocentric} - Intended to represent a location relative to the earth
+      @item @code{vcsl_geodetic} - Intended to represent a location relative to the earth
+      @item @code{vcsl_lambertian} - Lambert Conformal Conic Projection
+      @item @code{vcsl_utm} - Universal Transverse Mercator projection
+    @end itemize
+  @end itemize
+
+  @item @code{vcsl_spatial_transformation}
+  @itemize @bullet
+    @item @code{vcsl_cylindrical_to_cartesian_3d}
+    @item @code{vcsl_perspective}
+    @item @code{vcsl_rotation} - Rotation about an axis through the origin
+    @itemize @bullet
+      @item @code{vcsl_displacement} - Rotation about a general axis
+    @end itemize
+    @item @code{vcsl_scale}
+    @item @code{vcsl_translation}
+    @item @code{vcsl_composition} - Composition of transformations
+  @end itemize
+
+  @item @code{vcsl_graph} - Represent multiple co-ordinate systems and transformation between them.
+
+@end itemize
+
+@section Examples
+
+The following example shows how to use and build a set of co-ordinate systems.
+@comment example written by Rob.Campbell@att.net
+@example
+
+#include <vcsl/vcsl_cartesian_3d.h>
+#include <vcsl/vcsl_rotation.h>
+#include <vcsl/vcsl_graph.h>
+...
+  //: Convenient indices for vectors representing points, etc.
+  enum AXES @{ X, Y, Z, T @};
+
+  //: Graph of defined CS (Co-ordinate system)
+  // All CS must be added to this graph as they are created.
+  vcsl_graph_sptr graphCS = new vcsl_graph;
+
+  //: World Coordinate System
+  // Equivalent to the Top view, by definition.
+  //
+  // A CS for which no parent is defined is absolute.  Logically,
+  // there must be one absolute CS which all other directly or
+  // indirectly relate to.
+  vcsl_spatial_sptr WCS = new vcsl_cartesian_3d;
+
+  // Add WCS to the global map of coordinate systems.
+  WCS->set_graph(graphCS);
+
+  // New CS can be defined relative to any point (translation) or
+  // axis (rotation) in the parent CS.  But it is so common to do
+  // so relative to the X, Y, or Z axes, that it is convenient to
+  // define the corresponding vectors:
+
+  //: x-axis vector
+  vnl_vector_fixed <double, 3> xA;
+  xA[X]=1; xA[Y] = 0; xA[Z] = 0;
+
+  //: y-axis vector
+  vnl_vector_fixed <double, 3> yA;
+  yA[X]=0; yA[Y] = 1; yA[Z] = 0;
+
+  //: z-axis vector
+  vnl_vector_fixed <double, 3> zA;
+  zA[X]=0; zA[Y] = 0; zA[Z] = 1;
+
+  //: 90 degree rotation about WCS y-axis
+  // Transforms from WCS to right CS
+  vcsl_rotation rightXF;
+  rightXF.set_static(vnl_math::pi_over_2, yA);
+
+  //: WCS rotated 90 degrees about the y-axis to produce right hand view/CS
+  vcsl_spatial_sptr right = new vcsl_cartesian_3d;
+  right->set_graph(graphCS);
+  right->set_unique(WCS, &rightXF);
+
+  //: Corner of a box with opposite corner at origin of WCS.
+  vnl_vector_fixed <double, 3> corner;
+  corner[X] = 1; corner[Y] = 2; corner[Z] = 3;
+
+  // By inspection, corner should be (-3,2,1) in 'right' CS
+  vnl_vector<double> cornerXF = WCS->from_local_to_cs(corner, right, 0);
+
+  vcl_cout << cornerXF.x() << ", " << cornerXF.y() << ", " << cornerXF.z() << '\n';
+@end example
+
+@section Further Work
+
+@enumerate
+@item Write conversion between classic coordinate systems in the same than the
+class vcsl_cylindrical_to_cartesian_3d (singleton pattern)
+    @itemize @bullet
+    @item @code{vcsl_spherical_to_cartesian_3d}
+    @item @code{vcsl_polar_to_cartesian_2d}
+    @item @code{vcsl_geocentric_to_cartesian_3d}
+    @item @code{vcsl_geodetic_to_cartesian_3d}
+    @item @code{vcsl_lambertian_to_cartesian_3d}
+    @item @code{vcsl_utm_to_cartesian_3d}
+    @end itemize
+
+@item Add other units and dimensions
+
+@item In @code{vcsl_spatial_transformation}, add
+@example
+//: May `this' have a matrix representation ?
+virtual bool is_linear(void) const=0;
+
+//: Homogeneous matrix of `this' at time `time'
+// REQUIRE: is_valid()
+// REQUIRE: is_linear()
+virtual vnl_matrix<double> matrix_value(const double time, bool type) const;
+@end example
+@end enumerate

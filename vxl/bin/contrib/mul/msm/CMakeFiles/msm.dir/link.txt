@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libmsm.a  CMakeFiles/msm.dir/msm_points.o
+/usr/bin/ranlib ../../../lib/libmsm.a

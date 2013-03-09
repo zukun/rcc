@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../lib/libnetlib.a  CMakeFiles/netlib.dir/triangle.o
+/usr/bin/ranlib ../../lib/libnetlib.a

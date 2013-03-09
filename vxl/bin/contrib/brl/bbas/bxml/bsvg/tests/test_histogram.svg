@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg height="600" viewBox="0,0,1200,600" width="1200" xmlns="http://www.w3.org/2000/svg">
+<line stroke="black" stroke-width="2" x1="80" x2="80" y1="520" y2="40" />
+<line stroke="black" stroke-width="2" x1="80" x2="560" y1="520" y2="520" />
+<text font-size="30" transform="translate(80,560) ">0</text>
+<text font-size="30" transform="translate(40,520) ">0</text>
+<text font-size="30" transform="translate(520,560) ">1</text>
+<line stroke="black" stroke-width="2" x1="520" x2="520" y1="520" y2="530" />
+<text font-size="30" transform="translate(40,80) ">1</text>
+<line stroke="black" stroke-width="2" x1="70" x2="80" y1="80" y2="80" />
+<g stroke="black" stroke-width="2" transform="translate(560,520) ">
+<line transform="rotate(135)" x1="0" x2="0" y1="0" y2="10" />
+<line transform="rotate(45)" x1="0" x2="0" y1="0" y2="10" />
+</g>
+<g stroke="black" stroke-width="2" transform="translate(80,40) rotate(-90)">
+<line transform="rotate(135)" x1="0" x2="0" y1="0" y2="10" />
+<line transform="rotate(45)" x1="0" x2="0" y1="0" y2="10" />
+</g>
+<text font-size="30" transform="translate(460,40) ">Bar Plot</text>
+<g stroke="black" stroke-opacity="0.5" stroke-width="2">
+<line x1="80" x2="520" y1="476" y2="476" />
+<line x1="80" x2="520" y1="432" y2="432" />
+<line x1="80" x2="520" y1="388" y2="388" />
+<line x1="80" x2="520" y1="344" y2="344" />
+<line x1="80" x2="520" y1="300" y2="300" />
+<line x1="80" x2="520" y1="256" y2="256" />
+<line x1="80" x2="520" y1="212" y2="212" />
+<line x1="80" x2="520" y1="168" y2="168" />
+<line x1="80" x2="520" y1="124" y2="124" />
+<line x1="80" x2="520" y1="80" y2="80" />
+</g>
+<g fill="red">
+<rect height="44" width="45.5172" x="95.1724" y="476" />
+<rect height="88" width="45.5172" x="155.862" y="432" />
+<rect height="0" width="45.5172" x="216.552" y="520" />
+<rect height="352" width="45.5172" x="277.241" y="168" />
+<rect height="396" width="45.5172" x="337.931" y="124" />
+<rect height="0" width="45.5172" x="398.621" y="520" />
+<rect height="132" width="45.5172" x="459.31" y="388" />
+</g>
+<g fill="red">
+<text font-size="30" transform="translate(117.931,560) rotate(90)">0</text>
+<text font-size="30" transform="translate(178.621,560) rotate(90)">1</text>
+<text font-size="30" transform="translate(239.31,560) rotate(90)">2</text>
+<text font-size="30" transform="translate(300,560) rotate(90)">3</text>
+<text font-size="30" transform="translate(360.69,560) rotate(90)">4</text>
+<text font-size="30" transform="translate(421.379,560) rotate(90)">5</text>
+<text font-size="30" transform="translate(482.069,560) rotate(90)">6</text>
+</g>
+</svg>

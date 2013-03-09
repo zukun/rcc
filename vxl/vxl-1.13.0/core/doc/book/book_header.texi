@@ -1,0 +1,156 @@
+@c %**start of header
+@setfilename vxl.info
+@settitle VXL
+@setchapternewpage odd
+@paragraphindent 0
+@c Set up printed page layout.
+@iftex
+@afourlatex
+@end iftex
+
+@c Define the @caption{1} macro for use with the @figure macro
+@c below
+@iftex
+  @tex
+  \gdef\caption#1{\quotation \strong{Figure #1:}}
+  \gdef\endcaption{\Equotation}
+  @end tex
+@end iftex
+@ifinfo
+@macro caption{figurenumber}
+  @quotation
+  @strong{Figure \figurenumber\:}
+@end macro
+@macro endcaption
+  @end quotation
+@end macro
+@end ifinfo
+@ifhtml
+@macro caption {figurenumber}
+  @html
+  <caption align="bottom">
+  <div align=left><strong>Figure \figurenumber\:</strong>
+  @end html
+@end macro
+@macro endcaption
+  @html
+  </div>
+  </caption>
+  @end html
+@end macro
+@end ifhtml
+
+@c Define a figure environment. It's hard to do a figure environment,
+@c so just do an inline placement for HTML and info, and use
+@c \topinsert for TeX. Not quite a ``proper'' floating figure, but
+@c good enough for our purposes.
+@iftex
+  @tex
+  \gdef\figure{\topinsert\begingroup}
+  \gdef\endfigure{\endgroup\endinsert}
+  @end tex
+@end iftex
+@ifinfo
+@macro figure
+  @quotation
+@end macro
+@macro endfigure
+  @end quotation
+@end macro
+@end ifinfo
+@ifhtml
+@macro figure
+  @html
+  <p>
+  <table border="1" cellpadding="10" align=center width=80%>
+  <tr><td>
+  @end html
+@end macro
+@macro endfigure
+  @html
+  </td></tr></table></p>
+  @end html
+@end macro
+@end ifhtml
+
+@c Define the chapsummary macro
+@ifnottex
+@macro chapsummary
+  @quotation
+  @strong{Chapter summary}:
+@end macro
+
+@macro endchapsummary
+  @end quotation
+@end macro
+@end ifnottex
+
+@iftex
+  @tex
+  \gdef\chapsummary{
+    @quotation
+    @cartouche
+    @strong{Chapter summary}:
+  }
+  \gdef\endchapsummary{
+    @Ecartouche
+    @Equotation
+  }
+  @end tex
+@end iftex
+
+@c Define the @vxl{x} macro.  v, slanted x, l
+@c Ideally, you would just use @vxl{}, but texi2html doesn't
+@c handle the empty argument. So, use @vxl{x}. The parameter
+@c will be ignored.
+@iftex
+@c use a TeX \def to enable using the macro within other commands
+@tex
+\gdef\vxl#1{v{@sl x}l}
+@end tex
+@end iftex
+@ifinfo
+@macro vxl {arg}
+vxl
+@end macro
+@end ifinfo
+@ifhtml
+@macro vxl {arg}
+v@emph{x}l
+@end macro
+@end ifhtml
+
+@c Define the @LaTeX{} macro
+@iftex
+@tex
+\gdef@LaTeX{L\kern-.36em%
+        {\setbox0\hbox{T}\vbox to\ht0{\hbox{\smallrm A}\vss}}%
+        \kern-.15em\TeX}
+@end tex
+@end iftex
+@ifnottex
+@macro LaTeX
+LaTeX
+@end macro
+@end ifnottex
+
+@c Define the @inputclass{name} macro
+@macro inputclass{name}
+inputclass \name\
+@end macro
+
+@c Define @ttb{text}: teletype bold
+@iftex
+@macro ttb{text}
+@newdimen@ttbskip@ttbskip=.5pt@c
+@setbox0@hbox{@kern-0.5em\text\}@c
+@copy0@kern-@wd0@kern@ttbskip@unhbox0@kern-@ttbskip@c
+@end macro
+@end iftex
+@ifnottex
+@macro ttb{text}
+@strong{\text\}
+@end macro
+@end ifnottex
+
+@c %**end of header

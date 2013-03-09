@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libvipl.a  CMakeFiles/vipl.dir/filter/vipl_filter_abs.o
+/usr/bin/ranlib ../../../lib/libvipl.a

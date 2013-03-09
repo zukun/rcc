@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libboxm_io.a  CMakeFiles/boxm_io.dir/boxm_scene_parser.o CMakeFiles/boxm_io.dir/boxm_io_scene_base.o
+/usr/bin/ranlib ../../../../../lib/libboxm_io.a

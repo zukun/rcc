@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libvimt_algo.a  CMakeFiles/vimt_algo.dir/vimt_dummy.o
+/usr/bin/ranlib ../../../../lib/libvimt_algo.a

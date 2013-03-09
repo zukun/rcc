@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/antiw/demos/vxl-1.13.0/core/vgl/internals/gpc.c
+gpc.h
+/home/antiw/demos/vxl-1.13.0/core/vgl/internals/gpc.h
+stdlib.h
+-
+float.h
+-
+math.h
+-
+
+/home/antiw/demos/vxl-1.13.0/core/vgl/internals/gpc.h
+stdio.h
+-
+

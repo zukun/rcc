@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vnl_polyroots.dir/vnl_polyroots.o  -o vnl_polyroots -rdynamic ../../../lib/libvnl_algo.a ../../../lib/libvnl.a ../../../lib/libvul.a ../../../lib/libnetlib.a ../../../lib/libv3p_netlib.a ../../../lib/libvcl.a -lm 

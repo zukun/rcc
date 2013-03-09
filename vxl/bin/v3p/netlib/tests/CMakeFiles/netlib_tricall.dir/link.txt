@@ -1,0 +1,1 @@
+/usr/bin/gcc       CMakeFiles/netlib_tricall.dir/tricall.o  -o netlib_tricall -rdynamic ../../../lib/libnetlib.a -lm 

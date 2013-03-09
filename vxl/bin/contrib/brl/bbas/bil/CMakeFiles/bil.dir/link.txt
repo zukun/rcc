@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbil.a  CMakeFiles/bil.dir/Templates/bil_bounded_image_view+double-.o CMakeFiles/bil.dir/Templates/bil_bounded_image_view+unsigned_char-.o CMakeFiles/bil.dir/Templates/bil_bounded_image_view+unsigned_short-.o
+/usr/bin/ranlib ../../../../lib/libbil.a

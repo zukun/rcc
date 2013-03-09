@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbvpl_io.a  CMakeFiles/bvpl_io.dir/bvpl_io_kernel.o CMakeFiles/bvpl_io.dir/Templates/vbl_io_smart_ptr+bvpl_kernel-.o
+/usr/bin/ranlib ../../../../../lib/libbvpl_io.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libvdtop.a  CMakeFiles/vdtop.dir/vdtop_8_neighborhood_mask.o CMakeFiles/vdtop.dir/vdtop_freeman_code.o
+/usr/bin/ranlib ../../../lib/libvdtop.a

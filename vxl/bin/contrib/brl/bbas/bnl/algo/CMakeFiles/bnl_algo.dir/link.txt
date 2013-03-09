@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbnl_algo.a  CMakeFiles/bnl_algo.dir/bnl_legendre_polynomial.o
+/usr/bin/ranlib ../../../../../lib/libbnl_algo.a

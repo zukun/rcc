@@ -1,0 +1,1 @@
+/usr/bin/gcc       CMakeFiles/netlib_showme.dir/showme.o  -o netlib_showme -rdynamic ../../../lib/libnetlib.a -lX11 -lm 

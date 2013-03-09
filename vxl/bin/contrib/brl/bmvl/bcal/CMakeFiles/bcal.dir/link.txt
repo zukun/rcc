@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbcal.a  CMakeFiles/bcal.dir/bcal_camera.o CMakeFiles/bcal.dir/bcal_camera_node.o CMakeFiles/bcal.dir/bcal_euclidean_transformation.o CMakeFiles/bcal.dir/bcal_calibrate_plane.o CMakeFiles/bcal.dir/bcal_zhang_camera_node.o CMakeFiles/bcal.dir/bcal_zhang_linear_calibrate.o
+/usr/bin/ranlib ../../../../lib/libbcal.a

@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/bdpg_test_all.dir/test_driver.o CMakeFiles/bdpg_test_all.dir/test_array_dynamic_prg.o  -o bdpg_test_all -rdynamic ../../../../../lib/libbdpg.a ../../../../../lib/libtestlib.a ../../../../../lib/libvnl.a ../../../../../lib/libvbl.a ../../../../../lib/libvcl.a -lm 

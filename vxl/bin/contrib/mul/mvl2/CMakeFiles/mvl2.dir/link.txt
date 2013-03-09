@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libmvl2.a  CMakeFiles/mvl2.dir/mvl2_video_reader.o CMakeFiles/mvl2.dir/mvl2_video_from_sequence.o
+/usr/bin/ranlib ../../../lib/libmvl2.a

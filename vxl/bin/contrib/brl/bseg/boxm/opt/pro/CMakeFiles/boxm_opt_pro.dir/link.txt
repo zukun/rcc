@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../../lib/libboxm_opt_pro.a  CMakeFiles/boxm_opt_pro.dir/boxm_opt_register.o CMakeFiles/boxm_opt_pro.dir/processes/boxm_opt_bayesian_update_process.o CMakeFiles/boxm_opt_pro.dir/processes/boxm_render_expected_depth_rt_process.o CMakeFiles/boxm_opt_pro.dir/processes/boxm_render_expected_rt_process.o CMakeFiles/boxm_opt_pro.dir/processes/boxm_update_rt_process.o
+/usr/bin/ranlib ../../../../../../lib/libboxm_opt_pro.a

@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/bxml_test_include.dir/test_include.o  -o bxml_test_include -rdynamic ../../../../../lib/libbxml.a ../../../../../lib/libexpatpp.a -lexpat ../../../../../lib/libvbl_io.a ../../../../../lib/libvbl.a ../../../../../lib/libvsl.a ../../../../../lib/libvul.a ../../../../../lib/libvcl.a -lm 

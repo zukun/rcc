@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libgmvl.a  CMakeFiles/gmvl.dir/gmvl_connection.o CMakeFiles/gmvl.dir/gmvl_connection_cache.o CMakeFiles/gmvl.dir/gmvl_database.o CMakeFiles/gmvl.dir/gmvl_helpers.o CMakeFiles/gmvl.dir/gmvl_node.o CMakeFiles/gmvl.dir/gmvl_node_cache.o CMakeFiles/gmvl.dir/Templates/vbl_smart_ptr+gmvl_connection-.o CMakeFiles/gmvl.dir/Templates/vbl_smart_ptr+gmvl_node-.o
+/usr/bin/ranlib ../../../lib/libgmvl.a

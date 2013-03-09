@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/bnl_test_include.dir/test_include.o  -o bnl_test_include -rdynamic ../../../../../lib/libbnl.a ../../../../../lib/libvnl_algo.a ../../../../../lib/libvnl.a ../../../../../lib/libvcl.a ../../../../../lib/libnetlib.a ../../../../../lib/libv3p_netlib.a -lm 

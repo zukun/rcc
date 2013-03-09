@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg height="400" viewBox="0,0,400,400" width="400" xmlns="http://www.w3.org/2000/svg">
+<ellipse fill="#ffb200" rx="25" ry="7" transform="translate(250,15) " />
+<text font-size="15" transform="translate(10,15) ">[ -0.5, -0.5,-0.71]</text>
+<ellipse fill="#ffb900" rx="25" ry="7" transform="translate(250,30) " />
+<text font-size="15" transform="translate(10,30) ">[6.1e-17,    1,6.1e-17]</text>
+<ellipse fill="#feff00" rx="25" ry="7" transform="translate(250,45) " />
+<text font-size="15" transform="translate(10,45) ">[-0.71,-0.71,6.1e-17]</text>
+<ellipse fill="#6dff00" rx="25" ry="7" transform="translate(250,60) " />
+<text font-size="15" transform="translate(10,60) ">[ 0.71,    0, 0.71]</text>
+<ellipse fill="#63ff00" rx="25" ry="7" transform="translate(250,75) " />
+<text font-size="15" transform="translate(10,75) ">[-1.8e-16,   -1,6.1e-17]</text>
+<ellipse fill="#46ff00" rx="25" ry="7" transform="translate(250,90) " />
+<text font-size="15" transform="translate(10,90) ">[  0.5,  0.5,-0.71]</text>
+<ellipse fill="#39ff00" rx="25" ry="7" transform="translate(250,105) " />
+<text font-size="15" transform="translate(10,105) ">[-0.71,8.7e-17,-0.71]</text>
+<ellipse fill="#01ff00" rx="25" ry="7" transform="translate(250,120) " />
+<text font-size="15" transform="translate(10,120) ">[  0.5, -0.5,-0.71]</text>
+<ellipse fill="#00ff01" rx="25" ry="7" transform="translate(250,135) " />
+<text font-size="15" transform="translate(10,135) ">[ 0.71,-0.71,6.1e-17]</text>
+<ellipse fill="#00ff3f" rx="25" ry="7" transform="translate(250,150) " />
+<text font-size="15" transform="translate(10,150) ">[-1.3e-16,-0.71, 0.71]</text>
+<ellipse fill="#00ff6c" rx="25" ry="7" transform="translate(250,165) " />
+<text font-size="15" transform="translate(10,165) ">[ -0.5,  0.5,-0.71]</text>
+<ellipse fill="#00ff7a" rx="25" ry="7" transform="translate(250,180) " />
+<text font-size="15" transform="translate(10,180) ">[ 0.71, 0.71,6.1e-17]</text>
+<ellipse fill="#00ff80" rx="25" ry="7" transform="translate(250,195) " />
+<text font-size="15" transform="translate(10,195) ">[-1.3e-16,-0.71,-0.71]</text>
+<ellipse fill="#00ffaa" rx="25" ry="7" transform="translate(250,210) " />
+<text font-size="15" transform="translate(10,210) ">[ -0.5, -0.5, 0.71]</text>
+<ellipse fill="#00fff6" rx="25" ry="7" transform="translate(250,225) " />
+<text font-size="15" transform="translate(10,225) ">[    0,    0,    1]</text>
+<ellipse fill="#00caff" rx="25" ry="7" transform="translate(250,240) " />
+<text font-size="15" transform="translate(10,240) ">[-0.71,8.7e-17, 0.71]</text>
+<ellipse fill="#00c8ff" rx="25" ry="7" transform="translate(250,255) " />
+<text font-size="15" transform="translate(10,255) ">[4.3e-17, 0.71, 0.71]</text>
+<ellipse fill="#00a3ff" rx="25" ry="7" transform="translate(250,270) " />
+<text font-size="15" transform="translate(10,270) ">[ 0.71,    0,-0.71]</text>
+<ellipse fill="#00a3ff" rx="25" ry="7" transform="translate(250,285) " />
+<text font-size="15" transform="translate(10,285) ">[    0,    0,   -1]</text>
+<ellipse fill="#4b00ff" rx="25" ry="7" transform="translate(250,300) " />
+<text font-size="15" transform="translate(10,300) ">[4.3e-17, 0.71,-0.71]</text>
+<ellipse fill="#6e00ff" rx="25" ry="7" transform="translate(250,315) " />
+<text font-size="15" transform="translate(10,315) ">[ -0.5,  0.5, 0.71]</text>
+<ellipse fill="#b000ff" rx="25" ry="7" transform="translate(250,330) " />
+<text font-size="15" transform="translate(10,330) ">[    1,    0,6.1e-17]</text>
+<ellipse fill="#ff00a3" rx="25" ry="7" transform="translate(250,345) " />
+<text font-size="15" transform="translate(10,345) ">[   -1,1.2e-16,6.1e-17]</text>
+<ellipse fill="#ff006a" rx="25" ry="7" transform="translate(250,360) " />
+<text font-size="15" transform="translate(10,360) ">[-0.71, 0.71,6.1e-17]</text>
+<ellipse fill="#ff003e" rx="25" ry="7" transform="translate(250,375) " />
+<text font-size="15" transform="translate(10,375) ">[  0.5,  0.5, 0.71]</text>
+<ellipse fill="#ff0035" rx="25" ry="7" transform="translate(250,390) " />
+<text font-size="15" transform="translate(10,390) ">[  0.5, -0.5, 0.71]</text>
+</svg>

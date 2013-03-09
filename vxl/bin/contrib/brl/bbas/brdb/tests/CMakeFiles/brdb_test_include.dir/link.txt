@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/brdb_test_include.dir/test_include.o  -o brdb_test_include -rdynamic ../../../../../lib/libbrdb.a ../../../../../lib/libvbl.a ../../../../../lib/libvsl.a ../../../../../lib/libvcl.a -lm 

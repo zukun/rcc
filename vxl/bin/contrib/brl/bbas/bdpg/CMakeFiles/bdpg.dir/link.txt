@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbdpg.a  CMakeFiles/bdpg.dir/bdpg_node.o CMakeFiles/bdpg.dir/bdpg_array_dynamic_prg.o CMakeFiles/bdpg.dir/Templates/vbl_smart_ptr+bdpg_node-.o
+/usr/bin/ranlib ../../../../lib/libbdpg.a

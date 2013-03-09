@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hierarchy model_dir=".\hierarchy_output_roi1_vehicle0\" name="roi1_vehicle0">
+<primitive_instances>
+  <gaussian bright="1" cutoff_perc="0.01" fitted_weibull="0" k="0" k_nc="0" lambda="0" lambda0="2" lambda1="1" lambda_nc="0" theta="-45">
+ <instance cnt="0" kind="0" rho="0" strength="0" x="0" y="0">
+ <base det_thres="0.0001" layer="0" log_likelihood="0" prior_prob="0" type="0">
+ </base>
+ </instance>
+ </gaussian>
+  <gaussian bright="0" cutoff_perc="0.5" fitted_weibull="0" k="0" k_nc="2.49971e-38" lambda="0" lambda0="2" lambda1="1" lambda_nc="0.292243" theta="-45">
+ <instance cnt="0" kind="0" rho="0" strength="0" x="0" y="0">
+ <base det_thres="0.0001" layer="0" log_likelihood="3.16045e-266" prior_prob="3.15965e-266" type="1">
+ </base>
+ </instance>
+ </gaussian>
+</primitive_instances>
+<vertices>
+  <base det_thres="0.01" layer="0" log_likelihood="0" prior_prob="0" type="0">
+ </base>
+  <base det_thres="0.01" layer="0" log_likelihood="0" prior_prob="0" type="1">
+ </base>
+  <base det_thres="1e-05" layer="1" log_likelihood="9.59587e-75" prior_prob="1.28035e-104" type="0">
+ </base>
+</vertices>
+<edges>
+  <edge angle_mean="0" angle_var="0" dist_mean="0" dist_var="0" min_stad_dev_angle="10" min_stad_dev_dist="2" to_central="1" weight="1">
+ <connectivity source="2" target="0">
+</connectivity>
+</edge>
+  <edge angle_mean="1.5708" angle_var="0.0304617" dist_mean="2.82843" dist_var="1" min_stad_dev_angle="10" min_stad_dev_dist="1" to_central="0" weight="1">
+ <connectivity source="2" target="1">
+</connectivity>
+</edge>
+  <edge angle_mean="-1.76819" angle_var="0.0304617" dist_mean="3.60555" dist_var="1" min_stad_dev_angle="10" min_stad_dev_dist="1" to_central="0" weight="1">
+ <connectivity source="2" target="1">
+</connectivity>
+</edge>
+</edges>
+</hierarchy>

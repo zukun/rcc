@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vul_io_test_include.dir/test_include.o  -o vul_io_test_include -rdynamic ../../../../lib/libvul_io.a ../../../../lib/libvul.a ../../../../lib/libvsl.a ../../../../lib/libvcl.a -lm 

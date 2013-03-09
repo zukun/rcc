@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/frame_extractor.dir/frame_extractor.o  -o frame_extractor -rdynamic ../../../../lib/libvidl1.a ../../../../lib/libvil.a ../../../../lib/libvul.a -ljpeg ../../../../lib/libgeotiff.a -ltiff -lpng -lz ../../../../lib/libvbl.a ../../../../lib/libvcl.a -lm ../../../../lib/libmpeg2.a ../../../../lib/libvo.a 

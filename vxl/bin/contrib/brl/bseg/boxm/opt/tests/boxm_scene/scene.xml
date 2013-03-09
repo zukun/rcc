@@ -1,0 +1,16 @@
+<boxm_scene>
+<appearence_model type="apm_simple_grey">
+</appearence_model>
+<multi_bin value="0">
+</multi_bin>
+<lvcs cs_name="wgs84" origin_lon="44.440000" origin_lat="33.330000" origin_elev="10.000000" lon_scale="0.000000" lat_scale="0.000000" local_XYZ_unit="meters" geo_angle_unit="degrees" local_origin_x="0.000000" local_origin_y="0.000000" theta="0.000000">
+</lvcs>
+<local_origin x="10.000000" y="10.000000" z="20.000000">
+</local_origin>
+<block_dimensions x="10.000000" y="10.000000" z="10.000000">
+</block_dimensions>
+<blocks x_dimension="1" y_dimension="1" z_dimension="1">
+</blocks>
+<scene_paths path="./boxm_scene" block_prefix="block">
+</scene_paths>
+</boxm_scene>

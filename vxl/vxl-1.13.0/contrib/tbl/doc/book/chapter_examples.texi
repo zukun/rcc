@@ -1,0 +1,28 @@
+Before anything else, let's look at some example programs.
+
+@section Gradients
+The image processing equivalent of "Hello world":
+@example
+
+#include <vcl_iostream.h>
+#include <vil1/vil1_load.h>
+#include <vil1/vil1_save.h>
+#include <vepl/vepl_gradient_mag.h>
+
+int main(int argc, char** argv)
+@{
+  // The input image:
+  vil1_image in = vil1_load(argv[1]);
+
+  // The filter:
+  vil1_image out = vepl_gradient_mag(in);
+
+  // Write output:
+  vil1_save(out, argv[2], "pnm");
+  vcl_cout << "Written image of type PNM to " << argv[2] << vcl_endl;
+
+  return 0;
+@}
+@end example
+This example takes one grey-level image, and creates a second whose pixel values are the
+gradient magnitudes of the first.

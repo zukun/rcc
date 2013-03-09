@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbvgl.a  CMakeFiles/bvgl.dir/bvgl_articulated_poly.o CMakeFiles/bvgl.dir/bvgl_change_obj.o CMakeFiles/bvgl.dir/bvgl_changes.o CMakeFiles/bvgl.dir/Templates/vbl_smart_ptr+bvgl_articulated_poly-.o CMakeFiles/bvgl.dir/Templates/vbl_smart_ptr+bvgl_changes-.o CMakeFiles/bvgl.dir/Templates/vbl_smart_ptr+bvgl_change_obj-.o
+/usr/bin/ranlib ../../../../lib/libbvgl.a

@@ -1,0 +1,1 @@
+/usr/bin/gcc       CMakeFiles/netlib_lbfgs_example.dir/lbfgs-example.o  -o netlib_lbfgs_example -rdynamic ../../../lib/libv3p_netlib.a -lm 

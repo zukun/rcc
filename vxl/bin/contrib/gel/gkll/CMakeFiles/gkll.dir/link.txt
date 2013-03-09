@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libgkll.a  CMakeFiles/gkll.dir/gkll_kl.o CMakeFiles/gkll.dir/gkll_kl_params.o CMakeFiles/gkll.dir/Templates/vbl_smart_ptr+gkll_multi_view_data+vbl_smart_ptr+vtol_vertex_2d---.o CMakeFiles/gkll.dir/gkll_multi_view_data.o
+/usr/bin/ranlib ../../../lib/libgkll.a

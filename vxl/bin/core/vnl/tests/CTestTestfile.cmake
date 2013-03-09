@@ -1,0 +1,42 @@
+# CMake generated Testfile for 
+# Source directory: /home/antiw/demos/vxl-1.13.0/core/vnl/tests
+# Build directory: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/core/vnl/tests
+# 
+# This file replicates the SUBDIRS() and ADD_TEST() commands from the source
+# tree CMakeLists.txt file, skipping any SUBDIRS() or ADD_TEST() commands
+# that are excluded by CMake control structures, i.e. IF() commands.
+ADD_TEST(vnl_test_bignum "./vnl_test_all" "test_bignum")
+ADD_TEST(vnl_test_complex "./vnl_test_all" "test_complex")
+ADD_TEST(vnl_test_diag_matrix "./vnl_test_all" "test_diag_matrix")
+ADD_TEST(vnl_test_file_matrix "./vnl_test_all" "test_file_matrix")
+ADD_TEST(vnl_test_finite "./vnl_test_all" "test_finite")
+ADD_TEST(vnl_test_inverse "./vnl_test_all" "test_inverse")
+ADD_TEST(vnl_test_math "./vnl_test_all" "test_math")
+ADD_TEST(vnl_test_matlab "./vnl_test_all" "test_matlab")
+ADD_TEST(vnl_test_matrix "./vnl_test_all" "test_matrix")
+ADD_TEST(vnl_test_matrix_exp "./vnl_test_all" "test_matrix_exp")
+ADD_TEST(vnl_test_matrix_fixed "./vnl_test_all" "test_matrix_fixed")
+ADD_TEST(vnl_test_vector_fixed_ref "./vnl_test_all" "test_vector_fixed_ref")
+ADD_TEST(vnl_test_matrix_fixed_ref "./vnl_test_all" "test_matrix_fixed_ref")
+ADD_TEST(vnl_test_numeric_traits "./vnl_test_all" "test_numeric_traits")
+ADD_TEST(vnl_test_random "./vnl_test_all" "test_random")
+ADD_TEST(vnl_test_rational "./vnl_test_all" "test_rational")
+ADD_TEST(vnl_test_real_polynomial "./vnl_test_all" "test_real_polynomial")
+ADD_TEST(vnl_test_real_npolynomial "./vnl_test_all" "test_real_npolynomial")
+ADD_TEST(vnl_test_resize "./vnl_test_all" "test_resize")
+ADD_TEST(vnl_test_rotation_matrix "./vnl_test_all" "test_rotation_matrix")
+ADD_TEST(vnl_test_sample "./vnl_test_all" "test_sample")
+ADD_TEST(vnl_test_sym_matrix "./vnl_test_all" "test_sym_matrix")
+ADD_TEST(vnl_test_transpose "./vnl_test_all" "test_transpose")
+ADD_TEST(vnl_test_fastops "./vnl_test_all" "test_fastops")
+ADD_TEST(vnl_test_vector "./vnl_test_all" "test_vector")
+ADD_TEST(vnl_test_gamma "./vnl_test_all" "test_gamma")
+ADD_TEST(vnl_test_arithmetic "./vnl_test_all" "test_arithmetic")
+ADD_TEST(vnl_test_alignment "./vnl_test_all" "test_alignment")
+ADD_TEST(vnl_test_hungarian_algorithm "./vnl_test_all" "test_hungarian_algorithm")
+ADD_TEST(vnl_test_integrant "./vnl_test_all" "test_integrant")
+ADD_TEST(vnl_test_bessel "./vnl_test_all" "test_bessel")
+ADD_TEST(vnl_test_quaternion "./vnl_test_all" "test_quaternion")
+ADD_TEST(vnl_test_crs_index "./vnl_test_all" "test_crs_index")
+ADD_TEST(vnl_test_sparse_lst_sqr_function "./vnl_test_all" "test_sparse_lst_sqr_function")
+ADD_TEST(vnl_test_power "./vnl_test_all" "test_power")

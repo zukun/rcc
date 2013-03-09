@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil1_clamp_example.dir/vil1_clamp_example.o  -o vil1_clamp_example -rdynamic ../../../lib/libvil1.a ../../../lib/libvul.a -ljpeg -ltiff -lpng -lz ../../../lib/libvcl.a -lm 

@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vobgetframe.dir/vobgetframe.o  -o vobgetframe -rdynamic ../../../../lib/liboxp.a ../../../../lib/libvidl_vil1.a ../../../../lib/libvil1.a ../../../../lib/libvnl.a ../../../../lib/libvul.a ../../../../lib/libmpeg2.a ../../../../lib/libvo.a -ljpeg -ltiff -lpng -lz ../../../../lib/libvbl.a ../../../../lib/libvpl.a ../../../../lib/libvcl.a -lm 

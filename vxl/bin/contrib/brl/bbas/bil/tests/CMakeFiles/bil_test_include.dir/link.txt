@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/bil_test_include.dir/test_include.o  -o bil_test_include -rdynamic ../../../../../lib/libbil.a ../../../../../lib/libvil_io.a ../../../../../lib/libvil.a -ljpeg ../../../../../lib/libgeotiff.a -ltiff -lpng -lz ../../../../../lib/libvsl.a ../../../../../lib/libvcl.a -lm 

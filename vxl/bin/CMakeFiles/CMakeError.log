@@ -1,0 +1,724 @@
+Performing Test VCL_STATIC_CONST_INIT_NO_DEFN failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_STATIC_CONST_INIT_NO_DEFN   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVCL_STATIC_CONST_INIT_NO_DEFN   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o: In function `main':
+vxl_platform_tests.cxx:(.text+0x35): undefined reference to `A::x'
+collect2: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Performing Test VCL_OVERLOAD_CAST failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_OVERLOAD_CAST   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx: In constructor ‘vnl_vector_fixed<n, T>::vnl_vector_fixed()’:
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:364: error: ‘data_fixed’ was not declared in this scope
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Performing Test VCL_NULL_TMPL_ARGS failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_NULL_TMPL_ARGS   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:409: warning: friend declaration ‘T dot(const victor<T>&, const victor<T>&)’ declares a non-template function
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:409: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx: In function ‘T dot(const victor<T>&, const victor<T>&) [with T = double]’:
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:423:   instantiated from here
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:412: error: ‘double victor<double>::data [3]’ is private
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:420: error: within this context
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:412: error: ‘double victor<double>::data [3]’ is private
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:420: error: within this context
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:412: error: ‘double victor<double>::data [3]’ is private
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:420: error: within this context
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:412: error: ‘double victor<double>::data [3]’ is private
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:420: error: within this context
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:412: error: ‘double victor<double>::data [3]’ is private
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:420: error: within this context
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:412: error: ‘double victor<double>::data [3]’ is private
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:420: error: within this context
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Performing Try-Run Test VCL_HAS_TEMPLATE_SYMBOLS failed to compile with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_HAS_TEMPLATE_SYMBOLS   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVCL_HAS_TEMPLATE_SYMBOLS   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o: In function `caller()':
+vxl_platform_tests.cxx:(.text+0x33): undefined reference to `void function<double>(double*, int)'
+collect2: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Performing Test VCL_NEEDS_NAMESPACE_STD failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_NEEDS_NAMESPACE_STD   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx: In function ‘void function()’:
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:776: error: ‘vector’ was not declared in this scope
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:776: error: expected primary-expression before ‘double’
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:776: error: expected `;' before ‘double’
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:777: error: ‘flaz’ was not declared in this scope
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Performing Test VCL_HAS_SLICED_DESTRUCTOR_BUG succeeded with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_HAS_SLICED_DESTRUCTOR_BUG   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVCL_HAS_SLICED_DESTRUCTOR_BUG   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Performing Test VCL_HAS_WORKING_STRINGSTREAM succeeded with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_HAS_WORKING_STRINGSTREAM   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVCL_HAS_WORKING_STRINGSTREAM   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Performing Test VCL_HAS_LFS succeeded with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_HAS_LFS   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVCL_HAS_LFS   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Performing Test VXL_HAS_DBGHELP_H failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_DBGHELP_H   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1099:21: error: Windows.h: No such file or directory
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1100:21: error: DbgHelp.h: No such file or directory
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx: In function ‘int main()’:
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1102: error: ‘MINIDUMP_EXCEPTION_INFORMATION’ was not declared in this scope
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1102: error: expected `;' before ‘dummy’
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if the include file ieeefp.h exists failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o -c "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx"
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:20: error: ieeefp.h: No such file or directory
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if the include file emmintrin.h exists failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o -c "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx"
+In file included from /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/lib/gcc/i486-linux-gnu/4.3.3/include/emmintrin.h:34:3: error: #error "SSE2 instruction set not enabled"
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if the std::shared_ptr<void> exist failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckTypeExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CheckTypeExists.cxx.o -c "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp/CheckTypeExists.cxx"
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp/CheckTypeExists.cxx:4: error: variable or field ‘cmakeRequireSymbol’ declared void
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp/CheckTypeExists.cxx:4: error: ‘shared_ptr’ is not a member of ‘std’
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp/CheckTypeExists.cxx:4: error: expected primary-expression before ‘void’
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckTypeExists.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+File /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp/CheckTypeExists.c:
+/* */
+#include <memory>
+
+void cmakeRequireSymbol(std::shared_ptr<void> dummy){(void)dummy;}
+int main()
+{return 0;
+}
+
+Performing Try-Run Test VXL_HAS_SSE2_HARDWARE_SUPPORT failed to compile with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_SSE2_HARDWARE_SUPPORT   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+In file included from /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1178:
+/usr/lib/gcc/i486-linux-gnu/4.3.3/include/emmintrin.h:34:3: error: #error "SSE2 instruction set not enabled"
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx: In function ‘int main()’:
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1186: error: ‘__m128d’ was not declared in this scope
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1186: error: expected `;' before ‘z’
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1187: error: ‘z’ was not declared in this scope
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1187: error: ‘_mm_loadu_pd’ was not declared in this scope
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1187: error: ‘_mm_mul_pd’ was not declared in this scope
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1189: error: ‘_mm_storeu_pd’ was not declared in this scope
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Performing Test VXL_SSE2_HARDWARE_SUPPORT_POSSIBLE succeeded with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_SSE2_HARDWARE_SUPPORT_POSSIBLE  -msse2   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_SSE2_HARDWARE_SUPPORT_POSSIBLE  -msse2   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Performing Test VCL_COMPLEX_POW_WORKS succeeded with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_COMPLEX_POW_WORKS   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVCL_COMPLEX_POW_WORKS   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the finite exist failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:20: error: ieeefp.h: No such file or directory
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ‘finite’ undeclared (first use in this function)
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: (Each undeclared identifier is reported only once
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: for each function it appears in.)
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+File /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <ieeefp.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef finite
+  cmakeRequireSymbol(0,&finite);
+#endif
+  return 0;
+}
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building C object CMakeFiles/cmTryCompileExec.dir/TestEndianess.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/TestEndianess.c.o   -c "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/TestEndianess.c"
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc         CMakeFiles/cmTryCompileExec.dir/TestEndianess.c.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing Test VCL_CHAR_IS_SIGNED succeeded with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_CHAR_IS_SIGNED   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVCL_CHAR_IS_SIGNED   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic -lm 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 8-bit int. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 16-bit int. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 16-bit int. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 32-bit int. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 64-bit int. Failed to compile with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1031: error: ‘__int64’ was not declared in this scope
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1031: error: expected primary-expression before ‘unsigned’
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1031: error: expected primary-expression before ‘signed’
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1031: error: initializer expression list treated as compound expression
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1032: error: expected ‘,’ or ‘;’ before ‘{’ token
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx: In function ‘int main()’:
+/home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx:1044: error: ‘__int64’ was not declared in this scope
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Looking for 64-bit int. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 32-bit float. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 32-bit float. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 64-bit float. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 64-bit float. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 96-bit float. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 96-bit float. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 128-bit float. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 128-bit float. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Looking for 128-bit float. Failed to run with the following output:
+(FLAGS=-DVXL_HAS_TYPE_OF_SIZE)
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVXL_HAS_TYPE_OF_SIZE -I"/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeTmp"   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVXL_HAS_TYPE_OF_SIZE   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the function tell exists failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=tell   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.6/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/gcc      -DCHECK_FUNCTION_EXISTS=tell   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lm 
+CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `tell'
+collect2: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Performing Test VCL_NUMERIC_LIMITS_HAS_INFINITY succeeded with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_NUMERIC_LIMITS_HAS_INFINITY   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVCL_NUMERIC_LIMITS_HAS_INFINITY   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic -lm 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Performing Test VCL_PROCESSOR_HAS_INFINITY succeeded with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o
+/usr/bin/c++    -DVCL_PROCESSOR_HAS_INFINITY   -o CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o -c /home/antiw/demos/vxl-1.13.0/config/cmake/config/vxl_platform_tests.cxx
+Linking CXX executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/usr/bin/c++       -DVCL_PROCESSOR_HAS_INFINITY   CMakeFiles/cmTryCompileExec.dir/vxl_platform_tests.cxx.o  -o cmTryCompileExec -rdynamic -lm 
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+
+
+Determining if the memalign exist failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o   -c "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ‘memalign’ undeclared (first use in this function)
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: (Each undeclared identifier is reported only once
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: for each function it appears in.)
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+File /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+void cmakeRequireSymbol(int dummy,...){(void)dummy;}
+int main()
+{
+#ifndef memalign
+  cmakeRequireSymbol(0,&memalign);
+#endif
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test DIRECTSHOW_SOURCE_COMPILES failed with the following output:
+Change Dir: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/CMakeFiles" 1
+Building CXX object CMakeFiles/cmTryCompileExec.dir/src.cxx.o
+/usr/bin/c++    -DDIRECTSHOW_SOURCE_COMPILES   -o CMakeFiles/cmTryCompileExec.dir/src.cxx.o -c "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/src.cxx"
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/src.cxx:2:23: error: atlbase.h: No such file or directory
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/src.cxx:3:21: error: dshow.h: No such file or directory
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/src.cxx:4:21: error: qedit.h: No such file or directory
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/src.cxx:8: error: ‘CComPtr’ was not declared in this scope
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/src.cxx:8: error: ‘IFilterGraph2’ was not declared in this scope
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/src.cxx:8: error: ‘filter_graph’ was not declared in this scope
+/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp/src.cxx:9: error: ‘CLSID_FilterGraph’ was not declared in this scope
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.cxx.o] Error 1
+make[1]: Leaving directory `/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+Source file was:
+
+  #include <atlbase.h>
+  #include <dshow.h>
+  #include <qedit.h>
+
+  int main()
+  {
+    CComPtr<IFilterGraph2> filter_graph;
+    filter_graph.CoCreateInstance(CLSID_FilterGraph);
+    return 0;
+  }
+

@@ -1,0 +1,42 @@
+# CMake generated Testfile for 
+# Source directory: /home/antiw/demos/vxl-1.13.0/contrib/mul/vil3d/tests
+# Build directory: /mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/contrib/mul/vil3d/tests
+# 
+# This file replicates the SUBDIRS() and ADD_TEST() commands from the source
+# tree CMakeLists.txt file, skipping any SUBDIRS() or ADD_TEST() commands
+# that are excluded by CMake control structures, i.e. IF() commands.
+ADD_TEST(vil3d_test_file_format_read "./vil3d_test_all" "test_file_format_read" "/home/antiw/demos/vxl-1.13.0/contrib/mul/vil3d/tests/file_read_data")
+ADD_TEST(vil3d_test_save_load_image "./vil3d_test_all" "test_save_load_image")
+ADD_TEST(vil3d_test_gen_synthetic "./vil3d_test_all" "test_gen_synthetic")
+ADD_TEST(vil3d_test_image_view "./vil3d_test_all" "test_image_view")
+ADD_TEST(vil3d_test_math "./vil3d_test_all" "test_math")
+ADD_TEST(vil3d_test_trilin_interp "./vil3d_test_all" "test_trilin_interp")
+ADD_TEST(vil3d_test_sample_profile_trilin "./vil3d_test_all" "test_sample_profile_trilin")
+ADD_TEST(vil3d_test_gauss_reduce "./vil3d_test_all" "test_gauss_reduce")
+ADD_TEST(vil3d_test_switch_axes "./vil3d_test_all" "test_switch_axes")
+ADD_TEST(vil3d_test_image_resource "./vil3d_test_all" "test_image_resource")
+ADD_TEST(vil3d_test_convert "./vil3d_test_all" "test_convert" "/home/antiw/demos/vxl-1.13.0/contrib/mul/vil3d/tests/file_read_data")
+ADD_TEST(vil3d_test_from_image_2d "./vil3d_test_all" "test_from_image_2d")
+ADD_TEST(vil3d_test_resample "./vil3d_test_all" "test_resample")
+ADD_TEST(vil3d_test_analyze_format "./vil3d_test_all" "test_analyze_format" "/home/antiw/demos/vxl-1.13.0/contrib/mul/vil3d/tests/file_read_data/analyze")
+ADD_TEST(vil3d_test_reflect "./vil3d_test_all" "test_reflect")
+ADD_TEST(vil3d_test_tricub_interp "./vil3d_test_all" "test_tricub_interp")
+ADD_TEST(vil3d_test_algo_threshold "./vil3d_test_all" "test_algo_threshold")
+ADD_TEST(vil3d_test_algo_structuring_element "./vil3d_test_all" "test_algo_structuring_element")
+ADD_TEST(vil3d_test_algo_binary_dilate "./vil3d_test_all" "test_algo_binary_dilate")
+ADD_TEST(vil3d_test_algo_binary_erode "./vil3d_test_all" "test_algo_binary_erode")
+ADD_TEST(vil3d_test_algo_exp_filter "./vil3d_test_all" "test_algo_exp_filter")
+ADD_TEST(vil3d_test_algo_grad_1x3 "./vil3d_test_all" "test_algo_grad_1x3")
+ADD_TEST(vil3d_test_algo_normalised_correlation_3d "./vil3d_test_all" "test_algo_normalised_correlation_3d")
+ADD_TEST(vil3d_test_algo_convolve_1d "./vil3d_test_all" "test_algo_convolve_1d")
+ADD_TEST(vil3d_test_algo_histogram "./vil3d_test_all" "test_algo_histogram")
+ADD_TEST(vil3d_test_algo_histogram_equalise "./vil3d_test_all" "test_algo_histogram_equalise")
+ADD_TEST(vil3d_test_algo_anisotropic_filter "./vil3d_test_all" "test_algo_anisotropic_filter")
+ADD_TEST(vil3d_test_algo_smooth_121 "./vil3d_test_all" "test_algo_smooth_121")
+ADD_TEST(vil3d_test_algo_corners "./vil3d_test_all" "test_algo_corners")
+ADD_TEST(vil3d_test_algo_quad_distance_function "./vil3d_test_all" "test_algo_quad_distance_function")
+ADD_TEST(vil3d_test_algo_distance_transform "./vil3d_test_all" "test_algo_distance_transform")
+ADD_TEST(vil3d_test_algo_abs_shuffle_distance "./vil3d_test_all" "test_algo_abs_shuffle_distance")
+ADD_TEST(vil3d_test_algo_make_distance_filter "./vil3d_test_all" "test_algo_make_distance_filter")
+ADD_TEST(vil3d_test_algo_exp_distance_transform "./vil3d_test_all" "test_algo_exp_distance_transform")
+ADD_TEST(vil3d_test_algo_find_blobs "./vil3d_test_all" "test_algo_find_blobs")

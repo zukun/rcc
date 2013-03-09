@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbgrl2_algo.a  CMakeFiles/bgrl2_algo.dir/bgrl2_algs.o
+/usr/bin/ranlib ../../../../../lib/libbgrl2_algo.a

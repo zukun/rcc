@@ -1,0 +1,92 @@
+@section Basic structure
+
+The directory structure of @vxl{x} is below
+@example
+  $VXLSRC/vcl
+          core/vnl
+              /vul
+              /vbl
+              /vil
+              /vgl
+              /vsl
+             @dots{}
+          v3p/netlib
+             /jpeg
+             @dots{}
+          config/cmake
+          contrib/
+@end example
+
+@table @samp
+@item vcl
+is the C++ compatibility layer (@pxref{vcl}).
+
+@item core
+contains the core @vxl{x} libraries.
+
+@item v3p
+(v-third-party) contains code that is available elsewhere and is used
+in implementing @vxl{x}. @code{v3p/netlib} contains cleaned-up C
+versions of the high-quality Fortran code. @code{v3p/jpeg} and others
+contain image file format code used by vil. In theory, you don't need
+any of of the v3p libraries if you have locally installed versions. In
+practice, you need @code{v3p/netlib} but not the others.  the
+
+@item config/cmake
+contains the configuration files used by the CMake build system
+(@pxref{CMake}).
+
+@end table
+
+@anchor{struct_other_packages}
+@section Other packages
+
+On the repository and some @vxl{x} distributions, you will find several other
+packages in the @samp{contrib} directory.
+
+@cindex gel
+@cindex oxl
+@cindex mul
+@cindex rpl
+@cindex brl
+@cindex tbl
+@cindex oul
+
+@table @samp
+@item gel
+Published libraries from General Electric Global Research.
+@item oxl
+Published libraries from the Robots Research
+Group at Oxford University.
+@item mul
+Published libraries from Imaging Science and Biomedical Engineering
+at the University of Manchester.
+@item rpl
+Published libraries from Rensselaer Polytechnic
+Institute
+@item brl
+Published libraries from Brown University
+@item tbl
+A set of image processing libraries.
+@item oul
+Published libraries from Otago University
+@item conversions
+A set of routines for converting between various @vxl{x} and non-@vxl{x} types.
+@end table
+
+These modules are presented as useful code, with even less guarantees
+than @vxl{x} (which is not to suggest that we guarantee anything about
+@vxl{x}).  In particular they may not work as advertised. They may not
+be documented. If you find them useful, and think they deserve full
+@vxl{x}-status please contact the library's author to see about having
+the code tidied up and promoted to @vxl{x}.
+
+You can find any overview documentation about these modules from the
+@uref{http://vxl.sourceforge.net/,vxl homepage} by following the
+``documentation'' link.
+
+@section Subversion (svn) Repository
+
+The VXL repository is provided by SourceForge---Thanks guys! The
+instructions for downloading @vxl{x} are documented at
+@url{http://vxl.sourceforge.net/#download}.

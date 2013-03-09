@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vul_psfile_example.dir/vul_psfile_example.o  -o vul_psfile_example -rdynamic ../../../lib/libvul.a ../../../lib/libvcl.a -lm 

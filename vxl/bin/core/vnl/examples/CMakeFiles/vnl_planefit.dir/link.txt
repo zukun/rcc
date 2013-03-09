@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vnl_planefit.dir/vnl_planefit.o  -o vnl_planefit -rdynamic ../../../lib/libvnl_algo.a ../../../lib/libvnl.a ../../../lib/libvul.a ../../../lib/libnetlib.a ../../../lib/libv3p_netlib.a ../../../lib/libvcl.a -lm 

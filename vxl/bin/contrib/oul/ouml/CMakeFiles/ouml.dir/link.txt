@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libouml.a  CMakeFiles/ouml.dir/eigenfaces.o CMakeFiles/ouml.dir/image_database.o CMakeFiles/ouml.dir/polygon_mesh.o CMakeFiles/ouml.dir/CardinalSpline.o
+/usr/bin/ranlib ../../../lib/libouml.a

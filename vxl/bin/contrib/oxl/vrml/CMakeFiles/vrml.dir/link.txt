@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libvrml.a  CMakeFiles/vrml.dir/vrml_out.o
+/usr/bin/ranlib ../../../lib/libvrml.a

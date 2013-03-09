@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libvpgl_file_formats.a  CMakeFiles/vpgl_file_formats.dir/vpgl_nitf_rational_camera.o CMakeFiles/vpgl_file_formats.dir/vpgl_geo_camera.o
+/usr/bin/ranlib ../../../../../lib/libvpgl_file_formats.a

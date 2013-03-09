@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/video_description.dir/video_description.o  -o video_description -rdynamic ../../../../lib/libvidl1.a ../../../../lib/libvul.a ../../../../lib/libvbl.a ../../../../lib/libvil.a -ljpeg ../../../../lib/libgeotiff.a -ltiff -lpng -lz ../../../../lib/libvcl.a -lm ../../../../lib/libmpeg2.a ../../../../lib/libvo.a 

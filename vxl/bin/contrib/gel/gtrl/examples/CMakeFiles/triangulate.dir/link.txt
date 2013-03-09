@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/triangulate.dir/triangulate.o  -o triangulate -rdynamic ../../../../lib/libgtrl.a ../../../../lib/libvbl.a ../../../../lib/libvcl.a ../../../../lib/libnetlib.a ../../../../lib/libv3p_netlib.a -lm 

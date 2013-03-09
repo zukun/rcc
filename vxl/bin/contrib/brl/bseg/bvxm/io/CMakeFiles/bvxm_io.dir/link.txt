@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbvxm_io.a  CMakeFiles/bvxm_io.dir/bvxm_io_voxel_world.o CMakeFiles/bvxm_io.dir/bvxm_io_world_params.o CMakeFiles/bvxm_io.dir/Templates/vbl_io_smart_ptr+bvxm_voxel_world-.o
+/usr/bin/ranlib ../../../../../lib/libbvxm_io.a

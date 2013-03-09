@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/expand_path.dir/expand_path.o  -o expand_path -rdynamic ../../../lib/libvul.a ../../../lib/libvcl.a -lm 

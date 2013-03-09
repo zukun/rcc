@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/antiw/demos/vxl-1.13.0/contrib/tbl/vipl/filter/vipl_filter_abs.cxx
+vipl_filter_abs.h
+/home/antiw/demos/vxl-1.13.0/contrib/tbl/vipl/filter/vipl_filter_abs.h
+
+/home/antiw/demos/vxl-1.13.0/contrib/tbl/vipl/filter/vipl_filter_abs.h
+

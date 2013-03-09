@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbgeo.a  CMakeFiles/bgeo.dir/bgeo_lvcs.o CMakeFiles/bgeo.dir/bgeo_datum_conversion.o CMakeFiles/bgeo.dir/bgeo_utm.o CMakeFiles/bgeo.dir/Templates/vbl_smart_ptr+bgeo_lvcs-.o
+/usr/bin/ranlib ../../../../../lib/libbgeo.a

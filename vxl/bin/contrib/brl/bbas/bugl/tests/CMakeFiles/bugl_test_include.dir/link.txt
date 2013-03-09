@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/bugl_test_include.dir/test_include.o  -o bugl_test_include -rdynamic ../../../../../lib/libbugl.a ../../../../../lib/libvgl_algo.a ../../../../../lib/libvnl_algo.a ../../../../../lib/libvnl.a ../../../../../lib/libnetlib.a ../../../../../lib/libv3p_netlib.a ../../../../../lib/libvgl.a ../../../../../lib/libvbl.a ../../../../../lib/libvcl.a -lm 

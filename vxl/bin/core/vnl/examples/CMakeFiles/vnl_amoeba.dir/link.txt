@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vnl_amoeba.dir/vnl_amoeba.o  -o vnl_amoeba -rdynamic ../../../lib/libvnl_algo.a ../../../lib/libvnl.a ../../../lib/libvul.a ../../../lib/libnetlib.a ../../../lib/libv3p_netlib.a ../../../lib/libvcl.a -lm 

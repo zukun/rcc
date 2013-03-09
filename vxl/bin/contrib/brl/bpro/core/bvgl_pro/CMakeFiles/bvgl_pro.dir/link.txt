@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbvgl_pro.a  CMakeFiles/bvgl_pro.dir/bvgl_register.o CMakeFiles/bvgl_pro.dir/processes/bvgl_generate_mask_process.o
+/usr/bin/ranlib ../../../../../lib/libbvgl_pro.a

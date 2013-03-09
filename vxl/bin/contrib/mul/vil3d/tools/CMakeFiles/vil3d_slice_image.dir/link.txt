@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil3d_slice_image.dir/vil3d_slice_image.o  -o vil3d_slice_image -rdynamic ../../../../lib/libvil3d.a ../../../../lib/libvil.a -ljpeg ../../../../lib/libgeotiff.a -ltiff -lpng -lz ../../../../lib/libvul.a ../../../../lib/libvsl.a ../../../../lib/libvnl.a ../../../../lib/libvcl.a -lm 

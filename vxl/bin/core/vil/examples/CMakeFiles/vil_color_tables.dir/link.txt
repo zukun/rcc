@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil_color_tables.dir/vil_color_tables.o  -o vil_color_tables -rdynamic ../../../lib/libvil.a ../../../lib/libvcl.a -lm -ljpeg ../../../lib/libgeotiff.a -ltiff -lpng -lz 

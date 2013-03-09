@@ -1,0 +1,1 @@
+/usr/bin/gcc       CMakeFiles/netlib_lsqr_test.dir/lsqr-test.o  -o netlib_lsqr_test -rdynamic ../../../lib/libv3p_netlib.a -lm 

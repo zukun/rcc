@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libexpatpp.a  CMakeFiles/expatpp.dir/expatpp.o
+/usr/bin/ranlib ../../../../lib/libexpatpp.a

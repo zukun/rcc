@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libouel.a  CMakeFiles/ouel.dir/kalman_filter.o
+/usr/bin/ranlib ../../../lib/libouel.a

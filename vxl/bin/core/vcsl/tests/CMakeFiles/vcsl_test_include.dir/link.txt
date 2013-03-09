@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vcsl_test_include.dir/test_include.o  -o vcsl_test_include -rdynamic ../../../lib/libvcsl.a ../../../lib/libvnl.a ../../../lib/libtestlib.a ../../../lib/libvcsl.a ../../../lib/libvnl.a ../../../lib/libvbl.a ../../../lib/libvcl.a -lm 

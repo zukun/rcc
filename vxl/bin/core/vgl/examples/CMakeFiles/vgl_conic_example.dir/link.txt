@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vgl_conic_example.dir/vgl_conic_example.o  -o vgl_conic_example -rdynamic ../../../lib/libvgl_algo.a ../../../lib/libvgl.a ../../../lib/libvnl_algo.a ../../../lib/libnetlib.a ../../../lib/libv3p_netlib.a ../../../lib/libvnl.a ../../../lib/libvcl.a -lm 

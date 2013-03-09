@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../../lib/libbvxm_grid_io.a  CMakeFiles/bvxm_grid_io.dir/bvxm_io_voxel_slab_base.o CMakeFiles/bvxm_grid_io.dir/bvxm_io_voxel_grid_base.o CMakeFiles/bvxm_grid_io.dir/bvxm_io_voxel_grid.o CMakeFiles/bvxm_grid_io.dir/bvxm_slab_to_image.o CMakeFiles/bvxm_grid_io.dir/bvxm_grid_to_image_stack.o CMakeFiles/bvxm_grid_io.dir/Templates/vbl_io_smart_ptr+bvxm_voxel_grid_base-.o CMakeFiles/bvxm_grid_io.dir/Templates/vbl_io_smart_ptr+bvxm_voxel_slab_base-.o
+/usr/bin/ranlib ../../../../../../lib/libbvxm_grid_io.a

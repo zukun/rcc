@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbpro_batch.a  CMakeFiles/bpro_batch.dir/bpro_batch.o
+/usr/bin/ranlib ../../../../lib/libbpro_batch.a

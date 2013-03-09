@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libipts.a  CMakeFiles/ipts.dir/ipts_local_entropy.o CMakeFiles/ipts.dir/ipts_corner_pyramid.o CMakeFiles/ipts.dir/ipts_entropy_pyramid.o CMakeFiles/ipts.dir/ipts_orientation_pyramid.o
+/usr/bin/ranlib ../../../lib/libipts.a

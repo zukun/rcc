@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root some_attribute="some value">
+   <empty amount="2.3" />
+   <non_empty value="16">This element contains some text</non_empty>
+</root>

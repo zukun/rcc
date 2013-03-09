@@ -1,0 +1,1 @@
+/usr/bin/gcc       CMakeFiles/netlib_slamch_test.dir/slamch-test.o  -o netlib_slamch_test -rdynamic ../../../lib/libv3p_netlib.a -lm 

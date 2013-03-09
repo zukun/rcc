@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vidl1_mpegcodec_example.dir/vidl1_mpegcodec_example.o  -o vidl1_mpegcodec_example -rdynamic ../../../lib/libvidl1.a ../../../lib/libvbl.a ../../../lib/libvul.a ../../../lib/libvil.a -ljpeg ../../../lib/libgeotiff.a -ltiff -lpng -lz ../../../lib/libvcl.a -lm ../../../lib/libmpeg2.a ../../../lib/libvo.a 

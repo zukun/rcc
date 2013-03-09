@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libgst.a  CMakeFiles/gst.dir/gst_edge_2d.o CMakeFiles/gst.dir/gst_face_2d.o CMakeFiles/gst.dir/gst_polygon_2d.o CMakeFiles/gst.dir/gst_polygon_2d_operators.o CMakeFiles/gst.dir/gst_vertex_2d.o CMakeFiles/gst.dir/Templates/vbl_smart_ptr+gst_edge_2d-.o CMakeFiles/gst.dir/Templates/vbl_smart_ptr+gst_polygon_2d-.o CMakeFiles/gst.dir/Templates/vbl_smart_ptr+gst_vertex_2d-.o
+/usr/bin/ranlib ../../../lib/libgst.a

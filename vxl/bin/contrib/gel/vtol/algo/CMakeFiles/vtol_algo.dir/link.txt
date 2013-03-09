@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libvtol_algo.a  CMakeFiles/vtol_algo.dir/vtol_extract_topology.o CMakeFiles/vtol_algo.dir/Templates/vbl_smart_ptr+vtol_extract_topology_edgel_chain-.o CMakeFiles/vtol_algo.dir/Templates/vbl_smart_ptr+vtol_extract_topology_region_type-.o CMakeFiles/vtol_algo.dir/Templates/vtol_extract_topology+vxl_uint_16-.o
+/usr/bin/ranlib ../../../../lib/libvtol_algo.a

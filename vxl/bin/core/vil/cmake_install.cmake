@@ -1,0 +1,533 @@
+# Install script for directory: /home/antiw/demos/vxl-1.13.0/core/vil
+
+# Set the install prefix
+IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
+STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+
+# Set the install configuration name.
+IF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  IF(BUILD_TYPE)
+    STRING(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
+           CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
+  ELSE(BUILD_TYPE)
+    SET(CMAKE_INSTALL_CONFIG_NAME "")
+  ENDIF(BUILD_TYPE)
+  MESSAGE(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
+ENDIF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+
+# Set the component getting installed.
+IF(NOT CMAKE_INSTALL_COMPONENT)
+  IF(COMPONENT)
+    MESSAGE(STATUS "Install component: \"${COMPONENT}\"")
+    SET(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
+  ELSE(COMPONENT)
+    SET(CMAKE_INSTALL_COMPONENT)
+  ENDIF(COMPONENT)
+ENDIF(NOT CMAKE_INSTALL_COMPONENT)
+
+# Install shared libraries without execute permission?
+IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/core/vil/vil_config.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_png.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_jpeglib.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_jpeg.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_jpeg_source_mgr.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_jpeg_decompressor.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_jpeg_destination_mgr.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_jpeg_compressor.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_tiff.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_tiff_header.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_geotiff_header.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_memory_chunk.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_image_view_base.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_chord.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_image_view.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_image_view.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_image_resource.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_image_resource_sptr.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_blocked_image_resource.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_blocked_image_resource_sptr.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_blocked_image_facade.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_file_format.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_memory_image.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_block_cache.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_cached_image_resource.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_pyramid_image_resource.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_pyramid_image_resource_sptr.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_image_list.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_pnm.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_bmp_file_header.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_bmp_core_header.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_bmp_info_header.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_bmp.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_ras.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_iris.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_mit.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_viff.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_viff_support.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_viffheader.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_image.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_header.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_image_subheader.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_des.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_array_field.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_classification.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_compound_field_value.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_data_mask_table.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_field.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_field_definition.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_field_formatter.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_field_functor.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_field_sequence.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_index_vector.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_scalar_field.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_tagged_record.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_tagged_record_definition.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_typed_array_field.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_typed_scalar_field.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_nitf2_typed_field_formatter.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil/file_formats" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/file_formats/vil_pyramid_image_list.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_crop.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_clamp.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_transpose.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_flip.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_plane.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_math.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_view_as.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_convert.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_fill.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_transform.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_decimate.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_load.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_save.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_copy.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_copy.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_new.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_print.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_warp.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_flatten.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_bilin_interp.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_sample_profile_bilin.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_sample_profile_bilin.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_sample_grid_bilin.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_sample_grid_bilin.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_resample_bilin.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_resample_bilin.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_rotate.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_rotate.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_bicub_interp.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_bicub_interp.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_sample_profile_bicub.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_sample_profile_bicub.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_sample_grid_bicub.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_sample_grid_bicub.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_resample_bicub.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_resample_bicub.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_nearest_interp.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_resample_nearest.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_resample_nearest.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_border.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_smart_ptr.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_smart_ptr.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_property.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_pixel_format.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_exception.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_rgb.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_rgb.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_rgba.txx")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_rgba.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_color_table.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_fwd.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_round.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_stream.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_stream_fstream.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_stream_core.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_stream_section.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_open.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_stream_read.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_stream_write.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_image_resource_plugin.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/vxl/core/vil" TYPE FILE FILES "/home/antiw/demos/vxl-1.13.0/core/vil/vil_stream_url.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/lib/libvil.a")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
+
+IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  INCLUDE("/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/core/vil/examples/cmake_install.cmake")
+  INCLUDE("/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/core/vil/tests/cmake_install.cmake")
+
+ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+

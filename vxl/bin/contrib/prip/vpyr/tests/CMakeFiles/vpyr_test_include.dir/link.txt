@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vpyr_test_include.dir/test_include.o  -o vpyr_test_include -rdynamic ../../../../lib/libvpyr.a ../../../../lib/libvmap.a ../../../../lib/libvcl.a -lm 

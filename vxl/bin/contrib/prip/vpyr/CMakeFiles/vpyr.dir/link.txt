@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libvpyr.a  CMakeFiles/vpyr.dir/vpyr_2_pyramid_base.o CMakeFiles/vpyr.dir/vpyr_2_tpyramid_base.o
+/usr/bin/ranlib ../../../lib/libvpyr.a

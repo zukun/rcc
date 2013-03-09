@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbmdl.a  CMakeFiles/bmdl.dir/bmdl_mesh.o CMakeFiles/bmdl.dir/Templates/bmdl_classify+double-.o CMakeFiles/bmdl.dir/Templates/bmdl_classify+float-.o
+/usr/bin/ranlib ../../../../lib/libbmdl.a

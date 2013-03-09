@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../lib/libvo.a  CMakeFiles/vo.dir/libvo/video_out.o CMakeFiles/vo.dir/libvo/video_out_null.o CMakeFiles/vo.dir/libvo/video_out_pgm.o CMakeFiles/vo.dir/libvo/yuv2rgb.o CMakeFiles/vo.dir/libvo/yuv2rgb_mlib.o CMakeFiles/vo.dir/libvo/yuv2rgb_mmx.o
+/usr/bin/ranlib ../../lib/libvo.a

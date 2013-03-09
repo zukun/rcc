@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libvpgl_xio.a  CMakeFiles/vpgl_xio.dir/Templates/vpgl_xio_calibration_matrix+double-.o
+/usr/bin/ranlib ../../../../../lib/libvpgl_xio.a

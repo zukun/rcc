@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vipl_example3_threshold.dir/example3_threshold.o  -o vipl_example3_threshold -rdynamic ../../../../lib/libvipl.a ../../../../lib/libvnl.a ../../../../lib/libvil.a ../../../../lib/libgeotiff.a ../../../../lib/libvil1.a ../../../../lib/libvcl.a -lm -ljpeg -ltiff -lpng -lz 

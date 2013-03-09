@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbmsh3d_algo.a  CMakeFiles/bmsh3d_algo.dir/bmsh3d_fileio.o CMakeFiles/bmsh3d_algo.dir/bmsh3d_fileio_ply.o CMakeFiles/bmsh3d_algo.dir/bmsh3d_mesh_triangulate.o CMakeFiles/bmsh3d_algo.dir/bmsh3d_mesh_tri.o CMakeFiles/bmsh3d_algo.dir/bmsh3d_mesh_bnd.o
+/usr/bin/ranlib ../../../../../lib/libbmsh3d_algo.a

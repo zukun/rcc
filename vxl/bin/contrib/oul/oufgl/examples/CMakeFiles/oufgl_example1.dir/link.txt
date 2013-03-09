@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/oufgl_example1.dir/example1.o  -o oufgl_example1 -rdynamic ../../../../lib/liboufgl.a ../../../../lib/libvil1.a ../../../../lib/libvul.a ../../../../lib/libvil.a -ljpeg -lpng -lz ../../../../lib/libgeotiff.a -ltiff -lrt ../../../../lib/libvcl.a -lm 

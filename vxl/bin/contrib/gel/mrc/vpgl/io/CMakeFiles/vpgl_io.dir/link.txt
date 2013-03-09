@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libvpgl_io.a  CMakeFiles/vpgl_io.dir/Templates/vbl_io_smart_ptr+vpgl_camera+double--.o CMakeFiles/vpgl_io.dir/Templates/vpgl_io_camera+double-.o
+/usr/bin/ranlib ../../../../../lib/libvpgl_io.a

@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vbl_smart_ptr_example.dir/vbl_smart_ptr_example.o  -o vbl_smart_ptr_example -rdynamic ../../../lib/libvbl_example_templates.a ../../../lib/libvbl.a ../../../lib/libvcl.a -lm 

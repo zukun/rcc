@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vul_test_include.dir/test_include.o  -o vul_test_include -rdynamic ../../../lib/libvul.a ../../../lib/libvcl.a -lm 

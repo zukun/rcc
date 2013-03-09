@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vidl1_test_include.dir/test_include.o  -o vidl1_test_include -rdynamic ../../../lib/libvidl1.a ../../../lib/libvbl.a ../../../lib/libvul.a ../../../lib/libvil.a -ljpeg ../../../lib/libgeotiff.a -ltiff -lpng -lz ../../../lib/libvcl.a -lm ../../../lib/libmpeg2.a ../../../lib/libvo.a 

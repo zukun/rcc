@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Install VXL 1.13 release</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    <style type="text/css">
+      body { color: black ; background-color: white }
+    </style>
+  </head>
+
+<body>
+
+<h1>Installing the <a href="http://vxl.sourceforge.net/"><img alt="VXL" src="../logo1-quant.gif" border="0" width="128" height="48"/></a> 1.13 release</h1>
+
+<hr/>
+
+<h2><a name="unix-build">Configuration</a></h2>
+
+<p>
+The most common build system used for VXL is <a href="http://www.cmake.org/">CMake</a>.
+You should first download and install CMake. VXL requires CMake version 2.6.3 or higher.
+</p>
+
+<p>
+Extract the VXL source into the directory <b>vxl-1.13</b>. Create a
+separate output directory <b>bin</b> parallel to the source directory:
+</p>
+<pre>
+   .../.../... ---+--- vxl-1.13 ---+--- vxl
+                  |                     |
+                  |                     +--- vcl
+                  |                     ...
+                  |
+                  +--- bin
+</pre>
+
+<p>
+Let us call the former <code>$VXLSRC</code> and the latter <code>$VXLBIN</code>.
+</p>
+
+<p>
+Change current directory to <code>$VXLBIN</code> and run CMake, specifying <code>$VXLSRC</code>
+as the source directory.
+</p>
+<dl>
+<dt><b>Unix and Cygwin:</b></dt>
+  <dd>Run the Curses based front-end
+    <pre>
+      ccmake $VXLSRC
+    </pre>
+    or the command line front-end
+    <pre>
+      cmake -i $VXLSRC
+    </pre>
+  </dd>
+<dt><b>Windows:</b></dt>
+  <dd>Run CMakeSetup and specify the source and binary directories as <code>$VXLSRC</code> and
+      <code>$VXLBIN</code>, respectively. In the box on the upper right, choose the build system you use.
+  </dd>
+</dl>
+<p>
+Repeatedly select "Configure" ("C" on Unix) until the entries stop
+changing and you get the chance to generate the makefiles ("OK" on
+Windows, and "G" on Unix).
+<br/>
+You may ignore any "something-NOTFOUND" message since these refer to optional components.
+But if you are sure that one of these components is present on your system, manually fill in the correct path and re-run configure.
+</p>
+
+<p>
+In the CMake interface, you can choose which parts of the VXL tree to
+build. The default is to build everything except vgui and its
+dependents. Building vgui requires the presence of OpenGL and
+GLU. Often, these are in a platform specific area of the machine, and
+hence cannot be detected by CMake. If you have these on your system,
+and wish to build vgui, set BUILD_VGUI to "ON" and make sure the
+appropriate entries in the CMake cache are valid. With Windows, the
+required libraries (MFC and OpenGL) are shipped with the operating
+system, so you should be able to build vgui without any issues.
+</p>
+
+<h2>Build</h2>
+
+<p>
+Now you can build the libraries.
+</p>
+<dl>
+<dt><b>Unix or Cygwin:</b></dt>
+  <dd>Run make
+    <pre>
+      make
+    </pre>
+  </dd>
+<dt><b>Windows and MSVC:</b></dt>
+  <dd>Build VXL by loading the <code>$VXLBIN\vxl.dsw</code> into Developer Studio and
+      building the ALL_BUILD target. This project is a little larger than Developer
+      Studio can sometimes cope with, so you can do a full build from the command line:
+    <pre>
+      vcvars32.bat
+      msdev vxl.dsw /MAKE "ALL_BUILD - Win32 Debug"
+    </pre>
+    Or the speedier release version
+    <pre>
+      msdev vxl.dsw /MAKE "ALL_BUILD - Win32 Release"
+    </pre>
+  </dd>
+<dt><b>Windows and Visual Studio 7 and above:</b></dt>
+  <dd>Build VXL by loading the <code>$VXLBIN\vxl.sln</code> into Developer Studio and
+      building the ALL_BUILD target.
+  </dd>
+</dl>
+
+<h2>Test</h2>
+
+<p>
+You can run the test suite using the <code>ctest</code> program that came with CMake
+</p>
+<hr/>
+
+<h2><a name="docs">Documentation</a></h2>
+
+See the <a href="../index.html#docs">documentation</a> section on the main page.
+
+<h2>Problems and where to get help</h2>
+
+<p>
+Have a look through the <a href="http://vxl.sourceforge.net/build-faq.html">Build FAQ</a>.
+</p>
+
+<p>
+If you think you have found a bug, or if you have an installation or build problem, please submit a bug
+report on the <a href="http://lists.sourceforge.net/lists/listinfo/vxl-users">vxl-users
+mailing list</a>. Also supply the following information unless you know for certain it is not relevant:
+</p>
+<ul>
+<li> Exactly what you did and exactly what goes wrong. Be verbose. We need to know this in order to help.
+     If you have problems configuring VXL, include the options you gave to configure and the output it
+     produced. If you have problems compiling VXL, include the command the makefiles issued, as well as
+     the entire error message. </li>
+<li> Compiler and <i>compiler version number</i>. For gcc, this means we want the output of the
+     two shell commands &quot;<code>gcc -v</code>&quot; and &quot;<code>g++ -v</code>&quot;
+     (yes, both, please - they have been known to differ). For other
+     compilers try <code>-V</code>, <code>-ver</code>, <code>--version</code> or read the manual. </li>
+<li> Operating system (e.g. linux/solaris/irix) and architecture (e.g. i386/sparc/mips). </li>
+</ul>
+
+<hr/>
+  <address>
+   <a href="http://validator.w3.org/check?uri=referer"><img src="../valid-html401.png" height="31" width="88" align="right" border="0" alt="Valid HTML 4.01 Transitional"/></a>
+   <font color="blue">vxl-maintainers&nbsp;at&nbsp;lists&nbsp;dot&nbsp;sourceforge&nbsp;dot&nbsp;net</font>
+  <br/>
+   Hosted by <a href="http://sourceforge.net/"><img src="../sflogo.png" alt="SourceForge Logo" align="middle" border="0"/></a>
+  </address>
+
+  </body>
+</html>

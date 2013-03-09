@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil1_print_section.dir/vil1_print_section.o  -o vil1_print_section -rdynamic ../../../lib/libvil1.a ../../../lib/libvul.a -ljpeg -ltiff -lpng -lz ../../../lib/libvcl.a -lm 

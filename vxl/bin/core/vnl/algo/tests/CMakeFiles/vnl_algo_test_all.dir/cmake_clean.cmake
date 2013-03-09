@@ -1,0 +1,43 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/vnl_algo_test_all.dir/test_driver.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_util.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_algo.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_amoeba.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_cholesky.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_complex_eigensystem.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_convolve.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_cpoly_roots.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_determinant.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_fft.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_fft1d.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_fft2d.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_functions.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_generalized_eigensystem.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_ldl_cholesky.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_levenberg_marquardt.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_matrix_update.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_minimizers.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_powell.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_qr.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_qsvd.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_rank.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_real_eigensystem.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_rnpoly_roots.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_rpoly_roots.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_sparse_matrix.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_svd.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_symmetric_eigensystem.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_integral.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_solve_qp.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_sparse_lu.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_bracket_minimum.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_brent_minimizer.o"
+  "CMakeFiles/vnl_algo_test_all.dir/test_sparse_lm.o"
+  "vnl_algo_test_all.pdb"
+  "vnl_algo_test_all"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/vnl_algo_test_all.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

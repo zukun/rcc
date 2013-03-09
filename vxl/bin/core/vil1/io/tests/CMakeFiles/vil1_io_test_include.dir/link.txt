@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil1_io_test_include.dir/test_include.o  -o vil1_io_test_include -rdynamic ../../../../lib/libvil1_io.a ../../../../lib/libvil1.a -ljpeg -ltiff -lpng -lz ../../../../lib/libvsl.a ../../../../lib/libvcl.a -lm 

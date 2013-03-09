@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/bnl_test_all.dir/test_driver.o  -o bnl_test_all -rdynamic ../../../../../lib/libbnl.a ../../../../../lib/libtestlib.a ../../../../../lib/libvnl_algo.a ../../../../../lib/libvnl.a ../../../../../lib/libnetlib.a ../../../../../lib/libv3p_netlib.a ../../../../../lib/libvcl.a -lm 

@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vipl_example_sobel.dir/example_sobel.o  -o vipl_example_sobel -rdynamic ../../../../lib/libvipl.a ../../../../lib/libvbl.a ../../../../lib/libvil.a ../../../../lib/libgeotiff.a ../../../../lib/libvil1.a -ljpeg -ltiff -lpng -lz ../../../../lib/libvnl.a ../../../../lib/libvcl.a -lm 

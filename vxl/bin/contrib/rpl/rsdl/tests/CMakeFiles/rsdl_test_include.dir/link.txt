@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/rsdl_test_include.dir/test_include.o  -o rsdl_test_include -rdynamic ../../../../lib/librsdl.a ../../../../lib/libvnl.a ../../../../lib/libvbl.a ../../../../lib/libvcl.a -lm 

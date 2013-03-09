@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/testlib_test_all.dir/test_driver.o CMakeFiles/testlib_test_all.dir/test_assert.o CMakeFiles/testlib_test_all.dir/test_macros.o CMakeFiles/testlib_test_all.dir/test_args.o CMakeFiles/testlib_test_all.dir/test_root_dir.o  -o testlib_test_all -rdynamic ../../../lib/libtestlib.a ../../../lib/libvcl.a -lm 

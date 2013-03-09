@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg height="800" viewBox="0,0,400,800" width="400" xmlns="http://www.w3.org/2000/svg">
+<text font-size="15" transform="translate(10,15) ">[  0,  1,  0, 0]</text>
+<text font-size="15" transform="translate(10,30) ">[  0,  1,  0,0.79]</text>
+<text font-size="15" transform="translate(10,45) ">[  0,  1,  0,1.6]</text>
+<text font-size="15" transform="translate(10,60) ">[  0,  1,  0,2.4]</text>
+<text font-size="15" transform="translate(10,75) ">[  0,  1,  0,3.1]</text>
+<text font-size="15" transform="translate(10,90) ">[  0,  1,  0,3.9]</text>
+<text font-size="15" transform="translate(10,105) ">[  0,  1,  0,4.7]</text>
+<text font-size="15" transform="translate(10,120) ">[  0,  1,  0,5.5]</text>
+</svg>

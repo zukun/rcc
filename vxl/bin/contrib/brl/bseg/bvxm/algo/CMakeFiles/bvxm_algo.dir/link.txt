@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbvxm_algo.a  CMakeFiles/bvxm_algo.dir/bvxm_merge_mog.o CMakeFiles/bvxm_algo.dir/Templates/bvxm_mog_norm+float-.o
+/usr/bin/ranlib ../../../../../lib/libbvxm_algo.a

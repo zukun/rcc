@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg height="500" viewBox="0,0,500,500" width="500" xmlns="http://www.w3.org/2000/svg">
+<g fill="red" stroke="black">
+<path d="M200,200 380,200 A180,180 0 0,0 231.382,22.7568 z" />
+</g>
+<g fill="blue" stroke="black">
+<path d="M200,200 168.9,22.707 A180,180 0 0,0 44.235,109.793 z" />
+</g>
+<g fill="#FFFF00" stroke="black">
+<path d="M200,200 22.6823,230.959 A180,180 0 0,0 199.57,379.999 z" />
+</g>
+<g fill="#FFFFC8" stroke="black">
+<path d="M200,200 111.341,215.479 A90,90 0 0,0 199.785,290 z" />
+</g>
+</svg>

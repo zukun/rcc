@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/antiw/demos/vxl-1.13.0/v3p/netlib/triangle.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+math.h
+-
+math.h
+-
+sys/time.h
+-
+triangle.h
+/home/antiw/demos/vxl-1.13.0/v3p/netlib/triangle.h
+stdlib.h
+-
+stddef.h
+-
+stdlib.h
+-
+sys/types.h
+-
+stdint.h
+-
+inttypes.h
+-
+
+/home/antiw/demos/vxl-1.13.0/v3p/netlib/triangle.h
+

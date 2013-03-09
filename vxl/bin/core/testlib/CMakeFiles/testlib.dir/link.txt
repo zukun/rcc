@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../lib/libtestlib.a  CMakeFiles/testlib.dir/testlib_test.o CMakeFiles/testlib.dir/testlib_main.o CMakeFiles/testlib.dir/testlib_root_dir.o
+/usr/bin/ranlib ../../lib/libtestlib.a

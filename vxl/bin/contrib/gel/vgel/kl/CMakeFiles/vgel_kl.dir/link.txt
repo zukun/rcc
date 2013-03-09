@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libvgel_kl.a  CMakeFiles/vgel_kl.dir/convolve.o CMakeFiles/vgel_kl.dir/klt.o CMakeFiles/vgel_kl.dir/pnmio.o CMakeFiles/vgel_kl.dir/selectGoodFeatures.o CMakeFiles/vgel_kl.dir/trackFeatures.o CMakeFiles/vgel_kl.dir/error.o CMakeFiles/vgel_kl.dir/klt_util.o CMakeFiles/vgel_kl.dir/pyramid.o CMakeFiles/vgel_kl.dir/storeFeatures.o CMakeFiles/vgel_kl.dir/writeFeatures.o
+/usr/bin/ranlib ../../../../lib/libvgel_kl.a

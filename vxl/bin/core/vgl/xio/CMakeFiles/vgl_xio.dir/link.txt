@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libvgl_xio.a  CMakeFiles/vgl_xio.dir/Templates/vgl_xio_box_3d+double-.o CMakeFiles/vgl_xio.dir/Templates/vgl_xio_point_2d+double-.o CMakeFiles/vgl_xio.dir/Templates/vgl_xio_point_2d+float-.o CMakeFiles/vgl_xio.dir/Templates/vgl_xio_point_2d+int-.o CMakeFiles/vgl_xio.dir/Templates/vgl_xio_point_3d+double-.o CMakeFiles/vgl_xio.dir/Templates/vgl_xio_vector_3d+double-.o
+/usr/bin/ranlib ../../../lib/libvgl_xio.a

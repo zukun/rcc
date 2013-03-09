@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/liboufgl.a  CMakeFiles/oufgl.dir/frame_grabber_v4l.o CMakeFiles/oufgl.dir/frame_grabber_vil.o
+/usr/bin/ranlib ../../../lib/liboufgl.a

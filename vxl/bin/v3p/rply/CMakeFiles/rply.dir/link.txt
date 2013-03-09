@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../lib/librply.a  CMakeFiles/rply.dir/rply.o
+/usr/bin/ranlib ../../lib/librply.a

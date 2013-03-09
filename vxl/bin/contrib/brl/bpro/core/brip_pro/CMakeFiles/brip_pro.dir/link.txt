@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbrip_pro.a  CMakeFiles/brip_pro.dir/brip_register.o CMakeFiles/brip_pro.dir/processes/brip_extrema_process.o
+/usr/bin/ranlib ../../../../../lib/libbrip_pro.a

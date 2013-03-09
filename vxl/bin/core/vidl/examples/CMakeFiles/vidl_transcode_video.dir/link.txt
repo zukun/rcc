@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vidl_transcode_video.dir/vidl_transcode_video.o  -o vidl_transcode_video -rdynamic ../../../lib/libvidl.a ../../../lib/libvul.a ../../../lib/libvil.a ../../../lib/libvcl.a -lm -ljpeg ../../../lib/libgeotiff.a -ltiff -lpng -lz 

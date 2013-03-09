@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/testlib_test_link.dir/test_link.o  -o testlib_test_link -rdynamic ../../../lib/libtestlib.a ../../../lib/libvcl.a -lm 

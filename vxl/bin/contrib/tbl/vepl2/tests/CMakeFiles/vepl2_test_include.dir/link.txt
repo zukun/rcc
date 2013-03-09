@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vepl2_test_include.dir/test_include.o  -o vepl2_test_include -rdynamic ../../../../lib/libvepl2.a ../../../../lib/libvipl.a ../../../../lib/libvil1.a ../../../../lib/libvnl.a ../../../../lib/libvil.a -ljpeg ../../../../lib/libgeotiff.a -ltiff -lpng -lz ../../../../lib/libvcl.a -lm 

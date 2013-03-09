@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbmsh3d_pro.a  CMakeFiles/bmsh3d_pro.dir/bmsh3d_cmdpara.o
+/usr/bin/ranlib ../../../../../lib/libbmsh3d_pro.a

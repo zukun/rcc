@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vpyr_test2.dir/vpyr_test2.o CMakeFiles/vpyr_test2.dir/my_pyramid.o CMakeFiles/vpyr_test2.dir/my_top_level.o  -o vpyr_test2 -rdynamic ../../../../lib/libvpyr.a ../../../../lib/libvmap.a ../../../../lib/libvcl.a -lm 

@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vxl_echo.dir/vxl_echo.o  -o vxl_echo -rdynamic ../../lib/libvcl.a -lm 

@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbsta_vis.a  CMakeFiles/bsta_vis.dir/bsta_svg_tools.o
+/usr/bin/ranlib ../../../../../lib/libbsta_vis.a

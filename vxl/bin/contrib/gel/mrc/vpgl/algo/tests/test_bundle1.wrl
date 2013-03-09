@@ -1,0 +1,50 @@
+#VRML V2.0 utf8
+
+Viewpoint {
+  position    8 0 8
+  orientation 0.678598 0.678598 -0.281085 2.59356
+  fieldOfView 0.501235
+  description "Camera0"
+}
+Viewpoint {
+  position    10 10 0
+  orientation 0.281085 0.678598 -0.678598 2.59356
+  fieldOfView 0.501235
+  description "Camera1"
+}
+Viewpoint {
+  position    7 7 7
+  orientation 0.345235 0.833472 -0.431437 2.78791
+  fieldOfView 0.501235
+  description "Camera2"
+}
+Viewpoint {
+  position    0 -15 -2
+  orientation 1 0 0 1.43824
+  fieldOfView 0.501235
+  description "Camera3"
+}
+Viewpoint {
+  position    5 0 0
+  orientation 0.57735 0.57735 -0.57735 2.0944
+  fieldOfView 0.501235
+  description "Camera4"
+}
+Shape {
+  appearance NULL
+    geometry PointSet {
+      color Color { color [1 0 0] }
+      coord Coordinate{
+       point[
+0 0 0
+0 0 1
+0 1 0
+0 1 1
+1 0 0
+1 0 1
+1 1 0
+1 1 1
+   ]
+  }
+ }
+}

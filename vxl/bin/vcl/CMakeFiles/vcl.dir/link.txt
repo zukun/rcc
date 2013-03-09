@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../lib/libvcl.a  CMakeFiles/vcl.dir/vcl_deprecated.o CMakeFiles/vcl.dir/vcl_cmath.o CMakeFiles/vcl.dir/vcl_cassert.o CMakeFiles/vcl.dir/vcl_cstdlib.o CMakeFiles/vcl.dir/emulation/vcl_limits.o CMakeFiles/vcl.dir/emulation/vcl_string_instances.o CMakeFiles/vcl.dir/emulation/vcl_rbtree_instances.o CMakeFiles/vcl.dir/emulation/vcl_hashtable.o CMakeFiles/vcl.dir/emulation/vcl_alloc.o
+/usr/bin/ranlib ../lib/libvcl.a

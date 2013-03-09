@@ -1,0 +1,31 @@
+# oxl/apps/glmovie/CMakeLists.txt
+
+INCLUDE(${CMAKE_ROOT}/Modules/FindGLUT.cmake)
+INCLUDE(${CMAKE_ROOT}/Modules/FindOpenGL.cmake)
+INCLUDE(${CMAKE_ROOT}/Modules/FindMPEG2.cmake)
+
+LINK_LIBRARIES( oxp vidl_vil1 vil1 vnl vul )
+
+IF(MPEG2_FOUND)
+  LINK_LIBRARIES( ${MPEG2_LIBRARIES} )
+  ADD_DEFINITIONS(-DHAS_MPEG2)
+ENDIF(MPEG2_FOUND)
+
+IF(WIN32)
+  LINK_LIBRARIES( vfw32 )
+ENDIF(WIN32)
+
+ADD_EXECUTABLE( vobgetframe vobgetframe.cxx )
+INSTALL_TARGETS( /bin vobgetframe )
+
+IF(OPENGL_FOUND)
+  INCLUDE_DIRECTORIES( ${OPENGL_INCLUDE_DIR} )
+
+  IF (GLUT_FOUND)
+    INCLUDE_DIRECTORIES( ${GLUT_INCLUDE_DIR} )
+    ADD_EXECUTABLE( oxl_glmovie glmovie.cxx make_index.cxx )
+    INSTALL_TARGETS( /bin oxl_glmovie )
+    TARGET_LINK_LIBRARIES( oxl_glmovie ${GLUT_LIBRARIES} ${OPENGL_LIBRARIES} )
+  ENDIF (GLUT_FOUND)
+
+ENDIF(OPENGL_FOUND)

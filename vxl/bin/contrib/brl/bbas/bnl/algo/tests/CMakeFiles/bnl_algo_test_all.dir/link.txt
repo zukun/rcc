@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/bnl_algo_test_all.dir/test_driver.o CMakeFiles/bnl_algo_test_all.dir/test_legendre_polynomial.o  -o bnl_algo_test_all -rdynamic ../../../../../../lib/libbnl_algo.a ../../../../../../lib/libtestlib.a ../../../../../../lib/libvnl.a ../../../../../../lib/libvcl.a -lm 

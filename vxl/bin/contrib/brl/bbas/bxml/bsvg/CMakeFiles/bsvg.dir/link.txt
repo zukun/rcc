@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../lib/libbsvg.a  CMakeFiles/bsvg.dir/bsvg_document.o CMakeFiles/bsvg.dir/bsvg_element.o CMakeFiles/bsvg.dir/bsvg_plot.o
+/usr/bin/ranlib ../../../../../lib/libbsvg.a

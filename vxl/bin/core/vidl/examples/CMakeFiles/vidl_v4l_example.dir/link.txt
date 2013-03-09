@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vidl_v4l_example.dir/vidl_v4l_live_example.o  -o vidl_v4l_example -rdynamic ../../../lib/libvidl.a ../../../lib/libvil.a -ljpeg ../../../lib/libgeotiff.a -ltiff -lpng -lz ../../../lib/libvul.a ../../../lib/libvcl.a -lm 

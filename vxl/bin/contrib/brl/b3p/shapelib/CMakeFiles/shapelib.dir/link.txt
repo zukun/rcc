@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libshapelib.a  CMakeFiles/shapelib.dir/shptree.o CMakeFiles/shapelib.dir/shpopen.o CMakeFiles/shapelib.dir/dbfopen.o
+/usr/bin/ranlib ../../../../lib/libshapelib.a

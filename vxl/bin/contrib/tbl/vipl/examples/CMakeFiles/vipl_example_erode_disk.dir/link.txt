@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vipl_example_erode_disk.dir/example_erode_disk.o  -o vipl_example_erode_disk -rdynamic ../../../../lib/libvipl.a ../../../../lib/libvil.a ../../../../lib/libgeotiff.a ../../../../lib/libvil1.a -ljpeg -ltiff -lpng -lz ../../../../lib/libvnl.a ../../../../lib/libvcl.a -lm 

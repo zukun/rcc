@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vmap_test.dir/vmap_test.o  -o vmap_test -rdynamic ../../../../lib/libvmap.a ../../../../lib/libvcl.a -lm 

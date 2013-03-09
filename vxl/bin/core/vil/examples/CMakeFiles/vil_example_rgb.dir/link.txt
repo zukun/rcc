@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil_example_rgb.dir/example_rgb.o  -o vil_example_rgb -rdynamic ../../../lib/libvil.a ../../../lib/libvcl.a -lm -ljpeg ../../../lib/libgeotiff.a -ltiff -lpng -lz 

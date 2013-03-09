@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/bgeo_test_include.dir/test_include.o  -o bgeo_test_include -rdynamic ../../../../../../lib/libbgeo.a ../../../../../../lib/libvsl.a ../../../../../../lib/libvnl.a ../../../../../../lib/libvbl.a ../../../../../../lib/libvcl.a -lm 

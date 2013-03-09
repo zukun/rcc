@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vcl_test_include.dir/test_include.o  -o vcl_test_include -rdynamic ../../lib/libvcl.a -lm 

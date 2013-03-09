@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libvgel.a  CMakeFiles/vgel.dir/vgel_kl.o CMakeFiles/vgel.dir/vgel_kl_params.o CMakeFiles/vgel.dir/Templates/vbl_smart_ptr+vgel_mvd_vertex-.o CMakeFiles/vgel.dir/Templates/vgel_multi_view_data+vtol_vertex_2d_sptr-.o
+/usr/bin/ranlib ../../../lib/libvgel.a

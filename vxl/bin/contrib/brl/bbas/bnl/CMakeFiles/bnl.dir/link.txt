@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbnl.a  CMakeFiles/bnl.dir/bnl_parabolic_interpolator.o CMakeFiles/bnl.dir/bnl_quadratic_interpolator.o
+/usr/bin/ranlib ../../../../lib/libbnl.a

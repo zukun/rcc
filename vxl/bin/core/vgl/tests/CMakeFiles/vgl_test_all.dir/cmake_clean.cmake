@@ -1,0 +1,42 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/vgl_test_all.dir/test_driver.o"
+  "CMakeFiles/vgl_test_all.dir/test_cartesian.o"
+  "CMakeFiles/vgl_test_all.dir/test_distance.o"
+  "CMakeFiles/vgl_test_all.dir/test_closest_point.o"
+  "CMakeFiles/vgl_test_all.dir/test_conic.o"
+  "CMakeFiles/vgl_test_all.dir/test_homg.o"
+  "CMakeFiles/vgl_test_all.dir/test_polygon.o"
+  "CMakeFiles/vgl_test_all.dir/test_convex.o"
+  "CMakeFiles/vgl_test_all.dir/test_polygon_scan_iterator.o"
+  "CMakeFiles/vgl_test_all.dir/test_triangle_scan_iterator.o"
+  "CMakeFiles/vgl_test_all.dir/test_ellipse_scan_iterator.o"
+  "CMakeFiles/vgl_test_all.dir/test_window_scan_iterator.o"
+  "CMakeFiles/vgl_test_all.dir/test_area.o"
+  "CMakeFiles/vgl_test_all.dir/test_clip.o"
+  "CMakeFiles/vgl_test_all.dir/test_h_matrix_1d.o"
+  "CMakeFiles/vgl_test_all.dir/test_h_matrix_2d.o"
+  "CMakeFiles/vgl_test_all.dir/test_h_matrix_3d.o"
+  "CMakeFiles/vgl_test_all.dir/test_fit_lines_2d.o"
+  "CMakeFiles/vgl_test_all.dir/test_fit_conics_2d.o"
+  "CMakeFiles/vgl_test_all.dir/test_p_matrix.o"
+  "CMakeFiles/vgl_test_all.dir/test_convex_hull_2d.o"
+  "CMakeFiles/vgl_test_all.dir/test_sphere.o"
+  "CMakeFiles/vgl_test_all.dir/test_line_3d_2_points.o"
+  "CMakeFiles/vgl_test_all.dir/test_line_segment_3d.o"
+  "CMakeFiles/vgl_test_all.dir/test_orient_box_3d.o"
+  "CMakeFiles/vgl_test_all.dir/test_fit_plane_3d.o"
+  "CMakeFiles/vgl_test_all.dir/test_intersection.o"
+  "CMakeFiles/vgl_test_all.dir/test_rotation_3d.o"
+  "CMakeFiles/vgl_test_all.dir/test_triangle_3d.o"
+  "CMakeFiles/vgl_test_all.dir/test_triangle_3d_line_intersection.o"
+  "CMakeFiles/vgl_test_all.dir/test_rtree.o"
+  "CMakeFiles/vgl_test_all.dir/test_ellipsoid.o"
+  "CMakeFiles/vgl_test_all.dir/test_infinite_line_3d.o"
+  "vgl_test_all.pdb"
+  "vgl_test_all"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/vgl_test_all.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

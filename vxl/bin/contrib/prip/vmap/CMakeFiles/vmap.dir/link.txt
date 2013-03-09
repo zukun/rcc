@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libvmap.a  CMakeFiles/vmap.dir/vbl_controlled_partition.o CMakeFiles/vmap.dir/vmap_grid_structure.o CMakeFiles/vmap.dir/vmap_2_map.o CMakeFiles/vmap.dir/vmap_2_tmap_elts.o
+/usr/bin/ranlib ../../../lib/libvmap.a

@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil_example1.dir/example1.o  -o vil_example1 -rdynamic ../../../lib/libvil.a ../../../lib/libvcl.a -lm -ljpeg ../../../lib/libgeotiff.a -ltiff -lpng -lz 

@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbdgl.a  CMakeFiles/bdgl.dir/bdgl_curve_algs.o CMakeFiles/bdgl.dir/bdgl_region_algs.o CMakeFiles/bdgl.dir/bdgl_curve_region.o CMakeFiles/bdgl.dir/bdgl_peano_curve.o
+/usr/bin/ranlib ../../../../lib/libbdgl.a

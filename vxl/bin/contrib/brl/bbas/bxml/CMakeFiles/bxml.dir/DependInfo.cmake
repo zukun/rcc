@@ -1,0 +1,32 @@
+# The set of languages for which implicit dependencies are needed:
+SET(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/antiw/demos/vxl-1.13.0/contrib/brl/bbas/bxml/Templates/vbl_io_smart_ptr+bxml_document-.cxx" "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/contrib/brl/bbas/bxml/CMakeFiles/bxml.dir/Templates/vbl_io_smart_ptr+bxml_document-.o"
+  "/home/antiw/demos/vxl-1.13.0/contrib/brl/bbas/bxml/Templates/vbl_smart_ptr+bxml_data-.cxx" "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/contrib/brl/bbas/bxml/CMakeFiles/bxml.dir/Templates/vbl_smart_ptr+bxml_data-.o"
+  "/home/antiw/demos/vxl-1.13.0/contrib/brl/bbas/bxml/Templates/vbl_smart_ptr+bxml_document-.cxx" "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/contrib/brl/bbas/bxml/CMakeFiles/bxml.dir/Templates/vbl_smart_ptr+bxml_document-.o"
+  "/home/antiw/demos/vxl-1.13.0/contrib/brl/bbas/bxml/bxml_document.cxx" "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/contrib/brl/bbas/bxml/CMakeFiles/bxml.dir/bxml_document.o"
+  "/home/antiw/demos/vxl-1.13.0/contrib/brl/bbas/bxml/bxml_find.cxx" "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/contrib/brl/bbas/bxml/CMakeFiles/bxml.dir/bxml_find.o"
+  "/home/antiw/demos/vxl-1.13.0/contrib/brl/bbas/bxml/bxml_read.cxx" "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/contrib/brl/bbas/bxml/CMakeFiles/bxml.dir/bxml_read.o"
+  "/home/antiw/demos/vxl-1.13.0/contrib/brl/bbas/bxml/bxml_write.cxx" "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/contrib/brl/bbas/bxml/CMakeFiles/bxml.dir/bxml_write.o"
+  )
+SET(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+SET(CMAKE_TARGET_DEFINITIONS
+  "VXL_WARN_DEPRECATED"
+  "VXL_WARN_DEPRECATED_ONCE"
+  "VXL_LEGACY_ERROR_REPORTING"
+  )
+
+# Targets to which this target links.
+SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/contrib/brl/b3p/expatpp/CMakeFiles/expatpp.dir/DependInfo.cmake"
+  "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/core/vbl/io/CMakeFiles/vbl_io.dir/DependInfo.cmake"
+  "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/core/vul/CMakeFiles/vul.dir/DependInfo.cmake"
+  "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/core/vbl/CMakeFiles/vbl.dir/DependInfo.cmake"
+  "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/core/vsl/CMakeFiles/vsl.dir/DependInfo.cmake"
+  "/mnt/data/documents/Computer Vision/Computer Vision Courses - Lectures/Li Fei Fei - Recognizing and Learning Object Categories - ICCV2009/Demo of bag-of-word classifiers/bag_words_demo/bin/vcl/CMakeFiles/vcl.dir/DependInfo.cmake"
+  )

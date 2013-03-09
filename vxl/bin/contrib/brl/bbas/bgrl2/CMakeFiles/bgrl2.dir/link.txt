@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbgrl2.a  CMakeFiles/bgrl2.dir/bgrl2_hg_graph.o CMakeFiles/bgrl2.dir/bgrl2_hg_hypergraph.o
+/usr/bin/ranlib ../../../../lib/libbgrl2.a

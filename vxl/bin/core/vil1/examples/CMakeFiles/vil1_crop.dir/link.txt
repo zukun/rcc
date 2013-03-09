@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil1_crop.dir/vil1_crop.o  -o vil1_crop -rdynamic ../../../lib/libvil1.a ../../../lib/libvul.a -ljpeg -ltiff -lpng -lz ../../../lib/libvcl.a -lm 

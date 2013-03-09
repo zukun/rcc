@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg height="600" viewBox="0,0,600,600" width="600" xmlns="http://www.w3.org/2000/svg">
+<line stroke="black" stroke-width="2" x1="40" x2="40" y1="560" y2="20" />
+<line stroke="black" stroke-width="2" x1="40" x2="580" y1="560" y2="560" />
+<text font-size="15" transform="translate(40,580) ">0</text>
+<text font-size="15" transform="translate(20,560) ">0</text>
+<text font-size="15" transform="translate(560,580) ">1</text>
+<line stroke="black" stroke-width="2" x1="560" x2="560" y1="560" y2="565" />
+<text font-size="15" transform="translate(20,40) ">1</text>
+<line stroke="black" stroke-width="2" x1="35" x2="40" y1="40" y2="40" />
+<g stroke="black" stroke-width="2" transform="translate(580,560) ">
+<line transform="rotate(135)" x1="0" x2="0" y1="0" y2="10" />
+<line transform="rotate(45)" x1="0" x2="0" y1="0" y2="10" />
+</g>
+<g stroke="black" stroke-width="2" transform="translate(40,20) rotate(-90)">
+<line transform="rotate(135)" x1="0" x2="0" y1="0" y2="10" />
+<line transform="rotate(45)" x1="0" x2="0" y1="0" y2="10" />
+</g>
+<g stroke="black" stroke-opacity="0.5" stroke-width="2">
+<line x1="40" x2="560" y1="508" y2="508" />
+<line x1="40" x2="560" y1="456" y2="456" />
+<line x1="40" x2="560" y1="404" y2="404" />
+<line x1="40" x2="560" y1="352" y2="352" />
+<line x1="40" x2="560" y1="300" y2="300" />
+<line x1="40" x2="560" y1="248" y2="248" />
+<line x1="40" x2="560" y1="196" y2="196" />
+<line x1="40" x2="560" y1="144" y2="144" />
+<line x1="40" x2="560" y1="92" y2="92" />
+<line x1="40" x2="560" y1="40" y2="40" />
+</g>
+<g fill="red">
+<rect height="65" width="24" x="48" y="495" />
+<rect height="32.5" width="24" x="80" y="527.5" />
+<rect height="32.5" width="24" x="112" y="527.5" />
+<rect height="32.5" width="24" x="144" y="527.5" />
+<rect height="32.5" width="24" x="176" y="527.5" />
+<rect height="32.5" width="24" x="208" y="527.5" />
+<rect height="32.5" width="24" x="240" y="527.5" />
+<rect height="32.5" width="24" x="272" y="527.5" />
+<rect height="32.5" width="24" x="304" y="527.5" />
+<rect height="32.5" width="24" x="336" y="527.5" />
+<rect height="32.5" width="24" x="368" y="527.5" />
+<rect height="32.5" width="24" x="400" y="527.5" />
+<rect height="32.5" width="24" x="432" y="527.5" />
+<rect height="32.5" width="24" x="464" y="527.5" />
+<rect height="32.5" width="24" x="496" y="527.5" />
+<rect height="0" width="24" x="528" y="560" />
+</g>
+<g fill="red">
+<text font-size="15" transform="translate(60,580) rotate(90)">0</text>
+<text font-size="15" transform="translate(92,580) rotate(90)">8</text>
+<text font-size="15" transform="translate(124,580) rotate(90)">16</text>
+<text font-size="15" transform="translate(156,580) rotate(90)">24</text>
+<text font-size="15" transform="translate(188,580) rotate(90)">32</text>
+<text font-size="15" transform="translate(220,580) rotate(90)">40</text>
+<text font-size="15" transform="translate(252,580) rotate(90)">48</text>
+<text font-size="15" transform="translate(284,580) rotate(90)">56</text>
+<text font-size="15" transform="translate(316,580) rotate(90)">64</text>
+<text font-size="15" transform="translate(348,580) rotate(90)">72</text>
+<text font-size="15" transform="translate(380,580) rotate(90)">80</text>
+<text font-size="15" transform="translate(412,580) rotate(90)">88</text>
+<text font-size="15" transform="translate(444,580) rotate(90)">96</text>
+<text font-size="15" transform="translate(476,580) rotate(90)">104</text>
+<text font-size="15" transform="translate(508,580) rotate(90)">112</text>
+<text font-size="15" transform="translate(540,580) rotate(90)">120</text>
+</g>
+</svg>

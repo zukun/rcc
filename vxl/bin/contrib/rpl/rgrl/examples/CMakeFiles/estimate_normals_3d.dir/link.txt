@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/estimate_normals_3d.dir/estimate_normals_3d.o  -o estimate_normals_3d -rdynamic ../../../../lib/librrel.a ../../../../lib/librsdl.a ../../../../lib/libvnl_algo.a ../../../../lib/libnetlib.a ../../../../lib/libv3p_netlib.a ../../../../lib/libvgl.a ../../../../lib/libvnl.a ../../../../lib/libvbl.a ../../../../lib/libvcl.a -lm 

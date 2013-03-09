@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/bgeo_test_all.dir/test_driver.o CMakeFiles/bgeo_test_all.dir/test_lvcs.o  -o bgeo_test_all -rdynamic ../../../../../../lib/libbgeo.a ../../../../../../lib/libvgl.a ../../../../../../lib/libtestlib.a ../../../../../../lib/libvsl.a ../../../../../../lib/libvnl.a ../../../../../../lib/libvbl.a ../../../../../../lib/libvcl.a -lm 

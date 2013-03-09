@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libfhs.a  CMakeFiles/fhs.dir/fhs_arc.o CMakeFiles/fhs.dir/fhs_searcher.o
+/usr/bin/ranlib ../../../lib/libfhs.a

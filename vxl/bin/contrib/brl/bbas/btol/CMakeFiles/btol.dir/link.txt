@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libbtol.a  CMakeFiles/btol.dir/btol_edge_algs.o CMakeFiles/btol.dir/btol_vertex_algs.o CMakeFiles/btol.dir/btol_face_algs.o
+/usr/bin/ranlib ../../../../lib/libbtol.a

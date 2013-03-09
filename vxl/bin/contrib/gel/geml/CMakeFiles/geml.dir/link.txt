@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libgeml.a  CMakeFiles/geml.dir/geml_matcher.o CMakeFiles/geml.dir/geml_matcher_correlation.o
+/usr/bin/ranlib ../../../lib/libgeml.a

@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil_resample_image.dir/vil_resample_image.o  -o vil_resample_image -rdynamic ../../../lib/libvil.a ../../../lib/libvcl.a -lm -ljpeg ../../../lib/libgeotiff.a -ltiff -lpng -lz 

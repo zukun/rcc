@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vil_rotate_image.dir/vil_rotate_image.o  -o vil_rotate_image -rdynamic ../../../lib/libvil.a ../../../lib/libvcl.a -lm -ljpeg ../../../lib/libgeotiff.a -ltiff -lpng -lz 

@@ -1,0 +1,241 @@
+\input texinfo   @c -*-texinfo-*-
+
+@include book_header.texi
+
+@c make backslashes normal characters (used in eg "\brief")
+@c If we try to do this in book_header.texi, it seems be only valid
+@c in that file, so we have to do it here.
+@iftex
+@catcode92=12
+@end iftex
+
+@c -----------------------------------------------------------------------------
+
+@node Top
+@top
+
+@ifinfo
+This documents the VXL collection of C++ libraries.
+
+Copyright 2000-3 The TargetJr Consortium
+
+Permission is granted to copy and distribute, retaining this
+original copyright notice.
+@end ifinfo
+
+@c  This title page illustrates only one of the
+@c  two methods of forming a title page.
+
+@iftex
+@titlepage
+@title V@emph{X}L
+@subtitle A collection of C++ libraries for computer vision.
+@author The TargetJr Consortium
+
+@c  The following two commands start the copyright page.
+@page
+@vskip 0pt plus 1filll
+Copyright @copyright{} 2000 Andrew Fitzgibbon
+@end titlepage
+@shortcontents
+@contents
+@end iftex
+
+@menu
+* Introduction::
+* Examples::
+* vcl::
+* vbl::
+* vul::
+* vnl::
+* vil::
+* vgl::
+* vsl::
+* vgui::
+* vidl::
+* vpdl::
+* vcsl::
+* vidl1::
+* structure::
+* build::
+* coding standards::
+* Adding to vnl::
+* vsl for developers::
+* Concept Index::
+@end menu
+
+@node    Introduction
+@chapter Introduction
+@cindex Introduction
+@cindex IUE
+@cindex TargetJr
+
+@include chapter_intro.texi
+
+@comment ------------------------------------------------------------------
+@node    Examples
+@comment node-name, next, previous,     up
+@chapter Example programs
+
+@include chapter_examples.texi
+
+@comment ------------------------------------------------------------------
+@node    vcl
+@comment node-name, next, previous,     up
+@chapter vcl: C++ compatibility
+@cindex vcl
+@cindex ANSI/ISO C++
+@cindex STL
+@cindex Standard C++ library
+
+@include chapter_vcl.texi
+
+@comment ------------------------------------------------------------------
+@node    vbl
+@comment node-name, next,           previous, up
+@chapter vbl: Basic Templates
+@cindex vbl
+@cindex basics
+@cindex general utilities
+
+@include chapter_vbl.texi
+
+@comment ------------------------------------------------------------------
+@node    vul
+@comment node-name, next,           previous, up
+@chapter vul: Utilities
+@cindex vul
+@cindex basics
+@cindex general utilities
+
+@include chapter_vul.texi
+
+@comment ------------------------------------------------------------------
+@node    vnl
+@comment node-name, next, previous, up
+@chapter vnl: Numerics
+@cindex vnl
+@cindex Numerics
+
+@include chapter_vnl.texi
+
+@comment ------------------------------------------------------------------
+@node    vil
+@comment node-name, next,    previous, up
+@chapter vil: Imaging
+@cindex vil
+@cindex Images
+
+@include chapter_vil.texi
+
+@comment ------------------------------------------------------------------
+@node    vgl
+@comment node-name, next,  previous, up
+@chapter vgl: Geometry
+@cindex vgl
+@cindex Geometry
+
+@include chapter_vgl.texi
+
+@comment ------------------------------------------------------------------
+@node    vsl
+@comment node-name,   next,    previous, up
+@chapter vsl: Binary I/O
+@cindex vsl
+@cindex Binary I/O
+@cindex Binary save and restore
+@cindex Saving objects
+@cindex Loading objects
+@cindex Restoring objects
+
+@include chapter_vsl.texi
+
+
+@comment ------------------------------------------------------------------
+@node    vgui
+@comment node-name, next,    previous, up
+@chapter vgui: Graphical User Interface
+@cindex vgui
+@cindex Graphics
+
+@include chapter_vgui.texi
+
+@comment ------------------------------------------------------------------
+@node    vidl
+@comment node-name, next,      previous, up
+@chapter vidl: Video Streaming
+@cindex video
+
+@include chapter_vidl.texi
+
+@comment ------------------------------------------------------------------
+@node    vpdl
+@comment node-name, next,      previous, up
+@chapter vpdl: Probability Distributions (Experimental)
+@cindex Probability
+
+@include chapter_vpdl.texi
+
+@comment ------------------------------------------------------------------
+@node    vcsl
+@comment node-name, next,      previous, up
+@chapter vcsl: Co-ordinate systems
+@cindex co-ordinate systems
+
+@include chapter_vcsl.texi
+
+@comment ------------------------------------------------------------------
+@node    vidl1
+@comment node-name, next,      previous, up
+@chapter vidl1: Video Access (Deprecated)
+@cindex video
+
+@include chapter_vidl1.texi
+
+@comment ------------------------------------------------------------------
+@node    structure
+@comment node-name, next,     previous, up
+@appendix  Filenames and structure
+@cindex directories
+
+@include appendix_structure.texi
+
+@comment ------------------------------------------------------------------
+@node    build
+@comment node-name, next,      previous,  up
+@appendix  Build Systems
+@cindex Makefiles
+@cindex MSVS Project Files
+
+@include appendix_build.texi
+
+@comment ------------------------------------------------------------------
+@node    coding standards
+@appendix  Coding Standards
+@cindex Coding Standards
+
+
+@include appendix_coding_standards.texi
+
+@comment ------------------------------------------------------------------
+@node    Adding to vnl
+@comment node-name, next,          previous, up
+@appendix Adding to vnl_algo
+
+@include appendix_adding_to_vnl_algo.texi
+
+@comment ------------------------------------------------------------------
+@node    vsl for developers
+@comment node-name, next,          previous, up
+@appendix vsl Developer Topics
+
+@include appendix_vsl_for_developers.texi
+
+@comment ------------------------------------------------------------------
+@node    Concept Index
+@comment node-name,      next, previous,  up
+@unnumbered Concept Index
+
+@printindex cp
+
+@bye

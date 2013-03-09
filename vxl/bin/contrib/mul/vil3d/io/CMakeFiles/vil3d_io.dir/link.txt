@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../lib/libvil3d_io.a  CMakeFiles/vil3d_io.dir/vil3d_io_dummy.o
+/usr/bin/ranlib ../../../../lib/libvil3d_io.a

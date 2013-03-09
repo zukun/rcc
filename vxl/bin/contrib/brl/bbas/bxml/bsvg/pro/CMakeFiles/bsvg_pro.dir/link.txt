@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../../../../lib/libbsvg_pro.a  CMakeFiles/bsvg_pro.dir/bsvg_register.o CMakeFiles/bsvg_pro.dir/Templates/brdb_value_t+bxml_document_sptr-.o CMakeFiles/bsvg_pro.dir/processes/bsvg_plot_bar_processes.o CMakeFiles/bsvg_pro.dir/processes/bsvg_plot_roc_process.o
+/usr/bin/ranlib ../../../../../../lib/libbsvg_pro.a

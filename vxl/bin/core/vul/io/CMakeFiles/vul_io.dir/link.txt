@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../../../lib/libvul_io.a  CMakeFiles/vul_io.dir/vul_io_user_info.o
+/usr/bin/ranlib ../../../lib/libvul_io.a

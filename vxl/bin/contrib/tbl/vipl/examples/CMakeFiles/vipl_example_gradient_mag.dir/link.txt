@@ -1,0 +1,1 @@
+/usr/bin/c++        CMakeFiles/vipl_example_gradient_mag.dir/example_gradient_mag.o  -o vipl_example_gradient_mag -rdynamic ../../../../lib/libvipl.a ../../../../lib/libvbl.a ../../../../lib/libvil.a ../../../../lib/libgeotiff.a ../../../../lib/libvil1.a -ljpeg -ltiff -lpng -lz ../../../../lib/libvnl.a ../../../../lib/libvcl.a -lm 
